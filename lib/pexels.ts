@@ -33,7 +33,7 @@ export async function searchPexels(query: string, perPage = 15): Promise<PexelsR
       headers: {
         Authorization: PEXELS_API_KEY,
       },
-      next: { revalidate: 3600 }, // Cache for 1 hour
+      next: { revalidate: 3600 },
     }
   )
 
@@ -44,30 +44,10 @@ export async function searchPexels(query: string, perPage = 15): Promise<PexelsR
   return response.json()
 }
 
-export async function getCuratedPhotos(perPage = 15): Promise<PexelsResponse> {
-  const response = await fetch(
-    `https://api.pexels.com/v1/curated?per_page=${perPage}`,
-    {
-      headers: {
-        Authorization: PEXELS_API_KEY,
-      },
-      next: { revalidate: 3600 },
-    }
-  )
-
-  if (!response.ok) {
-    throw new Error('Failed to fetch curated photos')
-  }
-
-  return response.json()
-}
-
-// Predefined queries for different sections
-export const pexelsQueries = {
-  hero: 'modern office technology',
-  services: 'digital marketing team',
-  agency: 'creative agency workspace',
-  success: 'business success celebration',
-  technology: 'software development',
-  teamwork: 'team collaboration',
+// Predefined image URLs (fallback if API fails)
+export const pexelsImages = {
+  hero: 'https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=1920',
+  team: 'https://images.pexels.com/photos/3182773/pexels-photo-3182773.jpeg?auto=compress&cs=tinysrgb&w=1920',
+  office: 'https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=1920',
+  success: 'https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg?auto=compress&cs=tinysrgb&w=1920',
 }

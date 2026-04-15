@@ -1,64 +1,88 @@
 import Link from "next/link"
-import { Button } from "@/components/ui/button"
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { ArrowRight, Code, Rocket, Zap, CheckCircle2, Users, TrendingUp } from "lucide-react"
+import { ArrowRight, Code, Rocket, Zap, CheckCircle2, Users, TrendingUp, Sparkles } from "lucide-react"
+import { pexelsImages } from "@/lib/pexels"
 
 export default function Home() {
   return (
-    <div className="flex min-h-screen flex-col">
+    <div className="min-h-screen">
       {/* Hero Section with Pexels Background */}
-      <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden">
-        {/* Background Image */}
+      <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+        {/* Animated Background */}
         <div className="absolute inset-0 z-0">
           <img
-            src="https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=1920"
+            src={pexelsImages.hero}
             alt="Modern office"
             className="w-full h-full object-cover"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/60 to-black/40" />
+          <div className="absolute inset-0 bg-gradient-to-r from-black/90 via-black/70 to-black/50" />
+          
+          {/* Animated Gradient Overlay */}
+          <div className="absolute inset-0 bg-gradient-animate opacity-20" />
+          
+          {/* Floating Particles */}
+          <div className="absolute top-20 left-20 w-72 h-72 bg-blue-500/30 rounded-full blur-3xl animate-float" />
+          <div className="absolute bottom-20 right-20 w-96 h-96 bg-purple-500/30 rounded-full blur-3xl animate-float" style={{ animationDelay: '2s' }} />
         </div>
 
         {/* Hero Content */}
         <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <div className="max-w-4xl mx-auto space-y-8">
-            <h1 className="text-5xl md:text-7xl font-bold text-white leading-tight">
+          <div className="max-w-5xl mx-auto space-y-8">
+            {/* Animated Badge */}
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-white animate-pulse-slow">
+              <Sparkles className="w-4 h-4" />
+              <span className="text-sm font-medium">White-Label Technical Partner</span>
+            </div>
+
+            {/* Main Heading with Gradient */}
+            <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold text-white leading-tight">
               You Close the Deal.
               <br />
-              <span className="bg-gradient-to-r from-blue-400 to-purple-600 bg-clip-text text-transparent">
+              <span className="text-gradient animate-gradient bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 bg-clip-text text-transparent" style={{ backgroundSize: '200% auto' }}>
                 We Build the System.
               </span>
             </h1>
-            <p className="text-xl md:text-2xl text-gray-200 max-w-3xl mx-auto">
+
+            {/* Subheading */}
+            <p className="text-xl md:text-2xl text-gray-200 max-w-3xl mx-auto leading-relaxed">
               White-label technical partner for agencies. We build custom portals, dashboards, and backend systems—so your clients think you're a tech company.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+
+            {/* CTA Buttons */}
+            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-4">
               <Link href="/contact">
-                <Button size="lg" className="text-lg px-8 py-6 bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700">
-                  Book a Strategy Call <ArrowRight className="ml-2" />
-                </Button>
+                <button className="group relative px-8 py-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-lg font-semibold text-lg overflow-hidden transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-blue-500/50">
+                  <span className="relative z-10 flex items-center gap-2">
+                    Book a Strategy Call
+                    <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+                  </span>
+                  <div className="absolute inset-0 bg-gradient-to-r from-blue-700 to-purple-700 opacity-0 group-hover:opacity-100 transition-opacity" />
+                </button>
               </Link>
               <Link href="/services">
-                <Button size="lg" variant="outline" className="text-lg px-8 py-6 border-white text-white hover:bg-white hover:text-black">
+                <button className="px-8 py-4 bg-white/10 backdrop-blur-md border-2 border-white/30 text-white rounded-lg font-semibold text-lg hover:bg-white/20 transition-all duration-300 hover:scale-105">
                   See What We Build
-                </Button>
+                </button>
               </Link>
             </div>
           </div>
         </div>
 
         {/* Scroll Indicator */}
-        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-          <div className="w-6 h-10 border-2 border-white rounded-full flex justify-center">
-            <div className="w-1 h-3 bg-white rounded-full mt-2 animate-pulse" />
+        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-float">
+          <div className="w-6 h-10 border-2 border-white/50 rounded-full flex justify-center p-2">
+            <div className="w-1 h-3 bg-white rounded-full animate-glow" />
           </div>
         </div>
       </section>
 
       {/* Problem Section */}
-      <section className="py-20 bg-gray-50">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="py-20 bg-gradient-to-b from-gray-50 to-white relative overflow-hidden">
+        {/* Background Decoration */}
+        <div className="absolute top-0 right-0 w-96 h-96 bg-blue-100 rounded-full blur-3xl opacity-30" />
+        
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="max-w-3xl mx-auto text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold mb-6">
+            <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-gray-900 to-gray-700 bg-clip-text text-transparent">
               Agencies Are Stuck Between Two Bad Options
             </h2>
             <p className="text-xl text-gray-600">
@@ -67,72 +91,88 @@ export default function Home() {
           </div>
 
           <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto mb-12">
-            <Card className="border-red-200 bg-red-50/50">
-              <CardHeader>
-                <CardTitle className="text-2xl flex items-center justify-between">
-                  Option 1: Generic Software
-                  <span className="text-red-500">✗</span>
-                </CardTitle>
-              </CardHeader>
-              <CardContent className="space-y-3">
-                <p className="text-gray-700 flex items-start gap-2">
-                  <span className="text-red-500 mt-1">✗</span> Clients get lost in menus
-                </p>
-                <p className="text-gray-700 flex items-start gap-2">
-                  <span className="text-red-500 mt-1">✗</span> Low adoption rates
-                </p>
-                <p className="text-gray-700 flex items-start gap-2">
-                  <span className="text-red-500 mt-1">✗</span> High churn
-                </p>
-                <p className="text-gray-700 flex items-start gap-2">
-                  <span className="text-red-500 mt-1">✗</span> Looks like everyone else
-                </p>
-              </CardContent>
-            </Card>
+            {/* Option 1 */}
+            <div className="group relative bg-gradient-to-br from-red-50 to-orange-50 border-2 border-red-200 rounded-2xl p-8 hover-lift">
+              <div className="absolute top-4 right-4">
+                <div className="w-12 h-12 bg-red-500 rounded-full flex items-center justify-center text-white text-2xl font-bold">
+                  ✗
+                </div>
+              </div>
+              <h3 className="text-2xl font-bold mb-6 text-gray-900">Option 1: Generic Software</h3>
+              <div className="space-y-3">
+                <div className="flex items-start gap-3">
+                  <span className="text-red-500 text-xl mt-1">✗</span>
+                  <p className="text-gray-700">Clients get lost in menus</p>
+                </div>
+                <div className="flex items-start gap-3">
+                  <span className="text-red-500 text-xl mt-1">✗</span>
+                  <p className="text-gray-700">Low adoption rates</p>
+                </div>
+                <div className="flex items-start gap-3">
+                  <span className="text-red-500 text-xl mt-1">✗</span>
+                  <p className="text-gray-700">High churn</p>
+                </div>
+                <div className="flex items-start gap-3">
+                  <span className="text-red-500 text-xl mt-1">✗</span>
+                  <p className="text-gray-700">Looks like everyone else</p>
+                </div>
+              </div>
+            </div>
 
-            <Card className="border-red-200 bg-red-50/50">
-              <CardHeader>
-                <CardTitle className="text-2xl flex items-center justify-between">
-                  Option 2: Hire Developers
-                  <span className="text-red-500">✗</span>
-                </CardTitle>
-              </CardHeader>
-              <CardContent className="space-y-3">
-                <p className="text-gray-700 flex items-start gap-2">
-                  <span className="text-red-500 mt-1">✗</span> Expensive ($80k+/year)
-                </p>
-                <p className="text-gray-700 flex items-start gap-2">
-                  <span className="text-red-500 mt-1">✗</span> Slow to deliver
-                </p>
-                <p className="text-gray-700 flex items-start gap-2">
-                  <span className="text-red-500 mt-1">✗</span> Risky hires
-                </p>
-                <p className="text-gray-700 flex items-start gap-2">
-                  <span className="text-red-500 mt-1">✗</span> Hard to manage
-                </p>
-              </CardContent>
-            </Card>
+            {/* Option 2 */}
+            <div className="group relative bg-gradient-to-br from-red-50 to-orange-50 border-2 border-red-200 rounded-2xl p-8 hover-lift">
+              <div className="absolute top-4 right-4">
+                <div className="w-12 h-12 bg-red-500 rounded-full flex items-center justify-center text-white text-2xl font-bold">
+                  ✗
+                </div>
+              </div>
+              <h3 className="text-2xl font-bold mb-6 text-gray-900">Option 2: Hire Developers</h3>
+              <div className="space-y-3">
+                <div className="flex items-start gap-3">
+                  <span className="text-red-500 text-xl mt-1">✗</span>
+                  <p className="text-gray-700">Expensive ($80k+/year)</p>
+                </div>
+                <div className="flex items-start gap-3">
+                  <span className="text-red-500 text-xl mt-1">✗</span>
+                  <p className="text-gray-700">Slow to deliver</p>
+                </div>
+                <div className="flex items-start gap-3">
+                  <span className="text-red-500 text-xl mt-1">✗</span>
+                  <p className="text-gray-700">Risky hires</p>
+                </div>
+                <div className="flex items-start gap-3">
+                  <span className="text-red-500 text-xl mt-1">✗</span>
+                  <p className="text-gray-700">Hard to manage</p>
+                </div>
+              </div>
+            </div>
           </div>
 
+          {/* Solution Teaser */}
           <div className="text-center">
-            <p className="text-3xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+            <p className="text-4xl font-bold text-gradient bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text text-transparent animate-gradient" style={{ backgroundSize: '200% auto' }}>
               There's a third way.
             </p>
           </div>
         </div>
       </section>
 
-      {/* Solution Section with Pexels Image */}
+      {/* Solution Section with Pexels Background */}
       <section className="py-20 relative overflow-hidden">
+        {/* Background Image */}
         <div className="absolute inset-0 z-0">
           <img
-            src="https://images.pexels.com/photos/3182773/pexels-photo-3182773.jpeg?auto=compress&cs=tinysrgb&w=1920"
+            src={pexelsImages.team}
             alt="Team collaboration"
-            className="w-full h-full object-cover opacity-10"
+            className="w-full h-full object-cover opacity-5"
           />
         </div>
 
-        <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8">
+        {/* Animated Blobs */}
+        <div className="absolute top-20 left-10 w-64 h-64 bg-blue-400/20 rounded-full blur-3xl animate-float" />
+        <div className="absolute bottom-20 right-10 w-80 h-80 bg-purple-400/20 rounded-full blur-3xl animate-float" style={{ animationDelay: '3s' }} />
+
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="max-w-3xl mx-auto text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold mb-6">
               We're Your White-Label Technical Backbone
@@ -143,112 +183,124 @@ export default function Home() {
           </div>
 
           <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-            <Card className="hover:shadow-xl transition-shadow duration-300 border-t-4 border-t-blue-500">
-              <CardHeader className="text-center">
-                <div className="mx-auto w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-4">
-                  <Rocket className="w-8 h-8 text-blue-600" />
+            {/* Service 1 */}
+            <div className="group bg-white rounded-2xl p-8 shadow-lg hover-lift border-t-4 border-blue-500 relative overflow-hidden">
+              <div className="absolute top-0 right-0 w-32 h-32 bg-blue-100 rounded-full blur-2xl opacity-0 group-hover:opacity-100 transition-opacity" />
+              <div className="relative z-10">
+                <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-600 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                  <Rocket className="w-8 h-8 text-white" />
                 </div>
-                <CardTitle className="text-2xl">Custom Client Portals</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-gray-600 text-center">
+                <h3 className="text-2xl font-bold mb-4">Custom Client Portals</h3>
+                <p className="text-gray-600">
                   Deliver a branded, intuitive experience with custom dashboards and reporting that wow your clients.
                 </p>
-              </CardContent>
-            </Card>
+              </div>
+            </div>
 
-            <Card className="hover:shadow-xl transition-shadow duration-300 border-t-4 border-t-purple-500">
-              <CardHeader className="text-center">
-                <div className="mx-auto w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mb-4">
-                  <Code className="w-8 h-8 text-purple-600" />
+            {/* Service 2 */}
+            <div className="group bg-white rounded-2xl p-8 shadow-lg hover-lift border-t-4 border-purple-500 relative overflow-hidden">
+              <div className="absolute top-0 right-0 w-32 h-32 bg-purple-100 rounded-full blur-2xl opacity-0 group-hover:opacity-100 transition-opacity" />
+              <div className="relative z-10">
+                <div className="w-16 h-16 bg-gradient-to-br from-purple-500 to-purple-600 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                  <Code className="w-8 h-8 text-white" />
                 </div>
-                <CardTitle className="text-2xl">GHL API Development</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-gray-600 text-center">
+                <h3 className="text-2xl font-bold mb-4">GHL API Development</h3>
+                <p className="text-gray-600">
                   Extend GoHighLevel's functionality with bespoke integrations and automation tailored to your needs.
                 </p>
-              </CardContent>
-            </Card>
+              </div>
+            </div>
 
-            <Card className="hover:shadow-xl transition-shadow duration-300 border-t-4 border-t-green-500">
-              <CardHeader className="text-center">
-                <div className="mx-auto w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mb-4">
-                  <Zap className="w-8 h-8 text-green-600" />
+            {/* Service 3 */}
+            <div className="group bg-white rounded-2xl p-8 shadow-lg hover-lift border-t-4 border-green-500 relative overflow-hidden">
+              <div className="absolute top-0 right-0 w-32 h-32 bg-green-100 rounded-full blur-2xl opacity-0 group-hover:opacity-100 transition-opacity" />
+              <div className="relative z-10">
+                <div className="w-16 h-16 bg-gradient-to-br from-green-500 to-green-600 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                  <Zap className="w-8 h-8 text-white" />
                 </div>
-                <CardTitle className="text-2xl">Fulfillment Systems</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-gray-600 text-center">
+                <h3 className="text-2xl font-bold mb-4">Fulfillment Systems</h3>
+                <p className="text-gray-600">
                   Streamline operations with automated client onboarding, task management, and reporting systems.
                 </p>
-              </CardContent>
-            </Card>
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
       {/* Benefits Section */}
-      <section className="py-20 bg-gradient-to-br from-blue-50 to-purple-50">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="py-20 bg-gradient-to-br from-blue-50 via-purple-50 to-pink-50 relative overflow-hidden">
+        {/* Animated Background Elements */}
+        <div className="absolute inset-0 opacity-30">
+          <div className="absolute top-0 left-0 w-full h-full bg-gradient-animate" />
+        </div>
+
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="max-w-3xl mx-auto text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold mb-6">
               Why Partner With Opervia?
             </h2>
+            <p className="text-xl text-gray-600">
+              We empower agencies to scale without the overhead.
+            </p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-12 max-w-5xl mx-auto">
-            <div className="flex gap-4">
+          <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+            {/* Benefit 1 */}
+            <div className="flex gap-6 items-start group">
               <div className="flex-shrink-0">
-                <div className="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center">
-                  <TrendingUp className="w-6 h-6 text-white" />
+                <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-600 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform shadow-lg">
+                  <TrendingUp className="w-8 h-8 text-white" />
                 </div>
               </div>
               <div>
                 <h3 className="text-2xl font-bold mb-3">Scale Your Offerings</h3>
-                <p className="text-gray-600 text-lg">
+                <p className="text-gray-600 text-lg leading-relaxed">
                   Expand your service portfolio without the overhead of hiring an in-house development team.
                 </p>
               </div>
             </div>
 
-            <div className="flex gap-4">
+            {/* Benefit 2 */}
+            <div className="flex gap-6 items-start group">
               <div className="flex-shrink-0">
-                <div className="w-12 h-12 bg-purple-600 rounded-full flex items-center justify-center">
-                  <CheckCircle2 className="w-6 h-6 text-white" />
+                <div className="w-16 h-16 bg-gradient-to-br from-purple-500 to-purple-600 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform shadow-lg">
+                  <CheckCircle2 className="w-8 h-8 text-white" />
                 </div>
               </div>
               <div>
                 <h3 className="text-2xl font-bold mb-3">Maintain Brand Control</h3>
-                <p className="text-gray-600 text-lg">
+                <p className="text-gray-600 text-lg leading-relaxed">
                   All solutions are white-labeled, ensuring your brand remains front and center with your clients.
                 </p>
               </div>
             </div>
 
-            <div className="flex gap-4">
+            {/* Benefit 3 */}
+            <div className="flex gap-6 items-start group">
               <div className="flex-shrink-0">
-                <div className="w-12 h-12 bg-green-600 rounded-full flex items-center justify-center">
-                  <Zap className="w-6 h-6 text-white" />
+                <div className="w-16 h-16 bg-gradient-to-br from-green-500 to-green-600 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform shadow-lg">
+                  <Zap className="w-8 h-8 text-white" />
                 </div>
               </div>
               <div>
                 <h3 className="text-2xl font-bold mb-3">Fast Delivery</h3>
-                <p className="text-gray-600 text-lg">
+                <p className="text-gray-600 text-lg leading-relaxed">
                   Get your custom solutions delivered quickly without compromising on quality or functionality.
                 </p>
               </div>
             </div>
 
-            <div className="flex gap-4">
+            {/* Benefit 4 */}
+            <div className="flex gap-6 items-start group">
               <div className="flex-shrink-0">
-                <div className="w-12 h-12 bg-orange-600 rounded-full flex items-center justify-center">
-                  <Users className="w-6 h-6 text-white" />
+                <div className="w-16 h-16 bg-gradient-to-br from-orange-500 to-orange-600 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform shadow-lg">
+                  <Users className="w-8 h-8 text-white" />
                 </div>
               </div>
               <div>
                 <h3 className="text-2xl font-bold mb-3">Expert Team</h3>
-                <p className="text-gray-600 text-lg">
+                <p className="text-gray-600 text-lg leading-relaxed">
                   Access a team of experienced developers specialized in GoHighLevel and modern web technologies.
                 </p>
               </div>
@@ -258,18 +310,30 @@ export default function Home() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-r from-blue-600 to-purple-600 text-white">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6">
+      <section className="relative py-20 overflow-hidden">
+        {/* Animated Gradient Background */}
+        <div className="absolute inset-0 bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-gradient-animate" style={{ backgroundSize: '200% 200%' }} />
+        
+        {/* Overlay Pattern */}
+        <div className="absolute inset-0 opacity-10">
+          <div className="absolute inset-0" style={{ backgroundImage: 'radial-gradient(circle, white 1px, transparent 1px)', backgroundSize: '50px 50px' }} />
+        </div>
+
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+          <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
             Ready to Scale Your Agency?
           </h2>
-          <p className="text-xl mb-8 max-w-2xl mx-auto opacity-90">
+          <p className="text-xl text-white/90 mb-8 max-w-2xl mx-auto">
             Partner with Opervia and unlock new possibilities for your clients and your business.
           </p>
           <Link href="/contact">
-            <Button size="lg" variant="secondary" className="text-lg px-8 py-6 bg-white text-blue-600 hover:bg-gray-100">
-              Book Your Free Consultation <ArrowRight className="ml-2" />
-            </Button>
+            <button className="group relative px-10 py-5 bg-white text-blue-600 rounded-lg font-bold text-xl overflow-hidden transition-all duration-300 hover:scale-105 hover:shadow-2xl">
+              <span className="relative z-10 flex items-center gap-2">
+                Book Your Free Consultation
+                <ArrowRight className="w-6 h-6 group-hover:translate-x-1 transition-transform" />
+              </span>
+              <div className="absolute inset-0 bg-gradient-to-r from-gray-100 to-white opacity-0 group-hover:opacity-100 transition-opacity" />
+            </button>
           </Link>
         </div>
       </section>
@@ -277,39 +341,40 @@ export default function Home() {
       {/* Footer */}
       <footer className="bg-gray-900 text-gray-300 py-12">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid md:grid-cols-4 gap-8">
+          <div className="grid md:grid-cols-4 gap-8 mb-8">
             <div>
               <h3 className="text-white font-bold text-xl mb-4">Opervia</h3>
-              <p className="text-sm">
+              <p className="text-sm text-gray-400">
                 White-label technical partner for agencies building the future.
               </p>
             </div>
             <div>
               <h4 className="text-white font-semibold mb-4">Services</h4>
               <ul className="space-y-2 text-sm">
-                <li><Link href="/services" className="hover:text-white">Custom Portals</Link></li>
-                <li><Link href="/services" className="hover:text-white">GHL Development</Link></li>
-                <li><Link href="/services" className="hover:text-white">Fulfillment Systems</Link></li>
+                <li><Link href="/services" className="hover:text-white transition-colors">Custom Portals</Link></li>
+                <li><Link href="/services" className="hover:text-white transition-colors">GHL Development</Link></li>
+                <li><Link href="/services" className="hover:text-white transition-colors">Fulfillment Systems</Link></li>
               </ul>
             </div>
             <div>
               <h4 className="text-white font-semibold mb-4">Company</h4>
               <ul className="space-y-2 text-sm">
-                <li><Link href="/how-it-works" className="hover:text-white">How It Works</Link></li>
-                <li><Link href="/agency-partner" className="hover:text-white">For Agencies</Link></li>
-                <li><Link href="/contact" className="hover:text-white">Contact</Link></li>
+                <li><Link href="/how-it-works" className="hover:text-white transition-colors">How It Works</Link></li>
+                <li><Link href="/agency-partner" className="hover:text-white transition-colors">For Agencies</Link></li>
+                <li><Link href="/contact" className="hover:text-white transition-colors">Contact</Link></li>
               </ul>
             </div>
             <div>
-              <h4 className="text-white font-semibold mb-4">Contact</h4>
-              <p className="text-sm">
+              <h4 className="text-white font-semibold mb-4">Get Started</h4>
+              <p className="text-sm mb-4">
                 Ready to transform your agency?
-                <br />
-                <Link href="/contact" className="text-blue-400 hover:text-blue-300">Get in touch →</Link>
               </p>
+              <Link href="/contact" className="inline-flex items-center gap-2 text-blue-400 hover:text-blue-300 transition-colors">
+                Book a call <ArrowRight className="w-4 h-4" />
+              </Link>
             </div>
           </div>
-          <div className="border-t border-gray-800 mt-8 pt-8 text-center text-sm">
+          <div className="border-t border-gray-800 pt-8 text-center text-sm text-gray-500">
             <p>&copy; 2024 Opervia. All rights reserved.</p>
           </div>
         </div>

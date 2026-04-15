@@ -97,9 +97,9 @@ export default function ServicesPage() {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
             {/* Service 1: GoHighLevel Development */}
-            <div className="relative bg-white border-2 border-blue-200 rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-1 group">
-              <div className="absolute top-5 right-5">
-                <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-cyan-600 rounded-xl flex items-center justify-center shadow-lg">
+            <div className="relative bg-white border-2 border-blue-400 rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+              <div className="absolute top-6 right-6">
+                <div className="w-12 h-12 bg-blue-400 rounded-xl flex items-center justify-center">
                   <Database className="w-6 h-6 text-white" strokeWidth={2.5} />
                 </div>
               </div>
@@ -112,19 +112,19 @@ export default function ServicesPage() {
 
               <div className="space-y-3 mb-6">
                 <div className="flex items-start gap-2">
-                  <CheckCircle2 className="w-5 h-5 text-blue-500 mt-0.5 flex-shrink-0" />
+                  <Sparkles className="w-5 h-5 text-blue-500 mt-0.5 flex-shrink-0" />
                   <p className="text-gray-700 text-sm">Account & backend setup</p>
                 </div>
                 <div className="flex items-start gap-2">
-                  <CheckCircle2 className="w-5 h-5 text-blue-500 mt-0.5 flex-shrink-0" />
+                  <Sparkles className="w-5 h-5 text-blue-500 mt-0.5 flex-shrink-0" />
                   <p className="text-gray-700 text-sm">Pipelines, opportunities & calendars</p>
                 </div>
                 <div className="flex items-start gap-2">
-                  <CheckCircle2 className="w-5 h-5 text-blue-500 mt-0.5 flex-shrink-0" />
+                  <Sparkles className="w-5 h-5 text-blue-500 mt-0.5 flex-shrink-0" />
                   <p className="text-gray-700 text-sm">Workflows & automations</p>
                 </div>
                 <div className="flex items-start gap-2">
-                  <CheckCircle2 className="w-5 h-5 text-blue-500 mt-0.5 flex-shrink-0" />
+                  <Sparkles className="w-5 h-5 text-blue-500 mt-0.5 flex-shrink-0" />
                   <p className="text-gray-700 text-sm">Email/SMS setup & domain config</p>
                 </div>
               </div>
@@ -134,14 +134,12 @@ export default function ServicesPage() {
                   → Strong backend foundation for your agency
                 </p>
               </div>
-
-              <div className="absolute inset-0 bg-gradient-to-br from-blue-50/60 to-cyan-50/40 rounded-2xl -z-10" />
             </div>
 
             {/* Service 2: GHL API Integrations */}
-            <div className="relative bg-white border-2 border-purple-200 rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-1 group">
-              <div className="absolute top-5 right-5">
-                <div className="w-12 h-12 bg-gradient-to-br from-purple-500 to-pink-600 rounded-xl flex items-center justify-center shadow-lg">
+            <div className="relative bg-white border-2 border-purple-400 rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+              <div className="absolute top-6 right-6">
+                <div className="w-12 h-12 bg-purple-400 rounded-xl flex items-center justify-center">
                   <Code className="w-6 h-6 text-white" strokeWidth={2.5} />
                 </div>
               </div>
@@ -154,19 +152,19 @@ export default function ServicesPage() {
 
               <div className="space-y-3 mb-6">
                 <div className="flex items-start gap-2">
-                  <CheckCircle2 className="w-5 h-5 text-purple-500 mt-0.5 flex-shrink-0" />
+                  <Sparkles className="w-5 h-5 text-purple-500 mt-0.5 flex-shrink-0" />
                   <p className="text-gray-700 text-sm">GoHighLevel V2 API integrations</p>
                 </div>
                 <div className="flex items-start gap-2">
-                  <CheckCircle2 className="w-5 h-5 text-purple-500 mt-0.5 flex-shrink-0" />
+                  <Sparkles className="w-5 h-5 text-purple-500 mt-0.5 flex-shrink-0" />
                   <p className="text-gray-700 text-sm">Webhook workflows & custom sync</p>
                 </div>
                 <div className="flex items-start gap-2">
-                  <CheckCircle2 className="w-5 h-5 text-purple-500 mt-0.5 flex-shrink-0" />
+                  <Sparkles className="w-5 h-5 text-purple-500 mt-0.5 flex-shrink-0" />
                   <p className="text-gray-700 text-sm">Third-party connections</p>
                 </div>
                 <div className="flex items-start gap-2">
-                  <CheckCircle2 className="w-5 h-5 text-purple-500 mt-0.5 flex-shrink-0" />
+                  <Sparkles className="w-5 h-5 text-purple-500 mt-0.5 flex-shrink-0" />
                   <p className="text-gray-700 text-sm">Custom frontend integration</p>
                 </div>
               </div>
@@ -176,14 +174,12 @@ export default function ServicesPage() {
                   → Technical differentiation from competitors
                 </p>
               </div>
-
-              <div className="absolute inset-0 bg-gradient-to-br from-purple-50/60 to-pink-50/40 rounded-2xl -z-10" />
             </div>
 
             {/* Service 3: Custom Client Portals */}
-            <div className="relative bg-white border-2 border-cyan-200 rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-1 group">
-              <div className="absolute top-5 right-5">
-                <div className="w-12 h-12 bg-gradient-to-br from-cyan-500 to-blue-600 rounded-xl flex items-center justify-center shadow-lg">
+            <div className="relative bg-white border-2 border-cyan-400 rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+              <div className="absolute top-6 right-6">
+                <div className="w-12 h-12 bg-cyan-400 rounded-xl flex items-center justify-center">
                   <Layout className="w-6 h-6 text-white" strokeWidth={2.5} />
                 </div>
               </div>
@@ -196,19 +192,19 @@ export default function ServicesPage() {
 
               <div className="space-y-3 mb-6">
                 <div className="flex items-start gap-2">
-                  <CheckCircle2 className="w-5 h-5 text-cyan-500 mt-0.5 flex-shrink-0" />
+                  <Sparkles className="w-5 h-5 text-cyan-500 mt-0.5 flex-shrink-0" />
                   <p className="text-gray-700 text-sm">Login-based portals & role dashboards</p>
                 </div>
                 <div className="flex items-start gap-2">
-                  <CheckCircle2 className="w-5 h-5 text-cyan-500 mt-0.5 flex-shrink-0" />
+                  <Sparkles className="w-5 h-5 text-cyan-500 mt-0.5 flex-shrink-0" />
                   <p className="text-gray-700 text-sm">Branded client experience</p>
                 </div>
                 <div className="flex items-start gap-2">
-                  <CheckCircle2 className="w-5 h-5 text-cyan-500 mt-0.5 flex-shrink-0" />
+                  <Sparkles className="w-5 h-5 text-cyan-500 mt-0.5 flex-shrink-0" />
                   <p className="text-gray-700 text-sm">Lead views & booking tracking</p>
                 </div>
                 <div className="flex items-start gap-2">
-                  <CheckCircle2 className="w-5 h-5 text-cyan-500 mt-0.5 flex-shrink-0" />
+                  <Sparkles className="w-5 h-5 text-cyan-500 mt-0.5 flex-shrink-0" />
                   <p className="text-gray-700 text-sm">Reporting & support area</p>
                 </div>
               </div>
@@ -218,14 +214,12 @@ export default function ServicesPage() {
                   → Premium client experience that wows
                 </p>
               </div>
-
-              <div className="absolute inset-0 bg-gradient-to-br from-cyan-50/60 to-blue-50/40 rounded-2xl -z-10" />
             </div>
 
             {/* Service 4: White-Label Technical Fulfillment */}
-            <div className="relative bg-white border-2 border-indigo-200 rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-1 group">
-              <div className="absolute top-5 right-5">
-                <div className="w-12 h-12 bg-gradient-to-br from-indigo-500 to-purple-600 rounded-xl flex items-center justify-center shadow-lg">
+            <div className="relative bg-white border-2 border-indigo-400 rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+              <div className="absolute top-6 right-6">
+                <div className="w-12 h-12 bg-indigo-400 rounded-xl flex items-center justify-center">
                   <Users className="w-6 h-6 text-white" strokeWidth={2.5} />
                 </div>
               </div>
@@ -238,19 +232,19 @@ export default function ServicesPage() {
 
               <div className="space-y-3 mb-6">
                 <div className="flex items-start gap-2">
-                  <CheckCircle2 className="w-5 h-5 text-indigo-500 mt-0.5 flex-shrink-0" />
+                  <Sparkles className="w-5 h-5 text-indigo-500 mt-0.5 flex-shrink-0" />
                   <p className="text-gray-700 text-sm">Behind-the-scenes delivery</p>
                 </div>
                 <div className="flex items-start gap-2">
-                  <CheckCircle2 className="w-5 h-5 text-indigo-500 mt-0.5 flex-shrink-0" />
+                  <Sparkles className="w-5 h-5 text-indigo-500 mt-0.5 flex-shrink-0" />
                   <p className="text-gray-700 text-sm">Technical scoping & implementation</p>
                 </div>
                 <div className="flex items-start gap-2">
-                  <CheckCircle2 className="w-5 h-5 text-indigo-500 mt-0.5 flex-shrink-0" />
+                  <Sparkles className="w-5 h-5 text-indigo-500 mt-0.5 flex-shrink-0" />
                   <p className="text-gray-700 text-sm">Fulfillment under your brand</p>
                 </div>
                 <div className="flex items-start gap-2">
-                  <CheckCircle2 className="w-5 h-5 text-indigo-500 mt-0.5 flex-shrink-0" />
+                  <Sparkles className="w-5 h-5 text-indigo-500 mt-0.5 flex-shrink-0" />
                   <p className="text-gray-700 text-sm">Revision support & handoff help</p>
                 </div>
               </div>
@@ -260,14 +254,12 @@ export default function ServicesPage() {
                   → Sell with confidence, no dev team needed
                 </p>
               </div>
-
-              <div className="absolute inset-0 bg-gradient-to-br from-indigo-50/60 to-purple-50/40 rounded-2xl -z-10" />
             </div>
 
             {/* Service 5: SOPs & Training */}
-            <div className="relative bg-white border-2 border-green-200 rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-1 group">
-              <div className="absolute top-5 right-5">
-                <div className="w-12 h-12 bg-gradient-to-br from-green-500 to-emerald-600 rounded-xl flex items-center justify-center shadow-lg">
+            <div className="relative bg-white border-2 border-green-400 rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+              <div className="absolute top-6 right-6">
+                <div className="w-12 h-12 bg-green-400 rounded-xl flex items-center justify-center">
                   <BookOpen className="w-6 h-6 text-white" strokeWidth={2.5} />
                 </div>
               </div>
@@ -280,19 +272,19 @@ export default function ServicesPage() {
 
               <div className="space-y-3 mb-6">
                 <div className="flex items-start gap-2">
-                  <CheckCircle2 className="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0" />
+                  <Sparkles className="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0" />
                   <p className="text-gray-700 text-sm">SOP documentation & guides</p>
                 </div>
                 <div className="flex items-start gap-2">
-                  <CheckCircle2 className="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0" />
+                  <Sparkles className="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0" />
                   <p className="text-gray-700 text-sm">Staff usage & onboarding guides</p>
                 </div>
                 <div className="flex items-start gap-2">
-                  <CheckCircle2 className="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0" />
+                  <Sparkles className="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0" />
                   <p className="text-gray-700 text-sm">Recorded walkthroughs</p>
                 </div>
                 <div className="flex items-start gap-2">
-                  <CheckCircle2 className="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0" />
+                  <Sparkles className="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0" />
                   <p className="text-gray-700 text-sm">Live training & admin handoff</p>
                 </div>
               </div>
@@ -302,14 +294,12 @@ export default function ServicesPage() {
                   → Better adoption, less confusion
                 </p>
               </div>
-
-              <div className="absolute inset-0 bg-gradient-to-br from-green-50/60 to-emerald-50/40 rounded-2xl -z-10" />
             </div>
 
             {/* Service 6: Support & Optimization */}
-            <div className="relative bg-white border-2 border-orange-200 rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-1 group">
-              <div className="absolute top-5 right-5">
-                <div className="w-12 h-12 bg-gradient-to-br from-orange-500 to-red-600 rounded-xl flex items-center justify-center shadow-lg">
+            <div className="relative bg-white border-2 border-orange-400 rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+              <div className="absolute top-6 right-6">
+                <div className="w-12 h-12 bg-orange-400 rounded-xl flex items-center justify-center">
                   <Headphones className="w-6 h-6 text-white" strokeWidth={2.5} />
                 </div>
               </div>
@@ -322,19 +312,19 @@ export default function ServicesPage() {
 
               <div className="space-y-3 mb-6">
                 <div className="flex items-start gap-2">
-                  <CheckCircle2 className="w-5 h-5 text-orange-500 mt-0.5 flex-shrink-0" />
+                  <Sparkles className="w-5 h-5 text-orange-500 mt-0.5 flex-shrink-0" />
                   <p className="text-gray-700 text-sm">Technical support & bug fixes</p>
                 </div>
                 <div className="flex items-start gap-2">
-                  <CheckCircle2 className="w-5 h-5 text-orange-500 mt-0.5 flex-shrink-0" />
+                  <Sparkles className="w-5 h-5 text-orange-500 mt-0.5 flex-shrink-0" />
                   <p className="text-gray-700 text-sm">Automation troubleshooting</p>
                 </div>
                 <div className="flex items-start gap-2">
-                  <CheckCircle2 className="w-5 h-5 text-orange-500 mt-0.5 flex-shrink-0" />
+                  <Sparkles className="w-5 h-5 text-orange-500 mt-0.5 flex-shrink-0" />
                   <p className="text-gray-700 text-sm">Portal & dashboard updates</p>
                 </div>
                 <div className="flex items-start gap-2">
-                  <CheckCircle2 className="w-5 h-5 text-orange-500 mt-0.5 flex-shrink-0" />
+                  <Sparkles className="w-5 h-5 text-orange-500 mt-0.5 flex-shrink-0" />
                   <p className="text-gray-700 text-sm">Maintenance retainers & optimization</p>
                 </div>
               </div>
@@ -344,8 +334,6 @@ export default function ServicesPage() {
                   → Ongoing partnership, not one-and-done
                 </p>
               </div>
-
-              <div className="absolute inset-0 bg-gradient-to-br from-orange-50/60 to-red-50/40 rounded-2xl -z-10" />
             </div>
           </div>
         </div>

@@ -1,0 +1,34 @@
+========================================
+VERCEL ENVIRONMENT VARIABLES
+Copy and paste these into Vercel Dashboard
+========================================
+
+Variable Name: DATABASE_URL
+Value: postgres://63169b9a03e7b0797c4e496dfdc9edc7a587eec8d7c98502a22742b7d79b6a21:sk_A6EdzkuTyk4MFFOBkMupO@db.prisma.io:5432/postgres?sslmode=require
+
+----------------------------------------
+
+Variable Name: NEXT_PUBLIC_PEXELS_API_KEY
+Value: UPJp8zwqFjKnUL2CUqxcn3U90JtMAhPWUB3ItNMHqu01Sf06gvl0qNVT
+
+----------------------------------------
+
+Variable Name: NEXT_PUBLIC_SITE_URL
+Value: https://opervia.agency
+
+========================================
+INSTRUCTIONS:
+========================================
+
+1. Go to your Vercel project settings
+2. Navigate to "Environment Variables"
+3. Add each variable above:
+   - Click "Add New"
+   - Enter Variable Name
+   - Paste Value
+   - Select all environments (Production, Preview, Development)
+   - Click "Save"
+
+4. After adding all variables, redeploy your project
+
+========================================

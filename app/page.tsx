@@ -41,8 +41,11 @@ export default function Home() {
             <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold leading-tight drop-shadow-2xl" style={{ textShadow: '0 4px 20px rgba(0,0,0,0.5)' }}>
               <span className="text-white">You Close the Deal.</span>
               <br />
-              <span className="text-gradient animate-gradient bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent" style={{ backgroundSize: '200% auto' }}>
-                We Build the System.
+              <span className="text-white">
+                We Build the{' '}
+                <span className="text-gradient animate-gradient bg-gradient-to-r from-cyan-300 via-blue-300 to-purple-300 bg-clip-text text-transparent" style={{ backgroundSize: '200% auto', textShadow: '0 0 40px rgba(255,255,255,0.5)' }}>
+                  System.
+                </span>
               </span>
             </h1>
 

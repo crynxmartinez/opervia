@@ -43,8 +43,9 @@ export default function Home() {
               <br />
               <span className="text-white">
                 We Build the{' '}
-                <span className="text-gradient animate-gradient bg-gradient-to-r from-cyan-300 via-blue-300 to-purple-300 bg-clip-text text-transparent" style={{ backgroundSize: '200% auto', textShadow: '0 0 40px rgba(255,255,255,0.5)' }}>
+                <span className="relative inline-block">
                   System.
+                  <span className="absolute -bottom-2 left-0 w-full h-1.5 bg-gradient-to-r from-cyan-400 via-blue-400 to-purple-400 rounded-full animate-gradient" style={{ backgroundSize: '200% auto' }} />
                 </span>
               </span>
             </h1>

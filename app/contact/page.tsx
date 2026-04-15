@@ -1,33 +1,41 @@
+'use client'
+
 import { Metadata } from "next"
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
+import { AnimatedGradient, DotPattern } from "@/components/animated-background"
+import { ScrollReveal } from "@/components/scroll-reveal"
+import { motion } from "framer-motion"
 
-export const metadata: Metadata = {
-  title: "Contact Us | Book a Strategy Call",
-  description: "Get in touch with Opervia to discuss your agency's technical needs. We'll help you build the system behind your service.",
-  keywords: ["contact opervia", "book strategy call", "agency technical partner"],
-}
 
 export default function ContactPage() {
   return (
     <>
       <Header />
       <main className="pt-16">
-        <section className="py-20">
-          <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="max-w-3xl mx-auto text-center mb-12">
-              <h1 className="text-4xl md:text-5xl font-bold mb-4">
+        <section className="relative py-20 overflow-hidden">
+          <AnimatedGradient />
+          <DotPattern />
+          <div className="container relative mx-auto px-4 sm:px-6 lg:px-8">
+            <motion.div 
+              className="max-w-3xl mx-auto text-center mb-12"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6 }}
+            >
+              <h1 className="text-4xl md:text-5xl font-bold mb-4 text-gradient">
                 Let's Build the System Behind Your Service
               </h1>
               <p className="text-lg text-muted-foreground">
                 Schedule a discovery call to see how we can help your agency deliver stronger systems
               </p>
-            </div>
+            </motion.div>
 
             <div className="grid md:grid-cols-2 gap-12 max-w-5xl mx-auto">
-              <Card>
+              <ScrollReveal direction="left">
+                <Card className="hover-lift">
                 <CardHeader>
                   <CardTitle>Contact Form</CardTitle>
                   <CardDescription>Fill out the form and we'll get back to you within 24 hours</CardDescription>

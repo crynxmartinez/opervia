@@ -1,5 +1,5 @@
 import Link from "next/link"
-import { ArrowRight, Code, Rocket, Zap, CheckCircle2, Users, TrendingUp, Sparkles } from "lucide-react"
+import { ArrowRight, Code, Rocket, Zap, CheckCircle2, Users, TrendingUp, Sparkles, AlertTriangle } from "lucide-react"
 import { pexelsImages } from "@/lib/pexels"
 import { Header } from "@/components/header"
 
@@ -77,94 +77,96 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Problem Section */}
+      {/* Problem Section - REDESIGNED */}
       <section className="py-16 bg-gradient-to-b from-gray-50 to-white relative overflow-hidden">
         {/* Background Decoration */}
-        <div className="absolute top-0 right-0 w-96 h-96 bg-blue-100 rounded-full blur-3xl opacity-30" />
+        <div className="absolute top-0 right-0 w-96 h-96 bg-red-100 rounded-full blur-3xl opacity-20" />
         
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          {/* Tighter Header */}
+          {/* Impactful Header */}
           <div className="max-w-3xl mx-auto text-center mb-10">
             <h2 className="text-4xl md:text-5xl font-bold mb-4 text-gray-900">
-              Agencies Are Stuck Between Two Bad Options
+              Most Agencies Are Trapped in a Lose-Lose Situation
             </h2>
-            <p className="text-lg text-gray-500">
-              Generic software or expensive developers.
+            <p className="text-lg text-gray-600 font-medium">
+              Pay for software nobody uses, or hire developers you can't afford.
             </p>
           </div>
 
-          {/* Premium Problem Cards */}
+          {/* Premium Problem Cards with AlertTriangle */}
           <div className="grid md:grid-cols-2 gap-6 max-w-5xl mx-auto mb-8">
-            {/* Option 1 - Enhanced Premium Styling */}
-            <div className="relative bg-white border-2 border-red-300 rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-1">
-              {/* Refined Badge */}
-              <div className="absolute top-5 right-5">
-                <div className="w-10 h-10 bg-red-500 rounded-full flex items-center justify-center text-white text-lg font-bold shadow-lg">
-                  ✗
+            {/* Card 1 - The Software Trap */}
+            <div className="relative bg-white border-l-4 border-red-500 rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-1 border-2 border-red-200">
+              {/* Premium AlertTriangle Badge */}
+              <div className="absolute top-5 right-5 animate-pulse-slow">
+                <div className="w-12 h-12 bg-gradient-to-br from-red-500 to-orange-600 rounded-xl flex items-center justify-center shadow-lg rotate-0 hover:rotate-12 transition-transform">
+                  <AlertTriangle className="w-6 h-6 text-white" strokeWidth={2.5} />
                 </div>
               </div>
               
-              {/* Stronger Card Title */}
-              <h3 className="text-2xl font-bold mb-6 text-gray-900 pr-12">Option 1: Generic Software</h3>
+              {/* Punchy Card Title */}
+              <h3 className="text-2xl font-bold mb-6 text-gray-900 pr-14">The Software Trap</h3>
               
-              {/* Improved Bullet Points */}
-              <div className="space-y-3.5">
+              {/* Impactful Bullet Points */}
+              <div className="space-y-4">
                 <div className="flex items-start gap-3">
-                  <span className="text-red-500 text-lg mt-0.5 font-bold">✗</span>
-                  <p className="text-gray-600 leading-relaxed">Clients get lost in cluttered menus</p>
+                  <AlertTriangle className="w-5 h-5 text-red-500 mt-0.5 flex-shrink-0" />
+                  <p className="text-gray-700 leading-relaxed font-medium">Clients never log in—too confusing</p>
                 </div>
                 <div className="flex items-start gap-3">
-                  <span className="text-red-500 text-lg mt-0.5 font-bold">✗</span>
-                  <p className="text-gray-600 leading-relaxed">Low staff adoption</p>
+                  <AlertTriangle className="w-5 h-5 text-red-500 mt-0.5 flex-shrink-0" />
+                  <p className="text-gray-700 leading-relaxed font-medium">Your team ignores it</p>
                 </div>
                 <div className="flex items-start gap-3">
-                  <span className="text-red-500 text-lg mt-0.5 font-bold">✗</span>
-                  <p className="text-gray-600 leading-relaxed">Hard to stand out</p>
+                  <AlertTriangle className="w-5 h-5 text-red-500 mt-0.5 flex-shrink-0" />
+                  <p className="text-gray-700 leading-relaxed font-medium">Looks exactly like your competitors</p>
                 </div>
                 <div className="flex items-start gap-3">
-                  <span className="text-red-500 text-lg mt-0.5 font-bold">✗</span>
-                  <p className="text-gray-600 leading-relaxed">Higher churn risk</p>
+                  <AlertTriangle className="w-5 h-5 text-red-500 mt-0.5 flex-shrink-0" />
+                  <p className="text-gray-700 leading-relaxed font-medium">Clients leave for better experiences</p>
                 </div>
               </div>
               
-              {/* Subtle Background Tint */}
-              <div className="absolute inset-0 bg-gradient-to-br from-red-50/50 to-orange-50/30 rounded-2xl -z-10" />
+              {/* Enhanced Background with Danger Glow */}
+              <div className="absolute inset-0 bg-gradient-to-br from-red-50/60 to-orange-50/40 rounded-2xl -z-10" />
+              <div className="absolute inset-0 bg-red-500/5 rounded-2xl -z-10" />
             </div>
 
-            {/* Option 2 - Enhanced Premium Styling */}
-            <div className="relative bg-white border-2 border-red-300 rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-1">
-              {/* Refined Badge */}
-              <div className="absolute top-5 right-5">
-                <div className="w-10 h-10 bg-red-500 rounded-full flex items-center justify-center text-white text-lg font-bold shadow-lg">
-                  ✗
+            {/* Card 2 - The Hiring Trap */}
+            <div className="relative bg-white border-l-4 border-red-500 rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-1 border-2 border-red-200">
+              {/* Premium AlertTriangle Badge */}
+              <div className="absolute top-5 right-5 animate-pulse-slow">
+                <div className="w-12 h-12 bg-gradient-to-br from-red-500 to-orange-600 rounded-xl flex items-center justify-center shadow-lg rotate-0 hover:rotate-12 transition-transform">
+                  <AlertTriangle className="w-6 h-6 text-white" strokeWidth={2.5} />
                 </div>
               </div>
               
-              {/* Stronger Card Title */}
-              <h3 className="text-2xl font-bold mb-6 text-gray-900 pr-12">Option 2: Hire Developers</h3>
+              {/* Punchy Card Title */}
+              <h3 className="text-2xl font-bold mb-6 text-gray-900 pr-14">The Hiring Trap</h3>
               
-              {/* Improved Bullet Points */}
-              <div className="space-y-3.5">
+              {/* Impactful Bullet Points */}
+              <div className="space-y-4">
                 <div className="flex items-start gap-3">
-                  <span className="text-red-500 text-lg mt-0.5 font-bold">✗</span>
-                  <p className="text-gray-600 leading-relaxed">Expensive in-house hires ($100-150k+ before overhead)</p>
+                  <AlertTriangle className="w-5 h-5 text-red-500 mt-0.5 flex-shrink-0" />
+                  <p className="text-gray-700 leading-relaxed font-medium">$150k+ per developer (before benefits, taxes, tools)</p>
                 </div>
                 <div className="flex items-start gap-3">
-                  <span className="text-red-500 text-lg mt-0.5 font-bold">✗</span>
-                  <p className="text-gray-600 leading-relaxed">Slow to recruit and onboard</p>
+                  <AlertTriangle className="w-5 h-5 text-red-500 mt-0.5 flex-shrink-0" />
+                  <p className="text-gray-700 leading-relaxed font-medium">3-6 months to find and onboard</p>
                 </div>
                 <div className="flex items-start gap-3">
-                  <span className="text-red-500 text-lg mt-0.5 font-bold">✗</span>
-                  <p className="text-gray-600 leading-relaxed">Risky hiring decisions</p>
+                  <AlertTriangle className="w-5 h-5 text-red-500 mt-0.5 flex-shrink-0" />
+                  <p className="text-gray-700 leading-relaxed font-medium">One bad hire costs you 6 months</p>
                 </div>
                 <div className="flex items-start gap-3">
-                  <span className="text-red-500 text-lg mt-0.5 font-bold">✗</span>
-                  <p className="text-gray-600 leading-relaxed">Hard to manage and scale</p>
+                  <AlertTriangle className="w-5 h-5 text-red-500 mt-0.5 flex-shrink-0" />
+                  <p className="text-gray-700 leading-relaxed font-medium">Managing developers isn't your expertise</p>
                 </div>
               </div>
               
-              {/* Subtle Background Tint */}
-              <div className="absolute inset-0 bg-gradient-to-br from-red-50/50 to-orange-50/30 rounded-2xl -z-10" />
+              {/* Enhanced Background with Danger Glow */}
+              <div className="absolute inset-0 bg-gradient-to-br from-red-50/60 to-orange-50/40 rounded-2xl -z-10" />
+              <div className="absolute inset-0 bg-red-500/5 rounded-2xl -z-10" />
             </div>
           </div>
 

@@ -16,10 +16,11 @@ export default function Home() {
             alt="Modern office"
             className="w-full h-full object-cover"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-black/90 via-black/70 to-black/50" />
+          {/* Darker, Refined Overlay for Better Contrast */}
+          <div className="absolute inset-0 bg-gradient-to-br from-purple-900/80 via-blue-900/75 to-purple-900/80" />
           
           {/* Animated Gradient Overlay */}
-          <div className="absolute inset-0 bg-gradient-animate opacity-20" />
+          <div className="absolute inset-0 bg-gradient-animate opacity-10" />
           
           {/* Floating Particles */}
           <div className="absolute top-20 left-20 w-72 h-72 bg-blue-500/30 rounded-full blur-3xl animate-float" />
@@ -29,40 +30,41 @@ export default function Home() {
         {/* Hero Content */}
         <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="max-w-5xl mx-auto space-y-8">
-            {/* Animated Badge */}
-            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-white animate-pulse-slow">
-              <Sparkles className="w-4 h-4" />
-              <span className="text-sm font-medium">White-Label Technical Partner</span>
+            {/* Premium Badge - Larger, Brighter, Clearer */}
+            <div className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-white/20 backdrop-blur-md border-2 border-white/30 shadow-[0_0_30px_rgba(255,255,255,0.3)] animate-float">
+              <Sparkles className="w-5 h-5 text-yellow-300 animate-pulse-slow" />
+              <span className="text-white font-bold text-base tracking-wide">White-Label Technical Partner</span>
+              <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse" />
             </div>
 
-            {/* Main Heading with Gradient */}
-            <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold text-white leading-tight">
-              You Close the Deal.
+            {/* Main Heading with Text Shadow for Crispness */}
+            <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold leading-tight drop-shadow-2xl" style={{ textShadow: '0 4px 20px rgba(0,0,0,0.5)' }}>
+              <span className="text-white">You Close the Deal.</span>
               <br />
-              <span className="text-gradient animate-gradient bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 bg-clip-text text-transparent" style={{ backgroundSize: '200% auto' }}>
+              <span className="text-gradient animate-gradient bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent" style={{ backgroundSize: '200% auto' }}>
                 We Build the System.
               </span>
             </h1>
 
-            {/* Subheading */}
-            <p className="text-xl md:text-2xl text-gray-200 max-w-3xl mx-auto leading-relaxed">
-              White-label technical partner for agencies. We build custom portals, dashboards, and backend systems—so your clients think you're a tech company.
+            {/* Subheading - Brighter, Benefit-Focused */}
+            <p className="text-xl md:text-2xl text-white font-medium max-w-3xl mx-auto leading-relaxed drop-shadow-lg" style={{ textShadow: '0 2px 10px rgba(0,0,0,0.4)' }}>
+              White-label technical partner for agencies. We build custom portals, dashboards, and backend systems—<strong className="text-white">so you can sell bigger, deliver better, and scale faster.</strong>
             </p>
 
-            {/* CTA Buttons */}
+            {/* CTA Buttons - Stronger Design */}
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-4">
               <Link href="/contact">
-                <button className="group relative px-8 py-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-lg font-semibold text-lg overflow-hidden transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-blue-500/50">
+                <button className="group relative px-8 py-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-xl font-bold text-lg overflow-hidden transition-all duration-300 hover:scale-105 shadow-2xl hover:shadow-3xl hover:shadow-purple-500/50">
                   <span className="relative z-10 flex items-center gap-2">
-                    Book a Strategy Call
+                    See How It Works
                     <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                   </span>
                   <div className="absolute inset-0 bg-gradient-to-r from-blue-700 to-purple-700 opacity-0 group-hover:opacity-100 transition-opacity" />
                 </button>
               </Link>
               <Link href="/services">
-                <button className="px-8 py-4 bg-white/10 backdrop-blur-md border-2 border-white/30 text-white rounded-lg font-semibold text-lg hover:bg-white/20 transition-all duration-300 hover:scale-105">
-                  See What We Build
+                <button className="px-8 py-4 bg-white/20 backdrop-blur-md border-2 border-white/40 text-white rounded-xl font-bold text-lg hover:bg-white/30 transition-all duration-300 hover:scale-105 shadow-lg">
+                  Book a Strategy Call
                 </button>
               </Link>
             </div>

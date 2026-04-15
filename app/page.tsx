@@ -1,3 +1,5 @@
+'use client'
+
 import { Metadata } from "next"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
@@ -5,16 +7,11 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
 import { ArrowRight, Code, Database, Gauge, Lock, Rocket, Users, Zap, CheckCircle2, X } from "lucide-react"
+import { WaveDivider } from "@/components/wave-divider"
+import { AnimatedGradient, FloatingBlobs, DotPattern } from "@/components/animated-background"
+import { ScrollReveal, FadeIn, ScaleIn } from "@/components/scroll-reveal"
+import { motion } from "framer-motion"
 
-export const metadata: Metadata = {
-  title: "Opervia | White-Label Technical Partner for Agencies | GHL API Developer",
-  description: "White-label technical backbone for agencies. Custom client portals, GHL API development, and fulfillment systems. We build the system behind your service.",
-  keywords: [
-    "white label technical partner for agencies",
-    "gohighlevel api developer",
-    "custom agency software development"
-  ],
-}
 
 export default function Home() {
   return (
@@ -23,128 +20,165 @@ export default function Home() {
       <main className="pt-16">
         {/* Hero Section */}
         <section className="relative py-20 md:py-32 overflow-hidden">
+          <AnimatedGradient />
+          <FloatingBlobs />
+          <DotPattern />
           <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-background to-background" />
           <div className="container relative mx-auto px-4 sm:px-6 lg:px-8">
             <div className="max-w-4xl mx-auto text-center space-y-8">
-              <h1 className="text-4xl md:text-6xl font-bold tracking-tight">
+              <motion.h1 
+                className="text-4xl md:text-6xl font-bold tracking-tight"
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6 }}
+              >
                 You Close the Deal. <br />
-                <span className="text-primary">We Build the System.</span> <br />
+                <span className="text-gradient">We Build the System.</span> <br />
                 They See the Magic.
-              </h1>
-              <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+              </motion.h1>
+              <motion.p 
+                className="text-xl text-muted-foreground max-w-2xl mx-auto"
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: 0.2 }}
+              >
                 White-label technical partner for agencies. We build custom portals, dashboards, and backend systems using GoHighLevel API—so your clients think you're a tech company.
-              </p>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              </motion.p>
+              <motion.div 
+                className="flex flex-col sm:flex-row gap-4 justify-center"
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: 0.4 }}
+              >
                 <Link href="/contact">
-                  <Button size="lg" className="w-full sm:w-auto">
+                  <Button size="lg" className="w-full sm:w-auto hover-lift">
                     Book a Strategy Call <ArrowRight className="ml-2 h-4 w-4" />
                   </Button>
                 </Link>
                 <Link href="/services">
-                  <Button size="lg" variant="outline" className="w-full sm:w-auto">
+                  <Button size="lg" variant="outline" className="w-full sm:w-auto hover-lift">
                     See What We Build
                   </Button>
                 </Link>
-              </div>
+              </motion.div>
             </div>
           </div>
+          <WaveDivider variant="wave1" className="text-muted/30" />
         </section>
 
         {/* The Problem Section */}
-        <section className="py-20 bg-muted/30">
+        <section className="relative py-20 bg-muted/30">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="max-w-3xl mx-auto text-center mb-12">
-              <h2 className="text-3xl md:text-4xl font-bold mb-4">
-                Agencies Are Stuck Between Two Bad Options
-              </h2>
-            </div>
+            <ScrollReveal direction="up">
+              <div className="max-w-3xl mx-auto text-center mb-12">
+                <h2 className="text-3xl md:text-4xl font-bold mb-4">
+                  Agencies Are Stuck Between Two Bad Options
+                </h2>
+              </div>
+            </ScrollReveal>
             <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-              <Card className="border-destructive/50">
-                <CardHeader>
-                  <div className="flex items-start justify-between">
-                    <CardTitle className="text-xl">Option 1: Generic Software</CardTitle>
-                    <X className="h-6 w-6 text-destructive" />
-                  </div>
-                </CardHeader>
-                <CardContent className="space-y-2">
-                  <p className="text-muted-foreground">❌ Clients get lost in menus</p>
-                  <p className="text-muted-foreground">❌ Low adoption rates</p>
-                  <p className="text-muted-foreground">❌ High churn</p>
-                  <p className="text-muted-foreground">❌ Looks like everyone else</p>
-                </CardContent>
-              </Card>
-              <Card className="border-destructive/50">
-                <CardHeader>
-                  <div className="flex items-start justify-between">
-                    <CardTitle className="text-xl">Option 2: Hire Developers</CardTitle>
-                    <X className="h-6 w-6 text-destructive" />
-                  </div>
-                </CardHeader>
-                <CardContent className="space-y-2">
-                  <p className="text-muted-foreground">❌ Expensive ($80k+/year)</p>
-                  <p className="text-muted-foreground">❌ Slow to deliver</p>
-                  <p className="text-muted-foreground">❌ Risky hires</p>
-                  <p className="text-muted-foreground">❌ Hard to manage</p>
-                </CardContent>
-              </Card>
+              <ScrollReveal direction="left" delay={0.1}>
+                <Card className="border-destructive/50 hover-lift">
+                  <CardHeader>
+                    <div className="flex items-start justify-between">
+                      <CardTitle className="text-xl">Option 1: Generic Software</CardTitle>
+                      <X className="h-6 w-6 text-destructive" />
+                    </div>
+                  </CardHeader>
+                  <CardContent className="space-y-2">
+                    <p className="text-muted-foreground">❌ Clients get lost in menus</p>
+                    <p className="text-muted-foreground">❌ Low adoption rates</p>
+                    <p className="text-muted-foreground">❌ High churn</p>
+                    <p className="text-muted-foreground">❌ Looks like everyone else</p>
+                  </CardContent>
+                </Card>
+              </ScrollReveal>
+              <ScrollReveal direction="right" delay={0.2}>
+                <Card className="border-destructive/50 hover-lift">
+                  <CardHeader>
+                    <div className="flex items-start justify-between">
+                      <CardTitle className="text-xl">Option 2: Hire Developers</CardTitle>
+                      <X className="h-6 w-6 text-destructive" />
+                    </div>
+                  </CardHeader>
+                  <CardContent className="space-y-2">
+                    <p className="text-muted-foreground">❌ Expensive ($80k+/year)</p>
+                    <p className="text-muted-foreground">❌ Slow to deliver</p>
+                    <p className="text-muted-foreground">❌ Risky hires</p>
+                    <p className="text-muted-foreground">❌ Hard to manage</p>
+                  </CardContent>
+                </Card>
+              </ScrollReveal>
             </div>
-            <div className="text-center mt-12">
-              <p className="text-2xl font-semibold text-primary">There's a third way.</p>
-            </div>
+            <FadeIn delay={0.4}>
+              <div className="text-center mt-12">
+                <p className="text-2xl font-semibold text-gradient animate-pulse-slow">There's a third way.</p>
+              </div>
+            </FadeIn>
           </div>
+          <WaveDivider variant="wave2" flip={true} className="text-background" />
         </section>
 
         {/* What We Do Section */}
-        <section className="py-20">
+        <section className="relative py-20">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="max-w-3xl mx-auto text-center mb-12">
-              <h2 className="text-3xl md:text-4xl font-bold mb-4">
-                We're Your White-Label Technical Backbone
-              </h2>
-              <p className="text-lg text-muted-foreground">
-                Partner with us to deliver custom software-grade systems without the overhead
-              </p>
-            </div>
+            <ScrollReveal direction="up">
+              <div className="max-w-3xl mx-auto text-center mb-12">
+                <h2 className="text-3xl md:text-4xl font-bold mb-4">
+                  We're Your White-Label Technical Backbone
+                </h2>
+                <p className="text-lg text-muted-foreground">
+                  Partner with us to deliver custom software-grade systems without the overhead
+                </p>
+              </div>
+            </ScrollReveal>
             <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-              <Card>
-                <CardHeader>
-                  <Database className="h-12 w-12 text-primary mb-4" />
-                  <CardTitle>Backend Infrastructure</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-muted-foreground">
-                    GHL automations, workflows, API integrations, and database architecture
-                  </p>
-                </CardContent>
-              </Card>
-              <Card>
-                <CardHeader>
-                  <Gauge className="h-12 w-12 text-primary mb-4" />
-                  <CardTitle>Custom Client-Facing Systems</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-muted-foreground">
-                    Portals, dashboards, and branded experiences your clients actually use
-                  </p>
-                </CardContent>
-              </Card>
-              <Card>
-                <CardHeader>
-                  <Rocket className="h-12 w-12 text-primary mb-4" />
-                  <CardTitle>Ongoing Fulfillment</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-muted-foreground">
-                    Support, updates, optimization, and SOPs to keep everything running
-                  </p>
-                </CardContent>
-              </Card>
+              <ScaleIn delay={0.1}>
+                <Card className="hover-lift hover-glow h-full">
+                  <CardHeader>
+                    <Database className="h-12 w-12 text-primary mb-4 animate-float" />
+                    <CardTitle>Backend Infrastructure</CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <p className="text-muted-foreground">
+                      GHL automations, workflows, API integrations, and database architecture
+                    </p>
+                  </CardContent>
+                </Card>
+              </ScaleIn>
+              <ScaleIn delay={0.2}>
+                <Card className="hover-lift hover-glow h-full">
+                  <CardHeader>
+                    <Gauge className="h-12 w-12 text-primary mb-4 animate-float" />
+                    <CardTitle>Custom Client-Facing Systems</CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <p className="text-muted-foreground">
+                      Portals, dashboards, and branded experiences your clients actually use
+                    </p>
+                  </CardContent>
+                </Card>
+              </ScaleIn>
+              <ScaleIn delay={0.3}>
+                <Card className="hover-lift hover-glow h-full">
+                  <CardHeader>
+                    <Rocket className="h-12 w-12 text-primary mb-4 animate-float" />
+                    <CardTitle>Ongoing Fulfillment</CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <p className="text-muted-foreground">
+                      Support, updates, optimization, and SOPs to keep everything running
+                    </p>
+                  </CardContent>
+                </Card>
+              </ScaleIn>
             </div>
           </div>
+          <WaveDivider variant="curve" className="text-muted/30" />
         </section>
 
         {/* Why This Model Works */}
-        <section className="py-20 bg-muted/30">
+        <section className="relative py-20 bg-muted/30">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="max-w-3xl mx-auto text-center mb-12">
               <h2 className="text-3xl md:text-4xl font-bold mb-4">
@@ -218,7 +252,8 @@ export default function Home() {
         </section>
 
         {/* What We Build Section */}
-        <section className="py-20">
+        <section className="relative py-20">
+          <FloatingBlobs />
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="max-w-3xl mx-auto text-center mb-12">
               <h2 className="text-3xl md:text-4xl font-bold mb-4">
@@ -237,15 +272,17 @@ export default function Home() {
                 { icon: Code, title: "Reporting Layers", desc: "Custom analytics and data visualization" },
                 { icon: Database, title: "Internal Tools", desc: "Team dashboards and management systems" },
               ].map((item, i) => (
-                <Card key={i} className="hover:shadow-lg transition-shadow">
-                  <CardHeader>
-                    <item.icon className="h-10 w-10 text-primary mb-2" />
-                    <CardTitle className="text-lg">{item.title}</CardTitle>
-                  </CardHeader>
-                  <CardContent>
-                    <p className="text-sm text-muted-foreground">{item.desc}</p>
-                  </CardContent>
-                </Card>
+                <ScrollReveal key={i} direction="up" delay={i * 0.1}>
+                  <Card className="hover-lift hover-glow h-full">
+                    <CardHeader>
+                      <item.icon className="h-10 w-10 text-primary mb-2" />
+                      <CardTitle className="text-lg">{item.title}</CardTitle>
+                    </CardHeader>
+                    <CardContent>
+                      <p className="text-sm text-muted-foreground">{item.desc}</p>
+                    </CardContent>
+                  </Card>
+                </ScrollReveal>
               ))}
             </div>
           </div>
@@ -347,18 +384,21 @@ export default function Home() {
         </section>
 
         {/* Final CTA Section */}
-        <section className="py-20">
-          <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="max-w-3xl mx-auto text-center space-y-6">
-              <h2 className="text-3xl md:text-4xl font-bold">
-                Let's Build the System Behind Your Service
-              </h2>
-              <p className="text-lg text-muted-foreground">
-                Schedule a discovery call to see how we can help your agency deliver stronger systems
-              </p>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Link href="/contact">
-                  <Button size="lg">
+        <section className="relative py-20 overflow-hidden">
+          <AnimatedGradient />
+          <DotPattern />
+          <div className="container relative mx-auto px-4 sm:px-6 lg:px-8">
+            <ScrollReveal direction="up">
+              <div className="max-w-3xl mx-auto text-center space-y-6">
+                <h2 className="text-3xl md:text-4xl font-bold text-gradient">
+                  Let's Build the System Behind Your Service
+                </h2>
+                <p className="text-lg text-muted-foreground">
+                  Schedule a discovery call to see how we can help your agency deliver stronger systems
+                </p>
+                <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                  <Link href="/contact">
+                    <Button size="lg" className="hover-lift">
                     Book a Call <ArrowRight className="ml-2 h-4 w-4" />
                   </Button>
                 </Link>

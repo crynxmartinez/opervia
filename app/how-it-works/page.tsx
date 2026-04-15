@@ -1,3 +1,5 @@
+'use client'
+
 import { Metadata } from "next"
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
@@ -5,28 +7,34 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import Link from "next/link"
 import { ArrowRight, CheckCircle2 } from "lucide-react"
+import { WaveDivider } from "@/components/wave-divider"
+import { AnimatedGradient, FloatingBlobs, GridPattern } from "@/components/animated-background"
+import { ScrollReveal, FadeIn } from "@/components/scroll-reveal"
+import { motion } from "framer-motion"
 
-export const metadata: Metadata = {
-  title: "How It Works | Our Process",
-  description: "Discover how Opervia partners with agencies to build custom technical systems. Simple, structured process from discovery to delivery.",
-  keywords: ["agency technical process", "white label development process", "gohighlevel implementation"],
-}
 
 export default function HowItWorksPage() {
   return (
     <>
       <Header />
       <main className="pt-16">
-        <section className="py-20">
-          <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="max-w-3xl mx-auto text-center mb-16">
-              <h1 className="text-4xl md:text-5xl font-bold mb-4">
+        <section className="relative py-20 overflow-hidden">
+          <AnimatedGradient />
+          <GridPattern />
+          <div className="container relative mx-auto px-4 sm:px-6 lg:px-8">
+            <motion.div 
+              className="max-w-3xl mx-auto text-center mb-16"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6 }}
+            >
+              <h1 className="text-4xl md:text-5xl font-bold mb-4 text-gradient">
                 How It Works
               </h1>
               <p className="text-lg text-muted-foreground">
                 Simple, structured, and designed for results
               </p>
-            </div>
+            </motion.div>
 
             <div className="max-w-5xl mx-auto space-y-16">
               {[
@@ -86,20 +94,20 @@ export default function HowItWorksPage() {
                     "Performance optimization"
                   ]
                 }
-              ].map((item) => (
-                <div key={item.step} className="flex gap-8 items-start">
-                  <div className="flex-shrink-0 w-16 h-16 rounded-full bg-primary text-primary-foreground flex items-center justify-center text-2xl font-bold">
-                    {item.step}
-                  </div>
-                  <Card className="flex-1">
-                    <CardHeader>
+              ].map((item, i) => (
+                <ScrollReveal key={i} direction="up" delay={i * 0.15}>
+                  <Card className="relative hover-lift">
+                    <div className="absolute -left-4 top-8 w-12 h-12 rounded-full bg-primary text-primary-foreground flex items-center justify-center text-xl font-bold animate-pulse-slow">
+                      {item.step}
+                    </div>
+                    <CardHeader className="pl-12">
                       <CardTitle className="text-2xl">{item.title}</CardTitle>
                       <CardDescription className="text-base">{item.description}</CardDescription>
                     </CardHeader>
-                    <CardContent>
+                    <CardContent className="pl-12">
                       <ul className="space-y-2">
-                        {item.details.map((detail, i) => (
-                          <li key={i} className="flex items-start gap-2">
+                        {item.details.map((detail, j) => (
+                          <li key={j} className="flex items-start gap-2">
                             <CheckCircle2 className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
                             <span>{detail}</span>
                           </li>
@@ -107,7 +115,7 @@ export default function HowItWorksPage() {
                       </ul>
                     </CardContent>
                   </Card>
-                </div>
+                </ScrollReveal>
               ))}
             </div>
 

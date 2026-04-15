@@ -3,7 +3,6 @@
 import Link from "next/link"
 import { ArrowRight, Sparkles, CheckCircle2, Rocket, Settings, TrendingUp, Shield, Users, Zap, Clock, Target, AlertCircle } from "lucide-react"
 import { Header } from "@/components/header"
-import { Footer } from "@/components/footer"
 
 export default function HowItWorksPage() {
   return (
@@ -856,8 +855,6 @@ export default function HowItWorksPage() {
           </div>
         </div>
       </section>
-
-      <Footer />
     </div>
   )
 }

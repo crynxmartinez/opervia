@@ -170,49 +170,65 @@ export default function Home() {
             </div>
           </div>
 
-          {/* Enhanced "Third Way" Transition Block */}
+          {/* Premium "Third Way" Solution Block */}
           <div className="max-w-4xl mx-auto">
-            {/* Transition Statement */}
+            {/* Impactful Transition Statement */}
             <div className="text-center mb-6">
-              <p className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text text-transparent mb-3">
-                There's a third way.
+              <p className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text text-transparent mb-3 animate-gradient" style={{ backgroundSize: '200% auto' }}>
+                There's a smarter way.
               </p>
-              <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-                A white-label technical partner that builds custom systems behind your service.
+              <p className="text-xl text-gray-700 max-w-2xl mx-auto font-medium">
+                Get custom systems that wow your clients—without hiring a single developer.
               </p>
             </div>
 
-            {/* Third Way Preview Card */}
-            <div className="relative bg-gradient-to-br from-blue-50 to-purple-50 border-2 border-blue-300 rounded-2xl p-8 shadow-xl">
-              {/* Success Badge */}
-              <div className="absolute top-5 right-5">
-                <div className="w-10 h-10 bg-gradient-to-r from-blue-600 to-purple-600 rounded-full flex items-center justify-center text-white text-lg font-bold shadow-lg">
-                  ✓
+            {/* Premium Solution Card with Sparkles */}
+            <div className="relative bg-gradient-to-br from-blue-50 via-purple-50 to-pink-50 border-2 border-transparent rounded-2xl p-8 shadow-2xl hover:shadow-3xl transition-all duration-500 overflow-hidden group">
+              {/* Animated Gradient Border */}
+              <div className="absolute inset-0 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 rounded-2xl opacity-20 group-hover:opacity-30 transition-opacity animate-gradient" style={{ backgroundSize: '200% auto' }} />
+              
+              {/* Premium Sparkles Badge */}
+              <div className="absolute top-5 right-5 z-10">
+                <div className="w-14 h-14 bg-gradient-to-br from-blue-600 via-purple-600 to-pink-600 rounded-2xl flex items-center justify-center shadow-xl animate-float">
+                  <Sparkles className="w-7 h-7 text-white animate-pulse-slow" strokeWidth={2.5} />
                 </div>
               </div>
               
-              <h3 className="text-2xl font-bold mb-6 bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent pr-12">
-                The Third Way: Opervia
+              {/* Punchy Title */}
+              <h3 className="text-3xl font-bold mb-8 bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text text-transparent pr-16 animate-gradient" style={{ backgroundSize: '200% auto' }}>
+                The Opervia Advantage
               </h3>
               
-              <div className="grid md:grid-cols-2 gap-4">
-                <div className="flex items-start gap-3">
-                  <CheckCircle2 className="w-5 h-5 text-blue-600 mt-0.5 flex-shrink-0" />
-                  <p className="text-gray-700 leading-relaxed">Custom systems without full in-house overhead</p>
+              {/* Benefit-Focused Bullets with Sparkles */}
+              <div className="grid md:grid-cols-2 gap-5 relative z-10">
+                <div className="flex items-start gap-3 group/item">
+                  <div className="w-6 h-6 bg-gradient-to-br from-blue-500 to-purple-500 rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5 group-hover/item:scale-110 transition-transform">
+                    <Sparkles className="w-4 h-4 text-white" strokeWidth={2.5} />
+                  </div>
+                  <p className="text-gray-800 leading-relaxed font-semibold">Custom-built systems at a fraction of hiring cost</p>
                 </div>
-                <div className="flex items-start gap-3">
-                  <CheckCircle2 className="w-5 h-5 text-blue-600 mt-0.5 flex-shrink-0" />
-                  <p className="text-gray-700 leading-relaxed">GHL-powered backend automations</p>
+                <div className="flex items-start gap-3 group/item">
+                  <div className="w-6 h-6 bg-gradient-to-br from-purple-500 to-pink-500 rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5 group-hover/item:scale-110 transition-transform">
+                    <Sparkles className="w-4 h-4 text-white" strokeWidth={2.5} />
+                  </div>
+                  <p className="text-gray-800 leading-relaxed font-semibold">Powerful automations that run on autopilot</p>
                 </div>
-                <div className="flex items-start gap-3">
-                  <CheckCircle2 className="w-5 h-5 text-blue-600 mt-0.5 flex-shrink-0" />
-                  <p className="text-gray-700 leading-relaxed">Tailored portals for better client adoption</p>
+                <div className="flex items-start gap-3 group/item">
+                  <div className="w-6 h-6 bg-gradient-to-br from-blue-500 to-pink-500 rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5 group-hover/item:scale-110 transition-transform">
+                    <Sparkles className="w-4 h-4 text-white" strokeWidth={2.5} />
+                  </div>
+                  <p className="text-gray-800 leading-relaxed font-semibold">Client portals they'll actually use and love</p>
                 </div>
-                <div className="flex items-start gap-3">
-                  <CheckCircle2 className="w-5 h-5 text-blue-600 mt-0.5 flex-shrink-0" />
-                  <p className="text-gray-700 leading-relaxed">White-label technical support for agencies</p>
+                <div className="flex items-start gap-3 group/item">
+                  <div className="w-6 h-6 bg-gradient-to-br from-purple-500 to-blue-500 rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5 group-hover/item:scale-110 transition-transform">
+                    <Sparkles className="w-4 h-4 text-white" strokeWidth={2.5} />
+                  </div>
+                  <p className="text-gray-800 leading-relaxed font-semibold">We're your invisible tech team</p>
                 </div>
               </div>
+
+              {/* Glow Effect on Hover */}
+              <div className="absolute inset-0 bg-gradient-to-r from-blue-400/10 via-purple-400/10 to-pink-400/10 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 blur-xl" />
             </div>
           </div>
         </div>

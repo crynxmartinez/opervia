@@ -1,10 +1,12 @@
 import Link from "next/link"
 import { ArrowRight, Code, Rocket, Zap, CheckCircle2, Users, TrendingUp, Sparkles } from "lucide-react"
 import { pexelsImages } from "@/lib/pexels"
+import { Header } from "@/components/header"
 
 export default function Home() {
   return (
     <div className="min-h-screen">
+      <Header />
       {/* Hero Section with Pexels Background */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
         {/* Animated Background */}

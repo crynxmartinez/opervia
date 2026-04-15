@@ -78,83 +78,140 @@ export default function Home() {
       </section>
 
       {/* Problem Section */}
-      <section className="py-20 bg-gradient-to-b from-gray-50 to-white relative overflow-hidden">
+      <section className="py-16 bg-gradient-to-b from-gray-50 to-white relative overflow-hidden">
         {/* Background Decoration */}
         <div className="absolute top-0 right-0 w-96 h-96 bg-blue-100 rounded-full blur-3xl opacity-30" />
         
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <div className="max-w-3xl mx-auto text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-gray-900 to-gray-700 bg-clip-text text-transparent">
+          {/* Tighter Header */}
+          <div className="max-w-3xl mx-auto text-center mb-10">
+            <h2 className="text-4xl md:text-5xl font-bold mb-4 text-gray-900">
               Agencies Are Stuck Between Two Bad Options
             </h2>
-            <p className="text-xl text-gray-600">
-              Generic software or expensive developers. There's a third way.
+            <p className="text-lg text-gray-500">
+              Generic software or expensive developers.
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto mb-12">
-            {/* Option 1 */}
-            <div className="group relative bg-gradient-to-br from-red-50 to-orange-50 border-2 border-red-200 rounded-2xl p-8 hover-lift">
-              <div className="absolute top-4 right-4">
-                <div className="w-12 h-12 bg-red-500 rounded-full flex items-center justify-center text-white text-2xl font-bold">
+          {/* Premium Problem Cards */}
+          <div className="grid md:grid-cols-2 gap-6 max-w-5xl mx-auto mb-8">
+            {/* Option 1 - Enhanced Premium Styling */}
+            <div className="relative bg-white border-2 border-red-300 rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-1">
+              {/* Refined Badge */}
+              <div className="absolute top-5 right-5">
+                <div className="w-10 h-10 bg-red-500 rounded-full flex items-center justify-center text-white text-lg font-bold shadow-lg">
                   ✗
                 </div>
               </div>
-              <h3 className="text-2xl font-bold mb-6 text-gray-900">Option 1: Generic Software</h3>
-              <div className="space-y-3">
+              
+              {/* Stronger Card Title */}
+              <h3 className="text-2xl font-bold mb-6 text-gray-900 pr-12">Option 1: Generic Software</h3>
+              
+              {/* Improved Bullet Points */}
+              <div className="space-y-3.5">
                 <div className="flex items-start gap-3">
-                  <span className="text-red-500 text-xl mt-1">✗</span>
-                  <p className="text-gray-700">Clients get lost in menus</p>
+                  <span className="text-red-500 text-lg mt-0.5 font-bold">✗</span>
+                  <p className="text-gray-600 leading-relaxed">Clients get lost in cluttered menus</p>
                 </div>
                 <div className="flex items-start gap-3">
-                  <span className="text-red-500 text-xl mt-1">✗</span>
-                  <p className="text-gray-700">Low adoption rates</p>
+                  <span className="text-red-500 text-lg mt-0.5 font-bold">✗</span>
+                  <p className="text-gray-600 leading-relaxed">Low staff adoption</p>
                 </div>
                 <div className="flex items-start gap-3">
-                  <span className="text-red-500 text-xl mt-1">✗</span>
-                  <p className="text-gray-700">High churn</p>
+                  <span className="text-red-500 text-lg mt-0.5 font-bold">✗</span>
+                  <p className="text-gray-600 leading-relaxed">Hard to stand out</p>
                 </div>
                 <div className="flex items-start gap-3">
-                  <span className="text-red-500 text-xl mt-1">✗</span>
-                  <p className="text-gray-700">Looks like everyone else</p>
+                  <span className="text-red-500 text-lg mt-0.5 font-bold">✗</span>
+                  <p className="text-gray-600 leading-relaxed">Higher churn risk</p>
                 </div>
               </div>
+              
+              {/* Subtle Background Tint */}
+              <div className="absolute inset-0 bg-gradient-to-br from-red-50/50 to-orange-50/30 rounded-2xl -z-10" />
             </div>
 
-            {/* Option 2 */}
-            <div className="group relative bg-gradient-to-br from-red-50 to-orange-50 border-2 border-red-200 rounded-2xl p-8 hover-lift">
-              <div className="absolute top-4 right-4">
-                <div className="w-12 h-12 bg-red-500 rounded-full flex items-center justify-center text-white text-2xl font-bold">
+            {/* Option 2 - Enhanced Premium Styling */}
+            <div className="relative bg-white border-2 border-red-300 rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-1">
+              {/* Refined Badge */}
+              <div className="absolute top-5 right-5">
+                <div className="w-10 h-10 bg-red-500 rounded-full flex items-center justify-center text-white text-lg font-bold shadow-lg">
                   ✗
                 </div>
               </div>
-              <h3 className="text-2xl font-bold mb-6 text-gray-900">Option 2: Hire Developers</h3>
-              <div className="space-y-3">
+              
+              {/* Stronger Card Title */}
+              <h3 className="text-2xl font-bold mb-6 text-gray-900 pr-12">Option 2: Hire Developers</h3>
+              
+              {/* Improved Bullet Points */}
+              <div className="space-y-3.5">
                 <div className="flex items-start gap-3">
-                  <span className="text-red-500 text-xl mt-1">✗</span>
-                  <p className="text-gray-700">Expensive ($80k+/year)</p>
+                  <span className="text-red-500 text-lg mt-0.5 font-bold">✗</span>
+                  <p className="text-gray-600 leading-relaxed">Expensive in-house hires ($100-150k+ before overhead)</p>
                 </div>
                 <div className="flex items-start gap-3">
-                  <span className="text-red-500 text-xl mt-1">✗</span>
-                  <p className="text-gray-700">Slow to deliver</p>
+                  <span className="text-red-500 text-lg mt-0.5 font-bold">✗</span>
+                  <p className="text-gray-600 leading-relaxed">Slow to recruit and onboard</p>
                 </div>
                 <div className="flex items-start gap-3">
-                  <span className="text-red-500 text-xl mt-1">✗</span>
-                  <p className="text-gray-700">Risky hires</p>
+                  <span className="text-red-500 text-lg mt-0.5 font-bold">✗</span>
+                  <p className="text-gray-600 leading-relaxed">Risky hiring decisions</p>
                 </div>
                 <div className="flex items-start gap-3">
-                  <span className="text-red-500 text-xl mt-1">✗</span>
-                  <p className="text-gray-700">Hard to manage</p>
+                  <span className="text-red-500 text-lg mt-0.5 font-bold">✗</span>
+                  <p className="text-gray-600 leading-relaxed">Hard to manage and scale</p>
                 </div>
               </div>
+              
+              {/* Subtle Background Tint */}
+              <div className="absolute inset-0 bg-gradient-to-br from-red-50/50 to-orange-50/30 rounded-2xl -z-10" />
             </div>
           </div>
 
-          {/* Solution Teaser */}
-          <div className="text-center">
-            <p className="text-4xl font-bold text-gradient bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text text-transparent animate-gradient" style={{ backgroundSize: '200% auto' }}>
-              There's a third way.
-            </p>
+          {/* Enhanced "Third Way" Transition Block */}
+          <div className="max-w-4xl mx-auto">
+            {/* Transition Statement */}
+            <div className="text-center mb-6">
+              <p className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text text-transparent mb-3">
+                There's a third way.
+              </p>
+              <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+                A white-label technical partner that builds custom systems behind your service.
+              </p>
+            </div>
+
+            {/* Third Way Preview Card */}
+            <div className="relative bg-gradient-to-br from-blue-50 to-purple-50 border-2 border-blue-300 rounded-2xl p-8 shadow-xl">
+              {/* Success Badge */}
+              <div className="absolute top-5 right-5">
+                <div className="w-10 h-10 bg-gradient-to-r from-blue-600 to-purple-600 rounded-full flex items-center justify-center text-white text-lg font-bold shadow-lg">
+                  ✓
+                </div>
+              </div>
+              
+              <h3 className="text-2xl font-bold mb-6 bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent pr-12">
+                The Third Way: Opervia
+              </h3>
+              
+              <div className="grid md:grid-cols-2 gap-4">
+                <div className="flex items-start gap-3">
+                  <CheckCircle2 className="w-5 h-5 text-blue-600 mt-0.5 flex-shrink-0" />
+                  <p className="text-gray-700 leading-relaxed">Custom systems without full in-house overhead</p>
+                </div>
+                <div className="flex items-start gap-3">
+                  <CheckCircle2 className="w-5 h-5 text-blue-600 mt-0.5 flex-shrink-0" />
+                  <p className="text-gray-700 leading-relaxed">GHL-powered backend automations</p>
+                </div>
+                <div className="flex items-start gap-3">
+                  <CheckCircle2 className="w-5 h-5 text-blue-600 mt-0.5 flex-shrink-0" />
+                  <p className="text-gray-700 leading-relaxed">Tailored portals for better client adoption</p>
+                </div>
+                <div className="flex items-start gap-3">
+                  <CheckCircle2 className="w-5 h-5 text-blue-600 mt-0.5 flex-shrink-0" />
+                  <p className="text-gray-700 leading-relaxed">White-label technical support for agencies</p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>

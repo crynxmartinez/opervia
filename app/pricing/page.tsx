@@ -1,16 +1,12 @@
-import { Metadata } from "next"
+'use client'
+
+import React from 'react'
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import Link from "next/link"
 import { ArrowRight, CheckCircle2 } from "lucide-react"
-
-export const metadata: Metadata = {
-  title: "Pricing & Packages",
-  description: "Flexible pricing options for agencies. Project-based builds, monthly retainers, and custom enterprise solutions.",
-  keywords: ["white label development pricing", "gohighlevel developer rates", "agency technical partner cost"],
-}
 
 export default function PricingPage() {
   return (

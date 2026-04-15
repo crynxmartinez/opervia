@@ -1,16 +1,12 @@
-import { Metadata } from "next"
+'use client'
+
+import React from 'react'
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import Link from "next/link"
 import { ArrowRight, CheckCircle2 } from "lucide-react"
-
-export const metadata: Metadata = {
-  title: "Agency Partner | White-Label Technical Partner",
-  description: "Partner with Opervia as your white-label technical team. We build the systems behind your agency services without the overhead of hiring developers.",
-  keywords: ["white label technical partner", "agency fulfillment partner", "backend partner for agencies"],
-}
 
 export default function AgencyPartnerPage() {
   return (

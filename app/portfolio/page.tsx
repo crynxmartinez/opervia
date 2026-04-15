@@ -1,13 +1,9 @@
-import { Metadata } from "next"
+'use client'
+
+import React from 'react'
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-
-export const metadata: Metadata = {
-  title: "Portfolio | Case Studies",
-  description: "See how Opervia has helped agencies build custom technical systems, client portals, and fulfillment infrastructure.",
-  keywords: ["gohighlevel case studies", "custom portal examples", "agency technical solutions"],
-}
 
 export default function PortfolioPage() {
   return (

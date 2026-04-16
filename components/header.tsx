@@ -27,8 +27,8 @@ export function Header() {
             <Link href="/pricing" className="text-gray-700 hover:text-blue-600 transition-colors font-medium">
               Pricing
             </Link>
-            <Link href="/agency-partner" className="text-gray-700 hover:text-blue-600 transition-colors font-medium">
-              For Agencies
+            <Link href="/blog" className="text-gray-700 hover:text-blue-600 transition-colors font-medium">
+              Blog
             </Link>
             <Link href="/contact">
               <button className="px-6 py-2 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-lg font-semibold hover:shadow-lg hover:scale-105 transition-all">

@@ -6,82 +6,7 @@ import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
 
 export default function BlogPage() {
-  const blogPosts = [
-    {
-      id: 1,
-      title: "How to Scale Your Agency with White-Label Technical Partners",
-      excerpt: "Discover why top agencies are partnering with technical teams instead of hiring in-house developers. Learn the cost savings, time benefits, and how to choose the right partner.",
-      category: "Agency Growth",
-      author: "Opervia Team",
-      date: "April 15, 2026",
-      readTime: "8 min read",
-      image: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&h=400&fit=crop",
-      slug: "scale-agency-white-label-partners",
-      featured: true
-    },
-    {
-      id: 2,
-      title: "GoHighLevel Custom Development: Beyond Templates",
-      excerpt: "Why generic GHL snapshots limit your agency's potential and how custom development unlocks premium pricing and better client retention.",
-      category: "Technical",
-      author: "Opervia Team",
-      date: "April 12, 2026",
-      readTime: "6 min read",
-      image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=400&fit=crop",
-      slug: "gohighlevel-custom-development",
-      featured: true
-    },
-    {
-      id: 3,
-      title: "The Real Cost of Hiring vs. Partnering for Agency Tech",
-      excerpt: "A detailed breakdown comparing the total cost of hiring developers vs. partnering with a white-label technical team. The numbers might surprise you.",
-      category: "Business Strategy",
-      author: "Opervia Team",
-      date: "April 10, 2026",
-      readTime: "10 min read",
-      image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=400&fit=crop",
-      slug: "cost-hiring-vs-partnering",
-      featured: false
-    },
-    {
-      id: 4,
-      title: "Building Client Portals That Increase Retention by 40%",
-      excerpt: "How custom client portals improve communication, showcase value, and dramatically reduce churn for agency clients.",
-      category: "Client Success",
-      author: "Opervia Team",
-      date: "April 8, 2026",
-      readTime: "7 min read",
-      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=400&fit=crop",
-      slug: "client-portals-retention",
-      featured: false
-    },
-    {
-      id: 5,
-      title: "API Integrations: Connecting Your Agency's Tech Stack",
-      excerpt: "Learn how to integrate multiple tools seamlessly and create automated workflows that save hours of manual work every week.",
-      category: "Technical",
-      author: "Opervia Team",
-      date: "April 5, 2026",
-      readTime: "9 min read",
-      image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=800&h=400&fit=crop",
-      slug: "api-integrations-tech-stack",
-      featured: false
-    },
-    {
-      id: 6,
-      title: "From $5K to $15K/Month: Premium Agency Positioning",
-      excerpt: "How custom systems and technical differentiation allow agencies to charge 3x more than competitors using generic tools.",
-      category: "Agency Growth",
-      author: "Opervia Team",
-      date: "April 3, 2026",
-      readTime: "8 min read",
-      image: "https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?w=800&h=400&fit=crop",
-      slug: "premium-agency-positioning",
-      featured: false
-    }
-  ]
-
-  const categories = ["All", "Agency Growth", "Technical", "Business Strategy", "Client Success"]
+  const blogPosts: any[] = []
 
   return (
     <div className="min-h-screen">
@@ -114,122 +39,34 @@ export default function BlogPage() {
         </div>
       </section>
 
-      {/* Category Filter */}
-      <section className="py-8 bg-white border-b border-gray-200 sticky top-0 z-40">
+      {/* Coming Soon Section */}
+      <section className="py-24 bg-gradient-to-b from-gray-50 to-white min-h-[60vh] flex items-center">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex flex-wrap justify-center gap-3">
-            {categories.map((category) => (
-              <button
-                key={category}
-                className={`px-6 py-2 rounded-full font-semibold transition-all duration-200 ${
-                  category === "All"
-                    ? "bg-blue-600 text-white shadow-lg"
-                    : "bg-gray-100 text-gray-700 hover:bg-gray-200"
-                }`}
-              >
-                {category}
-              </button>
-            ))}
-          </div>
-        </div>
-      </section>
+          <div className="max-w-3xl mx-auto text-center">
+            <div className="w-32 h-32 bg-gradient-to-br from-blue-100 to-purple-100 rounded-full flex items-center justify-center mx-auto mb-8">
+              <div className="text-7xl">📝</div>
+            </div>
 
-      {/* Featured Posts */}
-      <section className="py-16 bg-gradient-to-b from-gray-50 to-white">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center gap-3 mb-12">
-            <TrendingUp className="w-8 h-8 text-blue-600" />
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900">Featured Articles</h2>
-          </div>
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+              Coming Soon
+            </h2>
 
-          <div className="grid md:grid-cols-2 gap-8 max-w-6xl">
-            {blogPosts.filter(post => post.featured).map((post) => (
-              <Link key={post.id} href={`/blog/${post.slug}`}>
-                <div className="group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 border-2 border-blue-100 hover:border-blue-300 cursor-pointer">
-                  <div className="relative h-64 overflow-hidden bg-gradient-to-br from-blue-100 to-purple-100">
-                    <div className="absolute inset-0 flex items-center justify-center">
-                      <div className="text-6xl">📝</div>
-                    </div>
-                    <div className="absolute top-4 left-4">
-                      <span className="px-4 py-2 bg-blue-600 text-white rounded-full text-sm font-bold">
-                        {post.category}
-                      </span>
-                    </div>
-                  </div>
+            <p className="text-xl text-gray-600 mb-8 leading-relaxed">
+              We're preparing valuable content about agency growth, technical strategies, and white-label partnerships. Check back soon for insights that help you scale your agency.
+            </p>
 
-                  <div className="p-8">
-                    <h3 className="text-2xl font-bold text-gray-900 mb-3 group-hover:text-blue-600 transition-colors">
-                      {post.title}
-                    </h3>
-
-                    <p className="text-gray-600 mb-6 leading-relaxed">
-                      {post.excerpt}
-                    </p>
-
-                    <div className="flex items-center justify-between text-sm text-gray-500">
-                      <div className="flex items-center gap-4">
-                        <div className="flex items-center gap-1">
-                          <Calendar className="w-4 h-4" />
-                          <span>{post.date}</span>
-                        </div>
-                        <div className="flex items-center gap-1">
-                          <Clock className="w-4 h-4" />
-                          <span>{post.readTime}</span>
-                        </div>
-                      </div>
-                      <ArrowRight className="w-5 h-5 text-blue-600 group-hover:translate-x-1 transition-transform" />
-                    </div>
-                  </div>
-                </div>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Link href="/">
+                <button className="px-8 py-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-xl font-bold hover:shadow-lg hover:scale-105 transition-all duration-300">
+                  Back to Home
+                </button>
               </Link>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* All Posts */}
-      <section className="py-16 bg-white">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-12">Latest Articles</h2>
-
-          <div className="grid md:grid-cols-3 gap-8 max-w-7xl">
-            {blogPosts.filter(post => !post.featured).map((post) => (
-              <Link key={post.id} href={`/blog/${post.slug}`}>
-                <div className="group bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 border border-gray-200 hover:border-blue-300 cursor-pointer h-full flex flex-col">
-                  <div className="relative h-48 overflow-hidden bg-gradient-to-br from-gray-100 to-blue-50">
-                    <div className="absolute inset-0 flex items-center justify-center">
-                      <div className="text-5xl">📄</div>
-                    </div>
-                    <div className="absolute top-3 left-3">
-                      <span className="px-3 py-1 bg-white/90 backdrop-blur-sm text-gray-700 rounded-full text-xs font-semibold">
-                        {post.category}
-                      </span>
-                    </div>
-                  </div>
-
-                  <div className="p-6 flex-1 flex flex-col">
-                    <h3 className="text-xl font-bold text-gray-900 mb-3 group-hover:text-blue-600 transition-colors line-clamp-2">
-                      {post.title}
-                    </h3>
-
-                    <p className="text-gray-600 mb-4 leading-relaxed line-clamp-3 flex-1">
-                      {post.excerpt}
-                    </p>
-
-                    <div className="flex items-center justify-between text-xs text-gray-500 pt-4 border-t border-gray-100">
-                      <div className="flex items-center gap-1">
-                        <Calendar className="w-3 h-3" />
-                        <span>{post.date}</span>
-                      </div>
-                      <div className="flex items-center gap-1">
-                        <Clock className="w-3 h-3" />
-                        <span>{post.readTime}</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+              <Link href="/contact">
+                <button className="px-8 py-4 bg-white border-2 border-gray-300 text-gray-700 rounded-xl font-bold hover:border-blue-600 hover:text-blue-600 transition-all duration-300">
+                  Contact Us
+                </button>
               </Link>
-            ))}
+            </div>
           </div>
         </div>
       </section>

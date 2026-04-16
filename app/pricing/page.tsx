@@ -4,6 +4,7 @@ import Link from "next/link"
 import { ArrowRight, Sparkles, Target, Settings, Rocket, TrendingUp, Users, Zap, Shield, CheckCircle2, XCircle, Clock, DollarSign, BarChart3 } from "lucide-react"
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
+import { ROICalculator } from "@/components/roi-calculator"
 
 export default function PricingPage() {
   return (
@@ -453,64 +454,7 @@ export default function PricingPage() {
       </section>
 
       {/* ROI Calculator */}
-      <section className="py-24 bg-white">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-4xl mx-auto">
-            <div className="bg-gradient-to-br from-green-50 to-emerald-50 border-2 border-green-300 rounded-2xl p-8 md:p-12">
-              <div className="flex items-center gap-3 mb-6">
-                <div className="w-12 h-12 bg-green-500 rounded-xl flex items-center justify-center">
-                  <BarChart3 className="w-6 h-6 text-white" />
-                </div>
-                <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
-                  Calculate Your Potential ROI
-                </h2>
-              </div>
-
-              <p className="text-lg text-gray-700 mb-8">
-                See how quickly the Opervia partnership pays for itself
-              </p>
-
-              <div className="bg-white rounded-xl p-6 shadow-lg mb-6">
-                <h3 className="text-xl font-bold text-gray-900 mb-4">Example Scenario:</h3>
-                <div className="space-y-3">
-                  <div className="flex justify-between items-center">
-                    <span className="text-gray-700">Number of clients:</span>
-                    <span className="text-2xl font-bold text-gray-900">3</span>
-                  </div>
-                  <div className="flex justify-between items-center">
-                    <span className="text-gray-700">Average monthly client value:</span>
-                    <span className="text-2xl font-bold text-gray-900">$5,000</span>
-                  </div>
-                  <div className="border-t border-gray-200 pt-3 mt-3">
-                    <div className="flex justify-between items-center mb-2">
-                      <span className="text-gray-700 font-semibold">Year 1 Revenue:</span>
-                      <span className="text-3xl font-bold text-green-600">$180,000</span>
-                    </div>
-                    <div className="flex justify-between items-center mb-2">
-                      <span className="text-gray-700 font-semibold">Opervia Investment:</span>
-                      <span className="text-2xl font-bold text-gray-900">$70,000</span>
-                    </div>
-                    <div className="flex justify-between items-center pt-3 border-t border-gray-200">
-                      <span className="text-xl font-bold text-gray-900">Net Profit:</span>
-                      <span className="text-4xl font-bold text-green-600">$110,000</span>
-                    </div>
-                    <div className="flex justify-between items-center mt-2">
-                      <span className="text-lg font-bold text-gray-900">ROI:</span>
-                      <span className="text-3xl font-bold text-green-600">157%</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div className="bg-blue-50 border border-blue-200 rounded-lg p-4">
-                <p className="text-sm text-gray-700">
-                  <strong>Note:</strong> This example assumes you close 3 clients at $5K/month. With Opervia's custom system and white-label support, many agencies charge $7K-$15K/month, significantly increasing ROI.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      <ROICalculator />
 
       {/* Who This Is For */}
       <section className="py-24 bg-gradient-to-b from-gray-50 to-white">

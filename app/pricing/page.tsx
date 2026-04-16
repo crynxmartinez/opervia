@@ -3,6 +3,7 @@
 import Link from "next/link"
 import { ArrowRight, Sparkles, Target, Settings, Rocket, TrendingUp, Users, Zap, Shield, CheckCircle2, XCircle, Clock, DollarSign, BarChart3 } from "lucide-react"
 import { Header } from "@/components/header"
+import { Footer } from "@/components/footer"
 
 export default function PricingPage() {
   return (
@@ -774,6 +775,8 @@ export default function PricingPage() {
           </div>
         </div>
       </section>
+
+      <Footer />
     </div>
   )
 }

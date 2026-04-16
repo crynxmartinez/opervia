@@ -3,6 +3,7 @@
 import Link from "next/link"
 import { ArrowRight, Code, Database, Layout, Zap, BookOpen, Headphones, CheckCircle2, Sparkles, Users, TrendingUp, Rocket, Settings, FileText, Phone } from "lucide-react"
 import { Header } from "@/components/header"
+import { Footer } from "@/components/footer"
 
 export default function ServicesPage() {
   return (
@@ -761,6 +762,8 @@ export default function ServicesPage() {
           </div>
         </div>
       </section>
+
+      <Footer />
     </div>
   )
 }

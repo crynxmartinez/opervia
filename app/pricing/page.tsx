@@ -50,14 +50,14 @@ export default function PricingPage() {
 
             {/* Price Display */}
             <div className="inline-block bg-white/10 backdrop-blur-md border-2 border-white/30 rounded-2xl p-8 shadow-[0_0_40px_rgba(255,255,255,0.2)]">
-              <div className="text-6xl md:text-7xl font-bold text-white mb-2">
-                $70,000
+              <div className="text-xl text-white/90 font-semibold mb-2">
+                Starting at
               </div>
-              <div className="text-xl text-white/90 font-semibold">
-                First Year Investment
+              <div className="text-6xl md:text-7xl font-bold text-white mb-2">
+                $5,000
               </div>
               <div className="text-sm text-white/70 mt-2">
-                12-Month Partnership Model
+                Activation Fee
               </div>
             </div>
 
@@ -144,18 +144,12 @@ export default function PricingPage() {
               </div>
             </div>
 
-            {/* Total */}
-            <div className="bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl p-8 text-center text-white shadow-2xl">
-              <div className="text-xl font-semibold mb-2">Total First Year Investment</div>
-              <div className="text-6xl font-bold mb-2">$70,000</div>
-              <div className="text-lg opacity-90">Includes Everything: Build + Launch + 12-Month Support</div>
-            </div>
           </div>
         </div>
       </section>
 
-      {/* The 3-Phase Investment Breakdown */}
-      <section id="breakdown" className="py-24 bg-white">
+      {/* Why Agencies Choose Opervia */}
+      <section id="breakdown" className="py-24 bg-gradient-to-b from-gray-50 to-white">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl mx-auto text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold mb-4 text-gray-900">
@@ -411,8 +405,8 @@ export default function PricingPage() {
                     <h3 className="text-3xl font-bold">The Opervia Partnership</h3>
                   </div>
 
-                  <div className="text-5xl font-bold mb-2">$70,000</div>
-                  <div className="text-xl mb-6 opacity-90">First Year Investment</div>
+                  <div className="text-5xl font-bold mb-2">$5,000</div>
+                  <div className="text-xl mb-6 opacity-90">Per Month</div>
 
                   <div className="space-y-3">
                     <div className="flex items-start gap-2">

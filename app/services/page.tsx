@@ -1,7 +1,7 @@
 'use client'
 
 import Link from "next/link"
-import { ArrowRight, Code, Database, Layout, Zap, BookOpen, Headphones, CheckCircle2, Sparkles, Users, TrendingUp, Rocket, Settings, FileText, Phone } from "lucide-react"
+import { ArrowRight, Code, Database, Layout, Zap, BookOpen, Headphones, CheckCircle2, Sparkles, Users, TrendingUp, Rocket, Settings, FileText, Phone, Globe, LayoutDashboard } from "lucide-react"
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
 
@@ -98,244 +98,301 @@ export default function ServicesPage() {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
-            {/* Service 1: GoHighLevel Development */}
-            <div className="relative bg-white border-2 border-blue-400 rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+          {/* Featured Core Partner Block */}
+          <div className="max-w-5xl mx-auto mb-16">
+            <div className="relative bg-gradient-to-br from-blue-50 via-purple-50 to-pink-50 border-2 border-blue-300 rounded-3xl p-8 md:p-12 shadow-2xl hover:shadow-3xl transition-all duration-500">
+              {/* Premium Badge */}
               <div className="absolute top-6 right-6">
-                <div className="w-12 h-12 bg-blue-400 rounded-xl flex items-center justify-center">
-                  <Database className="w-6 h-6 text-white" strokeWidth={2.5} />
+                <div className="px-4 py-2 bg-gradient-to-r from-blue-600 to-purple-600 rounded-full">
+                  <span className="text-white font-bold text-sm">FLAGSHIP OFFER</span>
                 </div>
               </div>
 
-              <h3 className="text-2xl font-bold mb-4 text-gray-900 pr-14">GoHighLevel Development</h3>
-              
-              <p className="text-gray-700 mb-6 leading-relaxed">
-                Real GHL implementation, not just basic setup. We build the backend foundation that powers your agency's service delivery.
+              <div className="mb-6">
+                <h3 className="text-3xl md:text-4xl font-bold text-gray-900 mb-3">
+                  Core Partner
+                </h3>
+                <div className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent mb-4">
+                  From $5,000/month
+                </div>
+              </div>
+
+              <p className="text-lg text-gray-700 leading-relaxed mb-8 max-w-3xl">
+                Built for agencies that need a real backend technical partner. Core Partner includes the full foundation: website, admin dashboard, client dashboard, GoHighLevel as the main integration, advanced support, and room for deeper custom delivery.
               </p>
 
-              <div className="space-y-3 mb-6">
-                <div className="flex items-start gap-2">
-                  <Sparkles className="w-5 h-5 text-blue-500 mt-0.5 flex-shrink-0" />
-                  <p className="text-gray-700 text-sm">Account & backend setup</p>
+              {/* What's Included Grid */}
+              <div className="grid md:grid-cols-2 gap-4 mb-8">
+                <div className="flex items-start gap-3">
+                  <CheckCircle2 className="w-6 h-6 text-green-600 mt-0.5 flex-shrink-0" />
+                  <div>
+                    <p className="font-semibold text-gray-900">1 website with 4 core public pages plus blog</p>
+                  </div>
                 </div>
-                <div className="flex items-start gap-2">
-                  <Sparkles className="w-5 h-5 text-blue-500 mt-0.5 flex-shrink-0" />
-                  <p className="text-gray-700 text-sm">Pipelines, opportunities & calendars</p>
+                <div className="flex items-start gap-3">
+                  <CheckCircle2 className="w-6 h-6 text-green-600 mt-0.5 flex-shrink-0" />
+                  <div>
+                    <p className="font-semibold text-gray-900">1 admin dashboard</p>
+                  </div>
                 </div>
-                <div className="flex items-start gap-2">
-                  <Sparkles className="w-5 h-5 text-blue-500 mt-0.5 flex-shrink-0" />
-                  <p className="text-gray-700 text-sm">Workflows & automations</p>
+                <div className="flex items-start gap-3">
+                  <CheckCircle2 className="w-6 h-6 text-green-600 mt-0.5 flex-shrink-0" />
+                  <div>
+                    <p className="font-semibold text-gray-900">1 client dashboard</p>
+                  </div>
                 </div>
-                <div className="flex items-start gap-2">
-                  <Sparkles className="w-5 h-5 text-blue-500 mt-0.5 flex-shrink-0" />
-                  <p className="text-gray-700 text-sm">Email/SMS setup & domain config</p>
+                <div className="flex items-start gap-3">
+                  <CheckCircle2 className="w-6 h-6 text-green-600 mt-0.5 flex-shrink-0" />
+                  <div>
+                    <p className="font-semibold text-gray-900">GoHighLevel as the main integration</p>
+                  </div>
+                </div>
+                <div className="flex items-start gap-3">
+                  <CheckCircle2 className="w-6 h-6 text-green-600 mt-0.5 flex-shrink-0" />
+                  <div>
+                    <p className="font-semibold text-gray-900">Up to 10 additional integrations</p>
+                  </div>
+                </div>
+                <div className="flex items-start gap-3">
+                  <CheckCircle2 className="w-6 h-6 text-green-600 mt-0.5 flex-shrink-0" />
+                  <div>
+                    <p className="font-semibold text-gray-900">Up to 10 client-side features</p>
+                  </div>
+                </div>
+                <div className="flex items-start gap-3">
+                  <CheckCircle2 className="w-6 h-6 text-green-600 mt-0.5 flex-shrink-0" />
+                  <div>
+                    <p className="font-semibold text-gray-900">Unlimited admins and clients</p>
+                  </div>
+                </div>
+                <div className="flex items-start gap-3">
+                  <CheckCircle2 className="w-6 h-6 text-green-600 mt-0.5 flex-shrink-0" />
+                  <div>
+                    <p className="font-semibold text-gray-900">Up to 5 feature revisions per month</p>
+                  </div>
+                </div>
+                <div className="flex items-start gap-3">
+                  <CheckCircle2 className="w-6 h-6 text-green-600 mt-0.5 flex-shrink-0" />
+                  <div>
+                    <p className="font-semibold text-gray-900">Dedicated support manager</p>
+                  </div>
+                </div>
+                <div className="flex items-start gap-3">
+                  <CheckCircle2 className="w-6 h-6 text-green-600 mt-0.5 flex-shrink-0" />
+                  <div>
+                    <p className="font-semibold text-gray-900">3 strategy calls per month</p>
+                  </div>
+                </div>
+                <div className="flex items-start gap-3">
+                  <CheckCircle2 className="w-6 h-6 text-green-600 mt-0.5 flex-shrink-0" />
+                  <div>
+                    <p className="font-semibold text-gray-900">1 weekly strategy meeting during first month</p>
+                  </div>
+                </div>
+                <div className="flex items-start gap-3">
+                  <CheckCircle2 className="w-6 h-6 text-green-600 mt-0.5 flex-shrink-0" />
+                  <div>
+                    <p className="font-semibold text-gray-900">A2P support guidance for US clients</p>
+                  </div>
                 </div>
               </div>
 
-              <div className="pt-4 border-t border-gray-200">
-                <p className="text-sm font-semibold text-blue-600">
-                  → Strong backend foundation for your agency
-                </p>
+              {/* CTAs */}
+              <div className="flex flex-col sm:flex-row gap-4">
+                <Link href="/pricing">
+                  <button className="px-8 py-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-xl font-bold text-lg hover:shadow-xl hover:scale-105 transition-all duration-300">
+                    See Pricing Details
+                  </button>
+                </Link>
+                <Link href="/contact">
+                  <button className="px-8 py-4 bg-white border-2 border-gray-300 text-gray-700 rounded-xl font-bold text-lg hover:border-blue-600 hover:text-blue-600 transition-all duration-300">
+                    Book a Strategy Call
+                  </button>
+                </Link>
+              </div>
+            </div>
+          </div>
+
+          {/* Five Pillar Cards */}
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+            {/* Pillar 1: Website & Frontend */}
+            <div className="relative bg-white border-2 border-gray-200 rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+              <div className="mb-4">
+                <Globe className="w-10 h-10 text-blue-600 mb-3" />
+                <h3 className="text-xl font-bold text-gray-900">Website & Frontend</h3>
+              </div>
+
+              <p className="text-sm text-gray-600 mb-4 font-medium">A complete front-facing system</p>
+
+              <div className="space-y-2">
+                <div className="flex items-start gap-2">
+                  <CheckCircle2 className="w-4 h-4 text-gray-600 mt-0.5 flex-shrink-0" />
+                  <p className="text-gray-700 text-sm">Home</p>
+                </div>
+                <div className="flex items-start gap-2">
+                  <CheckCircle2 className="w-4 h-4 text-gray-600 mt-0.5 flex-shrink-0" />
+                  <p className="text-gray-700 text-sm">About</p>
+                </div>
+                <div className="flex items-start gap-2">
+                  <CheckCircle2 className="w-4 h-4 text-gray-600 mt-0.5 flex-shrink-0" />
+                  <p className="text-gray-700 text-sm">Services</p>
+                </div>
+                <div className="flex items-start gap-2">
+                  <CheckCircle2 className="w-4 h-4 text-gray-600 mt-0.5 flex-shrink-0" />
+                  <p className="text-gray-700 text-sm">Pricing</p>
+                </div>
+                <div className="flex items-start gap-2">
+                  <CheckCircle2 className="w-4 h-4 text-gray-600 mt-0.5 flex-shrink-0" />
+                  <p className="text-gray-700 text-sm">Blog</p>
+                </div>
+                <div className="flex items-start gap-2">
+                  <CheckCircle2 className="w-4 h-4 text-gray-600 mt-0.5 flex-shrink-0" />
+                  <p className="text-gray-700 text-sm">Custom branded UI</p>
+                </div>
+                <div className="flex items-start gap-2">
+                  <CheckCircle2 className="w-4 h-4 text-gray-600 mt-0.5 flex-shrink-0" />
+                  <p className="text-gray-700 text-sm">Connected to backend structure</p>
+                </div>
               </div>
             </div>
 
-            {/* Service 2: GHL API Integrations */}
-            <div className="relative bg-white border-2 border-purple-400 rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
-              <div className="absolute top-6 right-6">
-                <div className="w-12 h-12 bg-purple-400 rounded-xl flex items-center justify-center">
-                  <Code className="w-6 h-6 text-white" strokeWidth={2.5} />
-                </div>
+            {/* Pillar 2: Admin Dashboard */}
+            <div className="relative bg-white border-2 border-gray-200 rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+              <div className="mb-4">
+                <LayoutDashboard className="w-10 h-10 text-purple-600 mb-3" />
+                <h3 className="text-xl font-bold text-gray-900">Admin Dashboard</h3>
               </div>
 
-              <h3 className="text-2xl font-bold mb-4 text-gray-900 pr-14">GHL API Integrations</h3>
-              
-              <p className="text-gray-700 mb-6 leading-relaxed">
-                Your technical advantage. We build custom integrations that separate you from standard GHL setup providers.
-              </p>
+              <p className="text-sm text-gray-600 mb-4 font-medium">The control center for your agency</p>
 
-              <div className="space-y-3 mb-6">
+              <div className="space-y-2">
                 <div className="flex items-start gap-2">
-                  <Sparkles className="w-5 h-5 text-purple-500 mt-0.5 flex-shrink-0" />
-                  <p className="text-gray-700 text-sm">GoHighLevel V2 API integrations</p>
+                  <CheckCircle2 className="w-4 h-4 text-gray-600 mt-0.5 flex-shrink-0" />
+                  <p className="text-gray-700 text-sm">Analytics / Reports</p>
                 </div>
                 <div className="flex items-start gap-2">
-                  <Sparkles className="w-5 h-5 text-purple-500 mt-0.5 flex-shrink-0" />
-                  <p className="text-gray-700 text-sm">Webhook workflows & custom sync</p>
+                  <CheckCircle2 className="w-4 h-4 text-gray-600 mt-0.5 flex-shrink-0" />
+                  <p className="text-gray-700 text-sm">Client Management</p>
                 </div>
                 <div className="flex items-start gap-2">
-                  <Sparkles className="w-5 h-5 text-purple-500 mt-0.5 flex-shrink-0" />
-                  <p className="text-gray-700 text-sm">Third-party connections</p>
+                  <CheckCircle2 className="w-4 h-4 text-gray-600 mt-0.5 flex-shrink-0" />
+                  <p className="text-gray-700 text-sm">Login as Client</p>
                 </div>
                 <div className="flex items-start gap-2">
-                  <Sparkles className="w-5 h-5 text-purple-500 mt-0.5 flex-shrink-0" />
-                  <p className="text-gray-700 text-sm">Custom frontend integration</p>
+                  <CheckCircle2 className="w-4 h-4 text-gray-600 mt-0.5 flex-shrink-0" />
+                  <p className="text-gray-700 text-sm">Support Inbox</p>
                 </div>
-              </div>
-
-              <div className="pt-4 border-t border-gray-200">
-                <p className="text-sm font-semibold text-purple-600">
-                  → Technical differentiation from competitors
-                </p>
+                <div className="flex items-start gap-2">
+                  <CheckCircle2 className="w-4 h-4 text-gray-600 mt-0.5 flex-shrink-0" />
+                  <p className="text-gray-700 text-sm">Notifications</p>
+                </div>
+                <div className="flex items-start gap-2">
+                  <CheckCircle2 className="w-4 h-4 text-gray-600 mt-0.5 flex-shrink-0" />
+                  <p className="text-gray-700 text-sm">Team / Admin Controls</p>
+                </div>
               </div>
             </div>
 
-            {/* Service 3: Custom Client Portals */}
-            <div className="relative bg-white border-2 border-cyan-400 rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
-              <div className="absolute top-6 right-6">
-                <div className="w-12 h-12 bg-cyan-400 rounded-xl flex items-center justify-center">
-                  <Layout className="w-6 h-6 text-white" strokeWidth={2.5} />
-                </div>
+            {/* Pillar 3: Client Dashboard */}
+            <div className="relative bg-white border-2 border-gray-200 rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+              <div className="mb-4">
+                <Users className="w-10 h-10 text-cyan-600 mb-3" />
+                <h3 className="text-xl font-bold text-gray-900">Client Dashboard</h3>
               </div>
 
-              <h3 className="text-2xl font-bold mb-4 text-gray-900 pr-14">Custom Client Portals</h3>
-              
-              <p className="text-gray-700 mb-6 leading-relaxed">
-                The visible client-facing outcome. Cleaner experience than raw software menus.
-              </p>
+              <p className="text-sm text-gray-600 mb-4 font-medium">The system your client actually uses</p>
 
-              <div className="space-y-3 mb-6">
+              <div className="space-y-2">
                 <div className="flex items-start gap-2">
-                  <Sparkles className="w-5 h-5 text-cyan-500 mt-0.5 flex-shrink-0" />
-                  <p className="text-gray-700 text-sm">Login-based portals & role dashboards</p>
+                  <CheckCircle2 className="w-4 h-4 text-gray-600 mt-0.5 flex-shrink-0" />
+                  <p className="text-gray-700 text-sm">Branded dashboard</p>
                 </div>
                 <div className="flex items-start gap-2">
-                  <Sparkles className="w-5 h-5 text-cyan-500 mt-0.5 flex-shrink-0" />
-                  <p className="text-gray-700 text-sm">Branded client experience</p>
+                  <CheckCircle2 className="w-4 h-4 text-gray-600 mt-0.5 flex-shrink-0" />
+                  <p className="text-gray-700 text-sm">Role-based access</p>
                 </div>
                 <div className="flex items-start gap-2">
-                  <Sparkles className="w-5 h-5 text-cyan-500 mt-0.5 flex-shrink-0" />
-                  <p className="text-gray-700 text-sm">Lead views & booking tracking</p>
+                  <CheckCircle2 className="w-4 h-4 text-gray-600 mt-0.5 flex-shrink-0" />
+                  <p className="text-gray-700 text-sm">Up to 10 client-side features</p>
                 </div>
                 <div className="flex items-start gap-2">
-                  <Sparkles className="w-5 h-5 text-cyan-500 mt-0.5 flex-shrink-0" />
-                  <p className="text-gray-700 text-sm">Reporting & support area</p>
+                  <CheckCircle2 className="w-4 h-4 text-gray-600 mt-0.5 flex-shrink-0" />
+                  <p className="text-gray-700 text-sm">Lead, booking, records views</p>
                 </div>
-              </div>
-
-              <div className="pt-4 border-t border-gray-200">
-                <p className="text-sm font-semibold text-cyan-600">
-                  → Premium client experience that wows
-                </p>
+                <div className="flex items-start gap-2">
+                  <CheckCircle2 className="w-4 h-4 text-gray-600 mt-0.5 flex-shrink-0" />
+                  <p className="text-gray-700 text-sm">Reports & workflow views</p>
+                </div>
+                <div className="flex items-start gap-2">
+                  <CheckCircle2 className="w-4 h-4 text-gray-600 mt-0.5 flex-shrink-0" />
+                  <p className="text-gray-700 text-sm">Built around your actual offer</p>
+                </div>
               </div>
             </div>
 
-            {/* Service 4: White-Label Technical Fulfillment */}
-            <div className="relative bg-white border-2 border-indigo-400 rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
-              <div className="absolute top-6 right-6">
-                <div className="w-12 h-12 bg-indigo-400 rounded-xl flex items-center justify-center">
-                  <Users className="w-6 h-6 text-white" strokeWidth={2.5} />
-                </div>
+            {/* Pillar 4: GHL & Integrations */}
+            <div className="relative bg-white border-2 border-gray-200 rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+              <div className="mb-4">
+                <Database className="w-10 h-10 text-green-600 mb-3" />
+                <h3 className="text-xl font-bold text-gray-900">GHL & Integrations</h3>
               </div>
 
-              <h3 className="text-2xl font-bold mb-4 text-gray-900 pr-14">White-Label Technical Fulfillment</h3>
-              
-              <p className="text-gray-700 mb-6 leading-relaxed">
-                Your core partner model. We deliver behind the scenes under your agency brand.
-              </p>
+              <p className="text-sm text-gray-600 mb-4 font-medium">GoHighLevel as the main backend engine</p>
 
-              <div className="space-y-3 mb-6">
+              <div className="space-y-2">
                 <div className="flex items-start gap-2">
-                  <Sparkles className="w-5 h-5 text-indigo-500 mt-0.5 flex-shrink-0" />
-                  <p className="text-gray-700 text-sm">Behind-the-scenes delivery</p>
+                  <CheckCircle2 className="w-4 h-4 text-gray-600 mt-0.5 flex-shrink-0" />
+                  <p className="text-gray-700 text-sm">GHL as main integration</p>
                 </div>
                 <div className="flex items-start gap-2">
-                  <Sparkles className="w-5 h-5 text-indigo-500 mt-0.5 flex-shrink-0" />
-                  <p className="text-gray-700 text-sm">Technical scoping & implementation</p>
+                  <CheckCircle2 className="w-4 h-4 text-gray-600 mt-0.5 flex-shrink-0" />
+                  <p className="text-gray-700 text-sm">Up to 10 additional integrations</p>
                 </div>
                 <div className="flex items-start gap-2">
-                  <Sparkles className="w-5 h-5 text-indigo-500 mt-0.5 flex-shrink-0" />
-                  <p className="text-gray-700 text-sm">Fulfillment under your brand</p>
+                  <CheckCircle2 className="w-4 h-4 text-gray-600 mt-0.5 flex-shrink-0" />
+                  <p className="text-gray-700 text-sm">Workflow & automation connection</p>
                 </div>
                 <div className="flex items-start gap-2">
-                  <Sparkles className="w-5 h-5 text-indigo-500 mt-0.5 flex-shrink-0" />
-                  <p className="text-gray-700 text-sm">Revision support & handoff help</p>
+                  <CheckCircle2 className="w-4 h-4 text-gray-600 mt-0.5 flex-shrink-0" />
+                  <p className="text-gray-700 text-sm">API / webhook support</p>
                 </div>
-              </div>
-
-              <div className="pt-4 border-t border-gray-200">
-                <p className="text-sm font-semibold text-indigo-600">
-                  → Sell with confidence, no dev team needed
-                </p>
+                <div className="flex items-start gap-2">
+                  <CheckCircle2 className="w-4 h-4 text-gray-600 mt-0.5 flex-shrink-0" />
+                  <p className="text-gray-700 text-sm">Launch-ready backend structure</p>
+                </div>
               </div>
             </div>
 
-            {/* Service 5: SOPs & Training */}
-            <div className="relative bg-white border-2 border-green-400 rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
-              <div className="absolute top-6 right-6">
-                <div className="w-12 h-12 bg-green-400 rounded-xl flex items-center justify-center">
-                  <BookOpen className="w-6 h-6 text-white" strokeWidth={2.5} />
-                </div>
+            {/* Pillar 5: Support & Partnership */}
+            <div className="relative bg-white border-2 border-gray-200 rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+              <div className="mb-4">
+                <Headphones className="w-10 h-10 text-orange-600 mb-3" />
+                <h3 className="text-xl font-bold text-gray-900">Support & Partnership</h3>
               </div>
 
-              <h3 className="text-2xl font-bold mb-4 text-gray-900 pr-14">SOPs & Training</h3>
-              
-              <p className="text-gray-700 mb-6 leading-relaxed">
-                More than just build. We ensure smooth adoption with documentation and training.
-              </p>
+              <p className="text-sm text-gray-600 mb-4 font-medium">Ongoing technical partnership after launch</p>
 
-              <div className="space-y-3 mb-6">
+              <div className="space-y-2">
                 <div className="flex items-start gap-2">
-                  <Sparkles className="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0" />
-                  <p className="text-gray-700 text-sm">SOP documentation & guides</p>
-                </div>
-                <div className="flex items-start gap-2">
-                  <Sparkles className="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0" />
-                  <p className="text-gray-700 text-sm">Staff usage & onboarding guides</p>
+                  <CheckCircle2 className="w-4 h-4 text-gray-600 mt-0.5 flex-shrink-0" />
+                  <p className="text-gray-700 text-sm">Dedicated support manager</p>
                 </div>
                 <div className="flex items-start gap-2">
-                  <Sparkles className="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0" />
-                  <p className="text-gray-700 text-sm">Recorded walkthroughs</p>
+                  <CheckCircle2 className="w-4 h-4 text-gray-600 mt-0.5 flex-shrink-0" />
+                  <p className="text-gray-700 text-sm">Up to 5 monthly feature revisions</p>
                 </div>
                 <div className="flex items-start gap-2">
-                  <Sparkles className="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0" />
-                  <p className="text-gray-700 text-sm">Live training & admin handoff</p>
-                </div>
-              </div>
-
-              <div className="pt-4 border-t border-gray-200">
-                <p className="text-sm font-semibold text-green-600">
-                  → Better adoption, less confusion
-                </p>
-              </div>
-            </div>
-
-            {/* Service 6: Support & Optimization */}
-            <div className="relative bg-white border-2 border-orange-400 rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
-              <div className="absolute top-6 right-6">
-                <div className="w-12 h-12 bg-orange-400 rounded-xl flex items-center justify-center">
-                  <Headphones className="w-6 h-6 text-white" strokeWidth={2.5} />
-                </div>
-              </div>
-
-              <h3 className="text-2xl font-bold mb-4 text-gray-900 pr-14">Support & Optimization</h3>
-              
-              <p className="text-gray-700 mb-6 leading-relaxed">
-                Long-term value. We stay involved after the initial build with ongoing support.
-              </p>
-
-              <div className="space-y-3 mb-6">
-                <div className="flex items-start gap-2">
-                  <Sparkles className="w-5 h-5 text-orange-500 mt-0.5 flex-shrink-0" />
-                  <p className="text-gray-700 text-sm">Technical support & bug fixes</p>
+                  <CheckCircle2 className="w-4 h-4 text-gray-600 mt-0.5 flex-shrink-0" />
+                  <p className="text-gray-700 text-sm">3 strategy calls per month</p>
                 </div>
                 <div className="flex items-start gap-2">
-                  <Sparkles className="w-5 h-5 text-orange-500 mt-0.5 flex-shrink-0" />
-                  <p className="text-gray-700 text-sm">Automation troubleshooting</p>
+                  <CheckCircle2 className="w-4 h-4 text-gray-600 mt-0.5 flex-shrink-0" />
+                  <p className="text-gray-700 text-sm">First-month weekly onboarding calls</p>
                 </div>
                 <div className="flex items-start gap-2">
-                  <Sparkles className="w-5 h-5 text-orange-500 mt-0.5 flex-shrink-0" />
-                  <p className="text-gray-700 text-sm">Portal & dashboard updates</p>
+                  <CheckCircle2 className="w-4 h-4 text-gray-600 mt-0.5 flex-shrink-0" />
+                  <p className="text-gray-700 text-sm">Continued support & optimization</p>
                 </div>
-                <div className="flex items-start gap-2">
-                  <Sparkles className="w-5 h-5 text-orange-500 mt-0.5 flex-shrink-0" />
-                  <p className="text-gray-700 text-sm">Maintenance retainers & optimization</p>
-                </div>
-              </div>
-
-              <div className="pt-4 border-t border-gray-200">
-                <p className="text-sm font-semibold text-orange-600">
-                  → Ongoing partnership, not one-and-done
-                </p>
               </div>
             </div>
           </div>

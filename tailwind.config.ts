@@ -9,15 +9,15 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        // Electric Infra Theme - Primary Colors
-        'infra-navy': '#0F1B3D',
-        'infra-cyan': '#26C6FF',
-        'infra-blue': '#1E88FF',
-        'infra-deep-blue': '#2B4DFF',
-        'infra-violet': '#6A35FF',
-        // Accent Colors (use sparingly)
-        'infra-lime': '#9BEA4D',
-        'infra-yellow-green': '#C8F24A',
+        // Blue-Green Gradient Theme with Subtle Violet Accent
+        'infra-sky': '#4A9FD8',        // Soft sky blue (main)
+        'infra-blue': '#3B82F6',       // Medium blue (primary)
+        'infra-deep-blue': '#2563EB',  // Deep blue (strong)
+        'infra-teal': '#14B8A6',       // Teal/green accent
+        'infra-navy': '#0F172A',       // Dark navy (text/base)
+        // Subtle Accents (use sparingly)
+        'infra-violet': '#8B5CF6',     // Softer violet (subtle accent)
+        'infra-lime': '#84CC16',       // Success/highlight
       },
       animation: {
         'float': 'float 6s ease-in-out infinite',

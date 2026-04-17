@@ -17,14 +17,14 @@ export default function Home() {
             className="w-full h-full object-cover"
           />
           {/* Logo-themed Gradient Overlay */}
-          <div className="absolute inset-0 bg-gradient-to-br from-infra-cyan/70 via-infra-blue/80 to-infra-violet/75" />
+          <div className="absolute inset-0 bg-gradient-to-br from-infra-sky/60 via-infra-blue/70 to-infra-teal/50" />
           
           {/* Animated Gradient Overlay */}
           <div className="absolute inset-0 bg-gradient-animate opacity-10" />
           
           {/* Floating Particles */}
-          <div className="absolute top-20 left-20 w-72 h-72 bg-infra-cyan/30 rounded-full blur-3xl animate-float" />
-          <div className="absolute bottom-20 right-20 w-96 h-96 bg-infra-violet/30 rounded-full blur-3xl animate-float" style={{ animationDelay: '2s' }} />
+          <div className="absolute top-20 left-20 w-72 h-72 bg-infra-blue/30 rounded-full blur-3xl animate-float" />
+          <div className="absolute bottom-20 right-20 w-96 h-96 bg-infra-teal/30 rounded-full blur-3xl animate-float" style={{ animationDelay: '2s' }} />
         </div>
 
         {/* Hero Content */}
@@ -47,7 +47,7 @@ export default function Home() {
                 We Build the{' '}
                 <span className="relative inline-block">
                   Infrastructure Behind It.
-                  <span className="absolute -bottom-2 left-0 w-full h-1.5 bg-gradient-to-r from-infra-cyan via-infra-deep-blue to-infra-violet rounded-full animate-gradient" style={{ backgroundSize: '200% auto' }} />
+                  <span className="absolute -bottom-2 left-0 w-full h-1.5 bg-gradient-to-r from-infra-blue via-infra-deep-blue to-infra-teal rounded-full animate-gradient" style={{ backgroundSize: '200% auto' }} />
                 </span>
               </span>
             </h1>
@@ -60,12 +60,12 @@ export default function Home() {
             {/* CTA Buttons - Stronger Design */}
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-4">
               <Link href="/contact">
-                <button className="group relative px-8 py-4 bg-gradient-to-r from-infra-cyan to-infra-blue text-white rounded-xl font-bold text-lg overflow-hidden transition-all duration-300 hover:scale-105 shadow-2xl hover:shadow-3xl hover:shadow-infra-cyan/50">
+                <button className="group relative px-8 py-4 bg-gradient-to-r from-infra-blue to-infra-deep-blue text-white rounded-xl font-bold text-lg overflow-hidden transition-all duration-300 hover:scale-105 shadow-2xl hover:shadow-3xl hover:shadow-infra-blue/50">
                   <span className="relative z-10 flex items-center gap-2">
                     See How It Works
                     <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                   </span>
-                  <div className="absolute inset-0 bg-gradient-to-r from-infra-blue to-infra-violet opacity-0 group-hover:opacity-100 transition-opacity" />
+                  <div className="absolute inset-0 bg-gradient-to-r from-infra-deep-blue to-infra-violet/80 opacity-0 group-hover:opacity-100 transition-opacity" />
                 </button>
               </Link>
               <Link href="/services">

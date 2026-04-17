@@ -455,65 +455,7 @@ export default function PricingPage() {
         </div>
       </section>
 
-      {/* SECTION 5: First-Month Onboarding Support */}
-      <section className="py-24 bg-white">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-3xl mx-auto text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold mb-4 text-gray-900">
-              First-Month Onboarding Support
-            </h2>
-            <p className="text-xl text-gray-600">
-              Both Starter and Core include 1 strategy meeting per week during the first month
-            </p>
-          </div>
-
-          <div className="max-w-5xl mx-auto">
-            <div className="grid md:grid-cols-2 gap-6 mb-12">
-              <div className="p-6 bg-gradient-to-br from-blue-50 to-cyan-50 rounded-2xl border-2 border-blue-200">
-                <h3 className="text-xl font-bold text-gray-900 mb-4">Week 1-2</h3>
-                <ul className="space-y-2 text-gray-700">
-                  <li className="flex items-start gap-2">
-                    <CheckCircle2 className="w-5 h-5 text-blue-600 mt-0.5 flex-shrink-0" />
-                    <span>Agency setup direction</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <CheckCircle2 className="w-5 h-5 text-blue-600 mt-0.5 flex-shrink-0" />
-                    <span>Offer clarity</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <CheckCircle2 className="w-5 h-5 text-blue-600 mt-0.5 flex-shrink-0" />
-                    <span>Feature prioritization</span>
-                  </li>
-                </ul>
-              </div>
-              <div className="p-6 bg-gradient-to-br from-purple-50 to-pink-50 rounded-2xl border-2 border-purple-200">
-                <h3 className="text-xl font-bold text-gray-900 mb-4">Week 3-4</h3>
-                <ul className="space-y-2 text-gray-700">
-                  <li className="flex items-start gap-2">
-                    <CheckCircle2 className="w-5 h-5 text-purple-600 mt-0.5 flex-shrink-0" />
-                    <span>Launch alignment</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <CheckCircle2 className="w-5 h-5 text-purple-600 mt-0.5 flex-shrink-0" />
-                    <span>Goal setting</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <CheckCircle2 className="w-5 h-5 text-purple-600 mt-0.5 flex-shrink-0" />
-                    <span>Smoother implementation</span>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div className="text-center p-6 bg-gray-50 rounded-2xl border-2 border-gray-200">
-              <p className="text-gray-700">
-                This intensive first-month support ensures your partnership starts strong and stays aligned.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* SECTION 6: FAQ */}
+      {/* SECTION 5: FAQ */}
       <section className="py-24 bg-gradient-to-b from-gray-50 to-white">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl mx-auto text-center mb-16">
@@ -609,7 +551,7 @@ export default function PricingPage() {
         </div>
       </section>
 
-      {/* SECTION 7: Final CTA */}
+      {/* SECTION 6: Final CTA */}
       <section className="py-24 bg-gradient-to-br from-purple-900 via-blue-900 to-purple-900">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto text-center">

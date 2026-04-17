@@ -42,7 +42,7 @@ export default function PricingPage() {
 
             {/* Subheadline */}
             <p className="text-xl md:text-2xl text-white font-medium max-w-4xl mx-auto leading-relaxed drop-shadow-lg" style={{ textShadow: '0 2px 10px rgba(0,0,0,0.4)' }}>
-              A structured partnership model designed for agencies ready to scale with <strong>custom GoHighLevel systems</strong> and <strong>white-label technical support</strong>—without the chaos of hiring or the limits of generic software.
+              This is not just a project fee. Opervia is a technical partnership built for agencies that need <strong>GoHighLevel development</strong>, <strong>custom portals</strong>, <strong>backend systems</strong>, and ongoing <strong>white-label technical support</strong>.
             </p>
 
             {/* Supporting line */}
@@ -53,13 +53,13 @@ export default function PricingPage() {
             {/* Price Display */}
             <div className="inline-block bg-white/10 backdrop-blur-md border-2 border-white/30 rounded-2xl p-8 shadow-[0_0_40px_rgba(255,255,255,0.2)]">
               <div className="text-xl text-white/90 font-semibold mb-2">
-                Starting at
+                From
               </div>
               <div className="text-6xl md:text-7xl font-bold text-white mb-2">
-                $5,000
+                $5,000/month
               </div>
               <div className="text-sm text-white/70 mt-2">
-                Activation Fee
+                for a 12-month technical partnership
               </div>
             </div>
 
@@ -104,10 +104,10 @@ export default function PricingPage() {
                   <div className="w-16 h-16 bg-blue-500 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
                     <span className="text-3xl font-bold text-white">1</span>
                   </div>
-                  <h3 className="text-2xl font-bold text-gray-900 mb-2">Activation</h3>
-                  <div className="text-4xl font-bold text-blue-600 mb-2">$5,000</div>
-                  <div className="text-sm text-gray-600 font-semibold">ONE-TIME</div>
-                  <div className="mt-4 text-sm text-gray-700">Week 1-2</div>
+                  <h3 className="text-2xl font-bold text-gray-900 mb-2">Partnership Activation</h3>
+                  <div className="text-4xl font-bold text-blue-600 mb-2">Starting at $5,000</div>
+                  <div className="text-sm text-gray-600 font-semibold">TO START</div>
+                  <div className="mt-4 text-sm text-gray-700">Discovery & Planning</div>
                 </div>
                 {/* Arrow */}
                 <div className="hidden md:block absolute top-1/2 -right-4 transform -translate-y-1/2">
@@ -121,10 +121,10 @@ export default function PricingPage() {
                   <div className="w-16 h-16 bg-purple-500 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
                     <span className="text-3xl font-bold text-white">2</span>
                   </div>
-                  <h3 className="text-2xl font-bold text-gray-900 mb-2">Pre-Launch</h3>
-                  <div className="text-4xl font-bold text-purple-600 mb-2">$5,000</div>
-                  <div className="text-sm text-gray-600 font-semibold">ONE-TIME</div>
-                  <div className="mt-4 text-sm text-gray-700">Week 3-12</div>
+                  <h3 className="text-2xl font-bold text-gray-900 mb-2">Build & Launch</h3>
+                  <div className="text-4xl font-bold text-purple-600 mb-2">From $5,000/month</div>
+                  <div className="text-sm text-gray-600 font-semibold">MONTHLY PARTNERSHIP</div>
+                  <div className="mt-4 text-sm text-gray-700">Custom system development</div>
                 </div>
                 {/* Arrow */}
                 <div className="hidden md:block absolute top-1/2 -right-4 transform -translate-y-1/2">
@@ -138,10 +138,10 @@ export default function PricingPage() {
                   <div className="w-16 h-16 bg-green-500 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
                     <span className="text-3xl font-bold text-white">3</span>
                   </div>
-                  <h3 className="text-2xl font-bold text-gray-900 mb-2">Partnership</h3>
-                  <div className="text-4xl font-bold text-green-600 mb-2">$5,000</div>
-                  <div className="text-sm text-gray-600 font-semibold">PER MONTH</div>
-                  <div className="mt-4 text-sm text-gray-700">12 Months</div>
+                  <h3 className="text-2xl font-bold text-gray-900 mb-2">Ongoing Partnership</h3>
+                  <div className="text-4xl font-bold text-green-600 mb-2">From $5,000/month</div>
+                  <div className="text-sm text-gray-600 font-semibold">12-MONTH MINIMUM</div>
+                  <div className="mt-4 text-sm text-gray-700">Support & improvements</div>
                 </div>
               </div>
             </div>

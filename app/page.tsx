@@ -52,7 +52,7 @@ export default function Home() {
 
             {/* Subheading - Brighter, Benefit-Focused */}
             <p className="text-xl md:text-2xl text-white font-medium max-w-3xl mx-auto leading-relaxed drop-shadow-lg" style={{ textShadow: '0 2px 10px rgba(0,0,0,0.4)' }}>
-              White-label technical partner for agencies. We build custom portals, dashboards, and backend systems—<strong className="text-white">so you can sell bigger, deliver better, and scale faster.</strong>
+              White-label technical partner for agencies. We build custom systems, portals, dashboards, and backend workflows—<strong className="text-white">so you can deliver like a real technical team without hiring one in-house.</strong>
             </p>
 
             {/* CTA Buttons - Stronger Design */}
@@ -92,10 +92,10 @@ export default function Home() {
           {/* Impactful Header */}
           <div className="max-w-3xl mx-auto text-center mb-10">
             <h2 className="text-4xl md:text-5xl font-bold mb-4 text-gray-900">
-              Most Agencies Are Trapped in a Lose-Lose Situation
+              Agencies Are Stuck Between Two Bad Options
             </h2>
             <p className="text-lg text-gray-600 font-medium">
-              Pay for software nobody uses, or hire developers you can't afford.
+              Generic software that limits you, or expensive in-house development.
             </p>
           </div>
 
@@ -111,25 +111,25 @@ export default function Home() {
               </div>
               
               {/* Punchy Card Title */}
-              <h3 className="text-2xl font-bold mb-6 text-gray-900 pr-14">The Software Trap</h3>
+              <h3 className="text-2xl font-bold mb-6 text-gray-900 pr-14">Option 1: Generic Software</h3>
               
               {/* Impactful Bullet Points */}
               <div className="space-y-4">
                 <div className="flex items-start gap-3">
                   <AlertTriangle className="w-5 h-5 text-red-500 mt-0.5 flex-shrink-0" />
-                  <p className="text-gray-700 leading-relaxed font-medium">Clients never log in—too confusing</p>
+                  <p className="text-gray-700 leading-relaxed font-medium">Crowded systems that feel generic</p>
                 </div>
                 <div className="flex items-start gap-3">
                   <AlertTriangle className="w-5 h-5 text-red-500 mt-0.5 flex-shrink-0" />
-                  <p className="text-gray-700 leading-relaxed font-medium">Your team ignores it</p>
+                  <p className="text-gray-700 leading-relaxed font-medium">Limited customization options</p>
                 </div>
                 <div className="flex items-start gap-3">
                   <AlertTriangle className="w-5 h-5 text-red-500 mt-0.5 flex-shrink-0" />
-                  <p className="text-gray-700 leading-relaxed font-medium">Looks exactly like your competitors</p>
+                  <p className="text-gray-700 leading-relaxed font-medium">Clients feel the limitations</p>
                 </div>
                 <div className="flex items-start gap-3">
                   <AlertTriangle className="w-5 h-5 text-red-500 mt-0.5 flex-shrink-0" />
-                  <p className="text-gray-700 leading-relaxed font-medium">Clients leave for better experiences</p>
+                  <p className="text-gray-700 leading-relaxed font-medium">Hard to differentiate from competitors</p>
                 </div>
               </div>
               
@@ -148,25 +148,25 @@ export default function Home() {
               </div>
               
               {/* Punchy Card Title */}
-              <h3 className="text-2xl font-bold mb-6 text-gray-900 pr-14">The Hiring Trap</h3>
+              <h3 className="text-2xl font-bold mb-6 text-gray-900 pr-14">Option 2: Hire Developers</h3>
               
               {/* Impactful Bullet Points */}
               <div className="space-y-4">
                 <div className="flex items-start gap-3">
                   <AlertTriangle className="w-5 h-5 text-red-500 mt-0.5 flex-shrink-0" />
-                  <p className="text-gray-700 leading-relaxed font-medium">$150k+ per developer (before benefits, taxes, tools)</p>
+                  <p className="text-gray-700 leading-relaxed font-medium">$100K+ per developer annually</p>
                 </div>
                 <div className="flex items-start gap-3">
                   <AlertTriangle className="w-5 h-5 text-red-500 mt-0.5 flex-shrink-0" />
-                  <p className="text-gray-700 leading-relaxed font-medium">3-6 months to find and onboard</p>
+                  <p className="text-gray-700 leading-relaxed font-medium">6+ months to build a team</p>
                 </div>
                 <div className="flex items-start gap-3">
                   <AlertTriangle className="w-5 h-5 text-red-500 mt-0.5 flex-shrink-0" />
-                  <p className="text-gray-700 leading-relaxed font-medium">One bad hire costs you 6 months</p>
+                  <p className="text-gray-700 leading-relaxed font-medium">Management overhead and complexity</p>
                 </div>
                 <div className="flex items-start gap-3">
                   <AlertTriangle className="w-5 h-5 text-red-500 mt-0.5 flex-shrink-0" />
-                  <p className="text-gray-700 leading-relaxed font-medium">Managing developers isn't your expertise</p>
+                  <p className="text-gray-700 leading-relaxed font-medium">Turnover risk and recruiting costs</p>
                 </div>
               </div>
               
@@ -181,10 +181,10 @@ export default function Home() {
             {/* Impactful Transition Statement */}
             <div className="text-center mb-6">
               <p className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text text-transparent mb-3 animate-gradient" style={{ backgroundSize: '200% auto' }}>
-                There's a smarter way.
+                The Third Option: Opervia
               </p>
               <p className="text-xl text-gray-700 max-w-2xl mx-auto font-medium">
-                Get custom systems that wow your clients—without hiring a single developer.
+                A white-label technical partner and backend partner for agencies.
               </p>
             </div>
 
@@ -202,7 +202,7 @@ export default function Home() {
               
               {/* Punchy Title */}
               <h3 className="text-3xl font-bold mb-8 bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text text-transparent pr-16 animate-gradient" style={{ backgroundSize: '200% auto' }}>
-                The Opervia Advantage
+                We Become Your Backend Technical Partner
               </h3>
               
               {/* Benefit-Focused Bullets with Sparkles */}
@@ -211,25 +211,25 @@ export default function Home() {
                   <div className="w-6 h-6 bg-gradient-to-br from-blue-500 to-purple-500 rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5 group-hover/item:scale-110 transition-transform">
                     <Sparkles className="w-4 h-4 text-white" strokeWidth={2.5} />
                   </div>
-                  <p className="text-gray-800 leading-relaxed font-semibold">Custom-built systems at a fraction of hiring cost</p>
+                  <p className="text-gray-800 leading-relaxed font-semibold">Backend partner for agencies without hiring in-house</p>
                 </div>
                 <div className="flex items-start gap-3 group/item">
                   <div className="w-6 h-6 bg-gradient-to-br from-purple-500 to-pink-500 rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5 group-hover/item:scale-110 transition-transform">
                     <Sparkles className="w-4 h-4 text-white" strokeWidth={2.5} />
                   </div>
-                  <p className="text-gray-800 leading-relaxed font-semibold">Powerful automations that run on autopilot</p>
+                  <p className="text-gray-800 leading-relaxed font-semibold">Custom systems built around your actual service</p>
                 </div>
                 <div className="flex items-start gap-3 group/item">
                   <div className="w-6 h-6 bg-gradient-to-br from-blue-500 to-pink-500 rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5 group-hover/item:scale-110 transition-transform">
                     <Sparkles className="w-4 h-4 text-white" strokeWidth={2.5} />
                   </div>
-                  <p className="text-gray-800 leading-relaxed font-semibold">Client portals they'll actually use and love</p>
+                  <p className="text-gray-800 leading-relaxed font-semibold">White-label delivery under your brand</p>
                 </div>
                 <div className="flex items-start gap-3 group/item">
                   <div className="w-6 h-6 bg-gradient-to-br from-purple-500 to-blue-500 rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5 group-hover/item:scale-110 transition-transform">
                     <Sparkles className="w-4 h-4 text-white" strokeWidth={2.5} />
                   </div>
-                  <p className="text-gray-800 leading-relaxed font-semibold">We're your invisible tech team</p>
+                  <p className="text-gray-800 leading-relaxed font-semibold">Ongoing support after launch as your agency fulfillment partner</p>
                 </div>
               </div>
 

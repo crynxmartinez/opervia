@@ -41,7 +41,7 @@ export default function ServicesPage() {
 
             {/* Subheadline */}
             <p className="text-xl md:text-2xl text-white font-medium max-w-4xl mx-auto leading-relaxed drop-shadow-lg" style={{ textShadow: '0 2px 10px rgba(0,0,0,0.4)' }}>
-              We help agencies deliver stronger offers through <strong>GoHighLevel development</strong>, API integrations, custom portals, white-label technical fulfillment, SOPs, and ongoing support.
+              We help agencies launch and support custom GoHighLevel-powered systems through a structured backend partnership model.
             </p>
 
             {/* Support Line */}
@@ -75,10 +75,10 @@ export default function ServicesPage() {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto text-center">
             <p className="text-xl md:text-2xl text-gray-700 leading-relaxed">
-              <strong className="text-gray-900">Opervia is a white-label technical partner for agencies</strong> that need more than generic setup. We build the backend systems, custom portals, automations, dashboards, SOPs, and support structure that help agencies deliver better services without building a full internal tech team.
+              Opervia is built for agencies that need more than a one-time hire. We act as the <strong className="text-gray-900">backend partner for agencies</strong>—building custom systems, dashboards, <strong className="text-gray-900">custom client portal development</strong>, GoHighLevel integrations, and backend workflows that help your agency deliver at a higher level.
             </p>
             <p className="text-lg text-gray-600 mt-6 font-medium">
-              Built for agencies that can sell, but need technical delivery muscle.
+              Instead of forcing agencies to choose between generic software or a large in-house build cost, Opervia offers a third path: a structured technical partnership designed for delivery, launch, and long-term support.
             </p>
           </div>
         </div>

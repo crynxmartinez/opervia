@@ -107,9 +107,9 @@ export default function HowItWorksPage() {
                   <span className="text-2xl font-bold text-blue-600">1</span>
                 </div>
                 <div>
-                  <h3 className="text-3xl font-bold text-gray-900 mb-2">Activation & Planning</h3>
+                  <h3 className="text-3xl font-bold text-gray-900 mb-2">Partnership Activation</h3>
                   <div className="inline-flex items-center gap-2 px-4 py-2 bg-blue-50 border border-blue-200 rounded-lg">
-                    <span className="text-lg font-bold text-blue-600">$5,000 Activation Fee</span>
+                    <span className="text-lg font-bold text-blue-600">Starting at $5,000</span>
                   </div>
                 </div>
               </div>
@@ -195,9 +195,9 @@ export default function HowItWorksPage() {
                   <span className="text-2xl font-bold text-purple-600">2</span>
                 </div>
                 <div>
-                  <h3 className="text-3xl font-bold text-gray-900 mb-2">Build & Pre-Launch</h3>
+                  <h3 className="text-3xl font-bold text-gray-900 mb-2">Build & Launch</h3>
                   <div className="inline-flex items-center gap-2 px-4 py-2 bg-purple-50 border border-purple-200 rounded-lg">
-                    <span className="text-lg font-bold text-purple-600">$5,000 Pre-Launch Fee</span>
+                    <span className="text-lg font-bold text-purple-600">From $5,000/month</span>
                   </div>
                 </div>
               </div>
@@ -294,7 +294,7 @@ export default function HowItWorksPage() {
                   <h3 className="text-3xl font-bold text-gray-900 mb-2">Launch & Ongoing Technical Partnership</h3>
                   <div className="space-y-2">
                     <div className="inline-flex items-center gap-2 px-4 py-2 bg-green-50 border border-green-200 rounded-lg">
-                      <span className="text-lg font-bold text-green-600">$5,000/month</span>
+                      <span className="text-lg font-bold text-green-600">From $5,000/month</span>
                     </div>
                     <div className="inline-flex items-center gap-2 px-4 py-2 bg-green-50 border border-green-200 rounded-lg ml-2">
                       <Clock className="w-4 h-4 text-green-600" />

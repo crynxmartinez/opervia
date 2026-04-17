@@ -41,20 +41,20 @@ export default function Home() {
 
             {/* Main Heading with Text Shadow for Crispness */}
             <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold leading-tight drop-shadow-2xl" style={{ textShadow: '0 4px 20px rgba(0,0,0,0.5)' }}>
-              <span className="text-white">You Close the Deal.</span>
+              <span className="text-white">You Grow the Agency.</span>
               <br />
               <span className="text-white">
                 We Build the{' '}
                 <span className="relative inline-block">
-                  System.
+                  Infrastructure Behind It.
                   <span className="absolute -bottom-2 left-0 w-full h-1.5 bg-gradient-to-r from-cyan-400 via-blue-400 to-purple-400 rounded-full animate-gradient" style={{ backgroundSize: '200% auto' }} />
                 </span>
               </span>
             </h1>
 
             {/* Subheading - Brighter, Benefit-Focused */}
-            <p className="text-xl md:text-2xl text-white font-medium max-w-3xl mx-auto leading-relaxed drop-shadow-lg" style={{ textShadow: '0 2px 10px rgba(0,0,0,0.4)' }}>
-              White-label technical partner for agencies. We build custom systems, portals, dashboards, and backend workflows—<strong className="text-white">so you can deliver like a real technical team without hiring one in-house.</strong>
+            <p className="text-xl md:text-2xl text-white font-medium max-w-4xl mx-auto leading-relaxed drop-shadow-lg" style={{ textShadow: '0 2px 10px rgba(0,0,0,0.4)' }}>
+              Opervia is the white-label technical partner for agencies that need custom systems, GoHighLevel integration, admin control, client dashboards, and ongoing backend support.
             </p>
 
             {/* CTA Buttons - Stronger Design */}

@@ -9,22 +9,15 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        brand: {
-          cyan: '#00D4FF',
-          'cyan-light': '#33DDFF',
-          'cyan-dark': '#00B8E6',
-          blue: '#0047AB',
-          'blue-light': '#1A5FBF',
-          'blue-dark': '#003D99',
-          green: '#7FFF00',
-          'green-light': '#99FF33',
-          'green-dark': '#66CC00',
-          purple: '#6B00FF',
-          'purple-light': '#8533FF',
-          'purple-dark': '#5500CC',
-          navy: '#001F3F',
-          'navy-light': '#003366',
-        },
+        // Electric Infra Theme - Primary Colors
+        'infra-navy': '#0F1B3D',
+        'infra-cyan': '#26C6FF',
+        'infra-blue': '#1E88FF',
+        'infra-deep-blue': '#2B4DFF',
+        'infra-violet': '#6A35FF',
+        // Accent Colors (use sparingly)
+        'infra-lime': '#9BEA4D',
+        'infra-yellow-green': '#C8F24A',
       },
       animation: {
         'float': 'float 6s ease-in-out infinite',

@@ -17,10 +17,10 @@ export function Header() {
             <Image 
               src="/logo-full.png" 
               alt="Opervia Logo" 
-              width={150} 
-              height={40}
+              width={180} 
+              height={48}
               priority
-              className="h-8 w-auto"
+              className="h-10 w-auto"
             />
           </Link>
 

@@ -4,16 +4,16 @@ import { ArrowRight } from "lucide-react"
 
 export function Footer() {
   return (
-    <footer className="bg-brand-navy text-gray-300 py-12">
+    <footer className="bg-infra-navy text-gray-300 py-12">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid md:grid-cols-4 gap-8 mb-8">
           <div>
             <Image 
               src="/logo-full.png" 
               alt="Opervia Logo" 
-              width={150} 
-              height={40}
-              className="h-8 w-auto mb-4 brightness-0 invert"
+              width={180} 
+              height={48}
+              className="h-10 w-auto mb-4 brightness-0 invert"
             />
             <p className="text-sm text-gray-400">
               White-label technical partner for agencies building the future.

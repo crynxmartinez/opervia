@@ -44,11 +44,7 @@ export default function Home() {
               <span className="text-white text-5xl md:text-7xl lg:text-8xl block">You Grow the Agency.</span>
               <br />
               <span className="text-white text-4xl md:text-6xl lg:text-7xl block">
-                We Build the{' '}
-                <span className="relative inline-block">
-                  Infrastructure Behind It.
-                  <span className="absolute -bottom-2 left-0 w-full h-1.5 bg-gradient-to-r from-infra-blue via-infra-deep-blue to-infra-teal rounded-full animate-gradient" style={{ backgroundSize: '200% auto' }} />
-                </span>
+                We Build the Infrastructure Behind It.
               </span>
             </h1>
 

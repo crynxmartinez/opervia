@@ -2,6 +2,7 @@
 
 import Link from "next/link"
 import { ArrowRight, Sparkles, CheckCircle2, Rocket, Settings, TrendingUp, Target } from "lucide-react"
+import { pexelsImages } from "@/lib/pexels"
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
 
@@ -11,9 +12,18 @@ export default function HowItWorksPage() {
       <Header />
 
       {/* Hero Section */}
-      <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-infra-sky/60 via-infra-blue/70 to-infra-teal/50">
-        {/* Background Pattern */}
-        <div className="absolute inset-0 opacity-10">
+      <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+        {/* Background Image */}
+        <div className="absolute inset-0 z-0">
+          <img
+            src={pexelsImages.office}
+            alt="Modern workspace"
+            className="w-full h-full object-cover"
+          />
+          {/* Blue-Green Gradient Overlay */}
+          <div className="absolute inset-0 bg-gradient-to-br from-infra-sky/60 via-infra-blue/70 to-infra-teal/50" />
+          
+          {/* Floating Particles */}
           <div className="absolute top-20 left-20 w-72 h-72 bg-infra-blue/30 rounded-full blur-3xl animate-float" />
           <div className="absolute bottom-20 right-20 w-96 h-96 bg-infra-teal/30 rounded-full blur-3xl animate-float" style={{ animationDelay: '2s' }} />
         </div>
@@ -33,11 +43,7 @@ export default function HowItWorksPage() {
               <span className="text-white">How the Opervia</span>
               <br />
               <span className="text-white">
-                Partnership{' '}
-                <span className="relative inline-block">
-                  Works
-                  <span className="absolute -bottom-2 left-0 w-full h-1.5 bg-gradient-to-r from-infra-blue via-infra-deep-blue to-infra-teal rounded-full animate-gradient" style={{ backgroundSize: '200% auto' }} />
-                </span>
+                Partnership Works
               </span>
             </h1>
 

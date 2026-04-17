@@ -8,6 +8,24 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      colors: {
+        brand: {
+          cyan: '#00D4FF',
+          'cyan-light': '#33DDFF',
+          'cyan-dark': '#00B8E6',
+          blue: '#0047AB',
+          'blue-light': '#1A5FBF',
+          'blue-dark': '#003D99',
+          green: '#7FFF00',
+          'green-light': '#99FF33',
+          'green-dark': '#66CC00',
+          purple: '#6B00FF',
+          'purple-light': '#8533FF',
+          'purple-dark': '#5500CC',
+          navy: '#001F3F',
+          'navy-light': '#003366',
+        },
+      },
       animation: {
         'float': 'float 6s ease-in-out infinite',
         'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',

@@ -16,15 +16,15 @@ export default function Home() {
             alt="Modern office"
             className="w-full h-full object-cover"
           />
-          {/* Darker, Refined Overlay for Better Contrast */}
-          <div className="absolute inset-0 bg-gradient-to-br from-purple-900/80 via-blue-900/75 to-purple-900/80" />
+          {/* Logo-themed Gradient Overlay */}
+          <div className="absolute inset-0 bg-gradient-to-br from-brand-cyan/70 via-brand-blue/80 to-brand-purple/75" />
           
           {/* Animated Gradient Overlay */}
           <div className="absolute inset-0 bg-gradient-animate opacity-10" />
           
           {/* Floating Particles */}
-          <div className="absolute top-20 left-20 w-72 h-72 bg-blue-500/30 rounded-full blur-3xl animate-float" />
-          <div className="absolute bottom-20 right-20 w-96 h-96 bg-purple-500/30 rounded-full blur-3xl animate-float" style={{ animationDelay: '2s' }} />
+          <div className="absolute top-20 left-20 w-72 h-72 bg-brand-cyan/30 rounded-full blur-3xl animate-float" />
+          <div className="absolute bottom-20 right-20 w-96 h-96 bg-brand-purple/30 rounded-full blur-3xl animate-float" style={{ animationDelay: '2s' }} />
         </div>
 
         {/* Hero Content */}
@@ -47,7 +47,7 @@ export default function Home() {
                 We Build the{' '}
                 <span className="relative inline-block">
                   Infrastructure Behind It.
-                  <span className="absolute -bottom-2 left-0 w-full h-1.5 bg-gradient-to-r from-cyan-400 via-blue-400 to-purple-400 rounded-full animate-gradient" style={{ backgroundSize: '200% auto' }} />
+                  <span className="absolute -bottom-2 left-0 w-full h-1.5 bg-gradient-to-r from-brand-cyan via-brand-blue to-brand-purple rounded-full animate-gradient" style={{ backgroundSize: '200% auto' }} />
                 </span>
               </span>
             </h1>
@@ -60,12 +60,12 @@ export default function Home() {
             {/* CTA Buttons - Stronger Design */}
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-4">
               <Link href="/contact">
-                <button className="group relative px-8 py-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-xl font-bold text-lg overflow-hidden transition-all duration-300 hover:scale-105 shadow-2xl hover:shadow-3xl hover:shadow-purple-500/50">
+                <button className="group relative px-8 py-4 bg-gradient-to-r from-brand-cyan to-brand-blue text-white rounded-xl font-bold text-lg overflow-hidden transition-all duration-300 hover:scale-105 shadow-2xl hover:shadow-3xl hover:shadow-brand-cyan/50">
                   <span className="relative z-10 flex items-center gap-2">
                     See How It Works
                     <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                   </span>
-                  <div className="absolute inset-0 bg-gradient-to-r from-blue-700 to-purple-700 opacity-0 group-hover:opacity-100 transition-opacity" />
+                  <div className="absolute inset-0 bg-gradient-to-r from-brand-blue to-brand-purple opacity-0 group-hover:opacity-100 transition-opacity" />
                 </button>
               </Link>
               <Link href="/services">

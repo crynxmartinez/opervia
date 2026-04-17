@@ -1,4 +1,5 @@
 import Link from "next/link"
+import Image from "next/image"
 import { ArrowRight } from "lucide-react"
 
 export function Footer() {
@@ -7,7 +8,13 @@ export function Footer() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid md:grid-cols-4 gap-8 mb-8">
           <div>
-            <h3 className="text-white font-bold text-xl mb-4">Opervia</h3>
+            <Image 
+              src="/logo-full.png" 
+              alt="Opervia Logo" 
+              width={150} 
+              height={40}
+              className="h-8 w-auto mb-4 brightness-0 invert"
+            />
             <p className="text-sm text-gray-400">
               White-label technical partner for agencies building the future.
             </p>

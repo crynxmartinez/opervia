@@ -4,6 +4,11 @@ import "./globals.css"
 export const metadata: Metadata = {
   title: "Opervia | White-Label Technical Partner for Agencies",
   description: "White-label technical backbone for agencies. Custom client portals, GHL API development, and fulfillment systems.",
+  icons: {
+    icon: '/favicon.png',
+    shortcut: '/favicon.png',
+    apple: '/favicon.png',
+  },
 }
 
 export default function RootLayout({

@@ -20,7 +20,7 @@ export default function PricingPage() {
           <div className="absolute top-1/2 left-1/2 w-80 h-80 bg-cyan-500/20 rounded-full blur-3xl animate-float" style={{ animationDelay: '4s' }} />
         </div>
 
-        <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8 text-center pt-20">
+        <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8 text-center pt-32 md:pt-24">
           <div className="max-w-5xl mx-auto space-y-8">
             {/* Premium Badge */}
             <div className="flex items-center justify-center">

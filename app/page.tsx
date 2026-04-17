@@ -28,7 +28,7 @@ export default function Home() {
         </div>
 
         {/* Hero Content */}
-        <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8 text-center pt-24 sm:pt-20">
+        <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8 text-center pt-32 md:pt-24">
           <div className="max-w-5xl mx-auto space-y-8">
             {/* Premium Badge - Larger, Brighter, Clearer */}
             <div className="flex items-center justify-center">

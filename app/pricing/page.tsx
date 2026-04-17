@@ -11,11 +11,11 @@ export default function PricingPage() {
       <Header />
 
       {/* Hero Section */}
-      <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-purple-900 via-blue-900 to-purple-900">
+      <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-brand-cyan/70 via-brand-blue/80 to-brand-purple/75">
         {/* Background Pattern */}
         <div className="absolute inset-0 opacity-10">
-          <div className="absolute top-20 left-20 w-72 h-72 bg-blue-500/30 rounded-full blur-3xl animate-float" />
-          <div className="absolute bottom-20 right-20 w-96 h-96 bg-purple-500/30 rounded-full blur-3xl animate-float" style={{ animationDelay: '2s' }} />
+          <div className="absolute top-20 left-20 w-72 h-72 bg-brand-cyan/30 rounded-full blur-3xl animate-float" />
+          <div className="absolute bottom-20 right-20 w-96 h-96 bg-brand-purple/30 rounded-full blur-3xl animate-float" style={{ animationDelay: '2s' }} />
           <div className="absolute top-1/2 left-1/2 w-80 h-80 bg-cyan-500/20 rounded-full blur-3xl animate-float" style={{ animationDelay: '4s' }} />
         </div>
 
@@ -36,7 +36,7 @@ export default function PricingPage() {
               <span className="text-white">
                 <span className="relative inline-block">
                   Level That Fits Your Agency
-                  <span className="absolute -bottom-2 left-0 w-full h-1.5 bg-gradient-to-r from-cyan-400 via-blue-400 to-purple-400 rounded-full animate-gradient" style={{ backgroundSize: '200% auto' }} />
+                  <span className="absolute -bottom-2 left-0 w-full h-1.5 bg-gradient-to-r from-brand-cyan via-brand-blue to-brand-purple rounded-full animate-gradient" style={{ backgroundSize: '200% auto' }} />
                 </span>
               </span>
             </h1>
@@ -552,7 +552,7 @@ export default function PricingPage() {
       </section>
 
       {/* SECTION 6: Final CTA */}
-      <section className="py-24 bg-gradient-to-br from-purple-900 via-blue-900 to-purple-900">
+      <section className="py-24 bg-gradient-to-br from-brand-blue via-brand-purple to-brand-navy">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">

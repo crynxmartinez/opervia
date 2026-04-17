@@ -11,11 +11,11 @@ export default function HowItWorksPage() {
       <Header />
 
       {/* Hero Section */}
-      <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-purple-900/80 via-blue-900/75 to-purple-900/80">
+      <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-brand-cyan/70 via-brand-blue/80 to-brand-purple/75">
         {/* Background Pattern */}
         <div className="absolute inset-0 opacity-10">
-          <div className="absolute top-20 left-20 w-72 h-72 bg-blue-500/30 rounded-full blur-3xl animate-float" />
-          <div className="absolute bottom-20 right-20 w-96 h-96 bg-purple-500/30 rounded-full blur-3xl animate-float" style={{ animationDelay: '2s' }} />
+          <div className="absolute top-20 left-20 w-72 h-72 bg-brand-cyan/30 rounded-full blur-3xl animate-float" />
+          <div className="absolute bottom-20 right-20 w-96 h-96 bg-brand-purple/30 rounded-full blur-3xl animate-float" style={{ animationDelay: '2s' }} />
         </div>
 
         <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8 text-center pt-32 md:pt-24">
@@ -36,7 +36,7 @@ export default function HowItWorksPage() {
                 Partnership{' '}
                 <span className="relative inline-block">
                   Works
-                  <span className="absolute -bottom-2 left-0 w-full h-1.5 bg-gradient-to-r from-cyan-400 via-blue-400 to-purple-400 rounded-full animate-gradient" style={{ backgroundSize: '200% auto' }} />
+                  <span className="absolute -bottom-2 left-0 w-full h-1.5 bg-gradient-to-r from-brand-cyan via-brand-blue to-brand-purple rounded-full animate-gradient" style={{ backgroundSize: '200% auto' }} />
                 </span>
               </span>
             </h1>
@@ -54,7 +54,7 @@ export default function HowItWorksPage() {
             {/* CTAs */}
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-4">
               <Link href="/contact">
-                <button className="group relative px-8 py-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-xl font-bold text-lg overflow-hidden transition-all duration-300 hover:scale-105 shadow-2xl hover:shadow-3xl hover:shadow-purple-500/50">
+                <button className="group relative px-8 py-4 bg-gradient-to-r from-brand-cyan to-brand-blue text-white rounded-xl font-bold text-lg overflow-hidden transition-all duration-300 hover:scale-105 shadow-2xl hover:shadow-3xl hover:shadow-brand-cyan/50">
                   <span className="relative z-10 flex items-center gap-2">
                     Book a Strategy Call
                     <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />

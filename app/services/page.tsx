@@ -86,15 +86,15 @@ export default function ServicesPage() {
         </div>
       </section>
 
-      {/* Core Services Section */}
+      {/* Core Partner Showcase Section */}
       <section className="py-24 bg-gradient-to-b from-gray-50 to-white">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl mx-auto text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold mb-4 text-gray-900">
-              Core Services
+              Everything Inside Core Partner
             </h2>
-            <p className="text-xl text-gray-600">
-              Six service categories that power your agency's technical delivery
+            <p className="text-xl text-gray-600 leading-relaxed">
+              Our flagship backend partnership for agencies that need more than setup—custom systems, GoHighLevel integration, admin control, client dashboards, and ongoing technical support.
             </p>
           </div>
 

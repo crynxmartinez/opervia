@@ -40,10 +40,10 @@ export default function Home() {
             </div>
 
             {/* Main Heading with Text Shadow for Crispness */}
-            <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold leading-tight drop-shadow-2xl" style={{ textShadow: '0 4px 20px rgba(0,0,0,0.5)' }}>
-              <span className="text-white">You Grow the Agency.</span>
+            <h1 className="font-bold leading-tight drop-shadow-2xl" style={{ textShadow: '0 4px 20px rgba(0,0,0,0.5)' }}>
+              <span className="text-white text-5xl md:text-7xl lg:text-8xl block">You Grow the Agency.</span>
               <br />
-              <span className="text-white">
+              <span className="text-white text-4xl md:text-6xl lg:text-7xl block">
                 We Build the{' '}
                 <span className="relative inline-block">
                   Infrastructure Behind It.

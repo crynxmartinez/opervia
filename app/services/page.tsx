@@ -72,20 +72,6 @@ export default function ServicesPage() {
         </div>
       </section>
 
-      {/* Positioning Intro */}
-      <section className="py-16 bg-white">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-4xl mx-auto text-center">
-            <p className="text-xl md:text-2xl text-gray-700 leading-relaxed">
-              Opervia is built for agencies that need more than a one-time hire. We act as the <strong className="text-gray-900">backend partner for agencies</strong>—building custom systems, dashboards, <strong className="text-gray-900">custom client portal development</strong>, GoHighLevel integrations, and backend workflows that help your agency deliver at a higher level.
-            </p>
-            <p className="text-lg text-gray-600 mt-6 font-medium">
-              Instead of forcing agencies to choose between generic software or a large in-house build cost, Opervia offers a third path: a structured technical partnership designed for delivery, launch, and long-term support.
-            </p>
-          </div>
-        </div>
-      </section>
-
       {/* Core Partner Showcase Section */}
       <section className="py-24 bg-gradient-to-b from-gray-50 to-white">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">

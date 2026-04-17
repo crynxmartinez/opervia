@@ -72,17 +72,6 @@ export default function HowItWorksPage() {
         </div>
       </section>
 
-      {/* Simple Overview Section */}
-      <section className="py-16 bg-white">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-4xl mx-auto text-center">
-            <p className="text-xl md:text-2xl text-gray-700 leading-relaxed">
-              Opervia works through a <strong className="text-gray-900">structured annual partnership model</strong>. Instead of charging one large upfront fee for a custom web app and backend system, we break the engagement into a <strong className="text-gray-900">build start phase</strong>, a <strong className="text-gray-900">pre-launch phase</strong>, and a <strong className="text-gray-900">12-month technical partnership</strong>. This allows agencies to launch stronger <strong className="text-gray-900">GoHighLevel-powered systems</strong> while gaining ongoing <strong className="text-gray-900">backend partner support</strong>, <strong className="text-gray-900">white-label technical fulfillment</strong>, and system improvements.
-            </p>
-          </div>
-        </div>
-      </section>
-
       {/* 3-Phase Model Section */}
       <section className="py-24 bg-gradient-to-b from-gray-50 to-white">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">

@@ -18,7 +18,7 @@ export default function HowItWorksPage() {
           <div className="absolute bottom-20 right-20 w-96 h-96 bg-purple-500/30 rounded-full blur-3xl animate-float" style={{ animationDelay: '2s' }} />
         </div>
 
-        <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8 text-center pt-24 sm:pt-20">
           <div className="max-w-5xl mx-auto space-y-8">
             {/* Premium Badge */}
             <div className="flex items-center justify-center">

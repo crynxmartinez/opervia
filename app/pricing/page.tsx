@@ -23,9 +23,11 @@ export default function PricingPage() {
         <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8 text-center pt-20">
           <div className="max-w-5xl mx-auto space-y-8">
             {/* Premium Badge */}
-            <div className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-white/20 backdrop-blur-md border-2 border-white/30 shadow-[0_0_30px_rgba(255,255,255,0.3)] animate-float">
-              <Sparkles className="w-5 h-5 text-yellow-300 animate-pulse-slow" />
-              <span className="text-white font-bold text-base tracking-wide">Fixed Investment Model</span>
+            <div className="flex items-center justify-center">
+              <div className="inline-flex items-center gap-2 px-4 sm:px-6 py-2 sm:py-3 rounded-full bg-white/20 backdrop-blur-md border-2 border-white/30 shadow-[0_0_30px_rgba(255,255,255,0.3)] animate-float">
+                <Sparkles className="w-4 h-4 sm:w-5 sm:h-5 text-yellow-300 animate-pulse-slow" />
+                <span className="text-white font-bold text-sm sm:text-base tracking-wide">Fixed Investment Model</span>
+              </div>
             </div>
 
             {/* Headline */}
@@ -672,9 +674,11 @@ export default function PricingPage() {
 
         <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="max-w-4xl mx-auto">
-            <div className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-white/20 backdrop-blur-md border-2 border-white/30 shadow-[0_0_30px_rgba(255,255,255,0.3)] mb-6 animate-float">
-              <Sparkles className="w-5 h-5 text-yellow-300 animate-pulse-slow" />
-              <span className="text-white font-bold text-base tracking-wide">Ready to Scale?</span>
+            <div className="flex items-center justify-center">
+              <div className="inline-flex items-center gap-2 px-4 sm:px-6 py-2 sm:py-3 rounded-full bg-white/20 backdrop-blur-md border-2 border-white/30 shadow-[0_0_30px_rgba(255,255,255,0.3)] mb-6 animate-float">
+                <Sparkles className="w-4 h-4 sm:w-5 sm:h-5 text-yellow-300 animate-pulse-slow" />
+                <span className="text-white font-bold text-sm sm:text-base tracking-wide">Ready to Scale?</span>
+              </div>
             </div>
 
             <h2 className="text-4xl md:text-6xl font-bold mb-6 drop-shadow-2xl" style={{ textShadow: '0 4px 20px rgba(0,0,0,0.5)' }}>

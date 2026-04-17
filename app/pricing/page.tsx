@@ -16,7 +16,6 @@ export default function PricingPage() {
         <div className="absolute inset-0 opacity-10">
           <div className="absolute top-20 left-20 w-72 h-72 bg-brand-cyan/30 rounded-full blur-3xl animate-float" />
           <div className="absolute bottom-20 right-20 w-96 h-96 bg-brand-purple/30 rounded-full blur-3xl animate-float" style={{ animationDelay: '2s' }} />
-          <div className="absolute top-1/2 left-1/2 w-80 h-80 bg-cyan-500/20 rounded-full blur-3xl animate-float" style={{ animationDelay: '4s' }} />
         </div>
 
         <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8 text-center pt-32 md:pt-24">
@@ -47,23 +46,24 @@ export default function PricingPage() {
             </p>
 
             {/* Supporting line */}
-            <p className="text-lg md:text-xl text-cyan-300 italic font-semibold">
+            <p className="text-lg md:text-xl text-white/90 max-w-2xl mx-auto italic">
               You close the client. We build the system behind your service.
             </p>
 
             {/* CTAs */}
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-4">
               <a href="#pricing-cards">
-                <button className="group relative px-8 py-4 bg-white text-blue-600 rounded-xl font-bold text-lg overflow-hidden transition-all duration-300 hover:scale-105 shadow-2xl hover:shadow-3xl">
+                <button className="group relative px-8 py-4 bg-gradient-to-r from-brand-cyan to-brand-blue text-white rounded-xl font-bold text-lg overflow-hidden transition-all duration-300 hover:scale-105 shadow-2xl hover:shadow-3xl hover:shadow-brand-cyan/50">
                   <span className="relative z-10 flex items-center gap-2">
                     View Plans
                     <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                   </span>
+                  <div className="absolute inset-0 bg-gradient-to-r from-brand-blue to-brand-purple opacity-0 group-hover:opacity-100 transition-opacity" />
                 </button>
               </a>
               <Link href="/contact">
                 <button className="px-8 py-4 bg-white/20 backdrop-blur-md border-2 border-white/40 text-white rounded-xl font-bold text-lg hover:bg-white/30 transition-all duration-300 hover:scale-105 shadow-lg">
-                  Book a Strategy Call
+                  Book a Call
                 </button>
               </Link>
             </div>

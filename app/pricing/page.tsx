@@ -26,17 +26,17 @@ export default function PricingPage() {
             <div className="flex items-center justify-center">
               <div className="inline-flex items-center gap-2 px-4 sm:px-6 py-2 sm:py-3 rounded-full bg-white/20 backdrop-blur-md border-2 border-white/30 shadow-[0_0_30px_rgba(255,255,255,0.3)] animate-float">
                 <Sparkles className="w-4 h-4 sm:w-5 sm:h-5 text-yellow-300 animate-pulse-slow" />
-                <span className="text-white font-bold text-sm sm:text-base tracking-wide">Fixed Investment Model</span>
+                <span className="text-white font-bold text-sm sm:text-base tracking-wide">Transparent Pricing • No Hidden Fees • 12-Month Partnership</span>
               </div>
             </div>
 
             {/* Headline */}
             <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold leading-tight drop-shadow-2xl" style={{ textShadow: '0 4px 20px rgba(0,0,0,0.5)' }}>
-              <span className="text-white">Investment in Your</span>
+              <span className="text-white">Choose the Partnership</span>
               <br />
               <span className="text-white">
                 <span className="relative inline-block">
-                  Technical Future
+                  Level That Fits Your Agency
                   <span className="absolute -bottom-2 left-0 w-full h-1.5 bg-gradient-to-r from-cyan-400 via-blue-400 to-purple-400 rounded-full animate-gradient" style={{ backgroundSize: '200% auto' }} />
                 </span>
               </span>
@@ -44,107 +44,228 @@ export default function PricingPage() {
 
             {/* Subheadline */}
             <p className="text-xl md:text-2xl text-white font-medium max-w-4xl mx-auto leading-relaxed drop-shadow-lg" style={{ textShadow: '0 2px 10px rgba(0,0,0,0.4)' }}>
-              This is not just a project fee. Opervia is a technical partnership built for agencies that need <strong>GoHighLevel development</strong>, <strong>custom portals</strong>, <strong>backend systems</strong>, and ongoing <strong>white-label technical support</strong>.
+              Opervia offers structured backend partnership plans for agencies that need custom systems, GoHighLevel integration, dashboards, and ongoing technical support.
             </p>
 
             {/* Supporting line */}
-            <p className="text-lg md:text-xl text-cyan-300 italic font-semibold animate-pulse-slow">
-              Transparent. Fixed. Premium.
+            <p className="text-lg md:text-xl text-cyan-300 italic font-semibold">
+              You close the client. We build the system behind your service.
             </p>
 
-            {/* Price Display */}
-            <div className="inline-block bg-white/10 backdrop-blur-md border-2 border-white/30 rounded-2xl p-8 shadow-[0_0_40px_rgba(255,255,255,0.2)]">
-              <div className="text-xl text-white/90 font-semibold mb-2">
-                From
-              </div>
-              <div className="text-6xl md:text-7xl font-bold text-white mb-2">
-                $5,000/month
-              </div>
-              <div className="text-sm text-white/70 mt-2">
-                for a 12-month technical partnership
-              </div>
-            </div>
+            {/* Small pricing hint */}
+            <p className="text-lg text-white/80">
+              Starting at <span className="font-bold text-white">$3,000/month</span>
+            </p>
 
             {/* CTAs */}
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-4">
-              <Link href="/contact">
+              <a href="#pricing-cards">
                 <button className="group relative px-8 py-4 bg-white text-blue-600 rounded-xl font-bold text-lg overflow-hidden transition-all duration-300 hover:scale-105 shadow-2xl hover:shadow-3xl">
                   <span className="relative z-10 flex items-center gap-2">
-                    Book Strategy Call
+                    View Plans
                     <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                   </span>
                 </button>
-              </Link>
-              <a href="#breakdown">
-                <button className="px-8 py-4 bg-white/20 backdrop-blur-md border-2 border-white/40 text-white rounded-xl font-bold text-lg hover:bg-white/30 transition-all duration-300 hover:scale-105 shadow-lg">
-                  See Investment Breakdown
-                </button>
               </a>
+              <Link href="/contact">
+                <button className="px-8 py-4 bg-white/20 backdrop-blur-md border-2 border-white/40 text-white rounded-xl font-bold text-lg hover:bg-white/30 transition-all duration-300 hover:scale-105 shadow-lg">
+                  Book a Strategy Call
+                </button>
+              </Link>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Quick Investment Visual */}
-      <section className="py-24 bg-gradient-to-b from-white to-gray-50">
+      {/* Pricing Cards Section */}
+      <section id="pricing-cards" className="py-24 bg-gradient-to-b from-white to-gray-50">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-5xl mx-auto text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold mb-4 text-gray-900">
-              One Partnership. Three Phases. Clear Value.
-            </h2>
-            <p className="text-xl text-gray-600">
-              A structured approach to building, launching, and supporting your custom system
-            </p>
-          </div>
-
-          {/* Timeline Visual */}
-          <div className="max-w-6xl mx-auto">
-            <div className="grid md:grid-cols-3 gap-8 mb-12">
-              {/* Phase 1 */}
-              <div className="relative">
-                <div className="bg-gradient-to-br from-blue-50 to-cyan-50 border-2 border-blue-300 rounded-2xl p-6 text-center hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
-                  <div className="w-16 h-16 bg-blue-500 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
-                    <span className="text-3xl font-bold text-white">1</span>
+          <div className="max-w-7xl mx-auto">
+            <div className="grid md:grid-cols-3 gap-8">
+              {/* Card 1: Starter Partner */}
+              <div className="relative bg-white border-2 border-blue-200 rounded-2xl p-8 hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
+                {/* Badge */}
+                <div className="absolute top-6 right-6">
+                  <div className="px-3 py-1 bg-blue-100 rounded-full">
+                    <span className="text-xs font-bold text-blue-700">LEAN LAUNCH</span>
                   </div>
-                  <h3 className="text-2xl font-bold text-gray-900 mb-2">Partnership Activation</h3>
-                  <div className="text-4xl font-bold text-blue-600 mb-2">Starting at $5,000</div>
-                  <div className="text-sm text-gray-600 font-semibold">TO START</div>
-                  <div className="mt-4 text-sm text-gray-700">Discovery & Planning</div>
                 </div>
-                {/* Arrow */}
-                <div className="hidden md:block absolute top-1/2 -right-4 transform -translate-y-1/2">
-                  <ArrowRight className="w-8 h-8 text-gray-400" />
+
+                <div className="mb-6">
+                  <h3 className="text-3xl font-bold text-gray-900 mb-4">Starter Partner</h3>
+                  <p className="text-gray-600 mb-6">For agencies that need a lean custom system with the core foundation in place.</p>
+                  
+                  {/* Pricing */}
+                  <div className="mb-2">
+                    <span className="text-2xl font-bold text-blue-600">$5,000</span>
+                    <span className="text-gray-600"> to start</span>
+                  </div>
+                  <div className="mb-2">
+                    <span className="text-4xl font-bold text-gray-900">$3,000</span>
+                    <span className="text-gray-600">/month</span>
+                  </div>
+                  <div className="text-sm text-gray-500 mb-4">12-month term</div>
+                  <div className="text-xs text-gray-400">First year total: $41,000</div>
                 </div>
+
+                {/* Key Features */}
+                <div className="space-y-3 mb-8">
+                  <div className="flex items-start gap-2">
+                    <CheckCircle2 className="w-5 h-5 text-blue-600 mt-0.5 flex-shrink-0" />
+                    <p className="text-sm text-gray-700">1 website (4 pages + blog)</p>
+                  </div>
+                  <div className="flex items-start gap-2">
+                    <CheckCircle2 className="w-5 h-5 text-blue-600 mt-0.5 flex-shrink-0" />
+                    <p className="text-sm text-gray-700">Admin + Client dashboards</p>
+                  </div>
+                  <div className="flex items-start gap-2">
+                    <CheckCircle2 className="w-5 h-5 text-blue-600 mt-0.5 flex-shrink-0" />
+                    <p className="text-sm text-gray-700">GoHighLevel integration</p>
+                  </div>
+                  <div className="flex items-start gap-2">
+                    <CheckCircle2 className="w-5 h-5 text-blue-600 mt-0.5 flex-shrink-0" />
+                    <p className="text-sm text-gray-700">Up to 5 client-side features</p>
+                  </div>
+                  <div className="flex items-start gap-2">
+                    <CheckCircle2 className="w-5 h-5 text-blue-600 mt-0.5 flex-shrink-0" />
+                    <p className="text-sm text-gray-700">Up to 3 additional integrations</p>
+                  </div>
+                  <div className="flex items-start gap-2">
+                    <CheckCircle2 className="w-5 h-5 text-blue-600 mt-0.5 flex-shrink-0" />
+                    <p className="text-sm text-gray-700">2 strategy calls/month</p>
+                  </div>
+                </div>
+
+                {/* CTA */}
+                <Link href="/contact">
+                  <button className="w-full px-6 py-3 bg-blue-600 text-white rounded-xl font-bold hover:bg-blue-700 transition-all duration-300 hover:scale-105">
+                    Get Started
+                  </button>
+                </Link>
               </div>
 
-              {/* Phase 2 */}
-              <div className="relative">
-                <div className="bg-gradient-to-br from-purple-50 to-pink-50 border-2 border-purple-300 rounded-2xl p-6 text-center hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
-                  <div className="w-16 h-16 bg-purple-500 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
-                    <span className="text-3xl font-bold text-white">2</span>
+              {/* Card 2: Core Partner (FEATURED) */}
+              <div className="relative bg-gradient-to-br from-purple-50 via-blue-50 to-pink-50 border-4 border-purple-400 rounded-2xl p-8 shadow-2xl transform md:scale-105 hover:scale-110 transition-all duration-300">
+                {/* Featured Badge */}
+                <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
+                  <div className="px-6 py-2 bg-gradient-to-r from-purple-600 to-blue-600 rounded-full shadow-lg">
+                    <span className="text-sm font-bold text-white">⭐ MOST POPULAR</span>
                   </div>
-                  <h3 className="text-2xl font-bold text-gray-900 mb-2">Build & Launch</h3>
-                  <div className="text-4xl font-bold text-purple-600 mb-2">From $5,000/month</div>
-                  <div className="text-sm text-gray-600 font-semibold">MONTHLY PARTNERSHIP</div>
-                  <div className="mt-4 text-sm text-gray-700">Custom system development</div>
                 </div>
-                {/* Arrow */}
-                <div className="hidden md:block absolute top-1/2 -right-4 transform -translate-y-1/2">
-                  <ArrowRight className="w-8 h-8 text-gray-400" />
+
+                <div className="mb-6 mt-4">
+                  <h3 className="text-3xl font-bold text-gray-900 mb-4">Core Partner</h3>
+                  <p className="text-gray-700 mb-6">For agencies that need a stronger backend technical partner with broader integrations and dedicated support.</p>
+                  
+                  {/* Pricing */}
+                  <div className="mb-2">
+                    <span className="text-2xl font-bold text-purple-600">$5,000</span>
+                    <span className="text-gray-700"> to start</span>
+                  </div>
+                  <div className="mb-2">
+                    <span className="text-4xl font-bold text-gray-900">$5,000</span>
+                    <span className="text-gray-700">/month</span>
+                  </div>
+                  <div className="text-sm text-gray-600 mb-4">12-month term</div>
+                  <div className="text-xs text-gray-500">First year total: $65,000</div>
                 </div>
+
+                {/* Key Features */}
+                <div className="space-y-3 mb-8">
+                  <div className="flex items-start gap-2">
+                    <CheckCircle2 className="w-5 h-5 text-purple-600 mt-0.5 flex-shrink-0" />
+                    <p className="text-sm text-gray-800 font-medium">1 website (4 pages + blog)</p>
+                  </div>
+                  <div className="flex items-start gap-2">
+                    <CheckCircle2 className="w-5 h-5 text-purple-600 mt-0.5 flex-shrink-0" />
+                    <p className="text-sm text-gray-800 font-medium">Admin + Client dashboards</p>
+                  </div>
+                  <div className="flex items-start gap-2">
+                    <CheckCircle2 className="w-5 h-5 text-purple-600 mt-0.5 flex-shrink-0" />
+                    <p className="text-sm text-gray-800 font-medium">GoHighLevel integration</p>
+                  </div>
+                  <div className="flex items-start gap-2">
+                    <CheckCircle2 className="w-5 h-5 text-purple-600 mt-0.5 flex-shrink-0" />
+                    <p className="text-sm text-gray-800 font-medium">Up to 10 client-side features</p>
+                  </div>
+                  <div className="flex items-start gap-2">
+                    <CheckCircle2 className="w-5 h-5 text-purple-600 mt-0.5 flex-shrink-0" />
+                    <p className="text-sm text-gray-800 font-medium">Up to 10 additional integrations</p>
+                  </div>
+                  <div className="flex items-start gap-2">
+                    <CheckCircle2 className="w-5 h-5 text-purple-600 mt-0.5 flex-shrink-0" />
+                    <p className="text-sm text-gray-800 font-medium">Dedicated support manager</p>
+                  </div>
+                  <div className="flex items-start gap-2">
+                    <CheckCircle2 className="w-5 h-5 text-purple-600 mt-0.5 flex-shrink-0" />
+                    <p className="text-sm text-gray-800 font-medium">3 strategy calls/month</p>
+                  </div>
+                  <div className="flex items-start gap-2">
+                    <CheckCircle2 className="w-5 h-5 text-purple-600 mt-0.5 flex-shrink-0" />
+                    <p className="text-sm text-gray-800 font-medium">Up to 5 feature revisions/month</p>
+                  </div>
+                </div>
+
+                {/* CTA */}
+                <Link href="/contact">
+                  <button className="w-full px-6 py-3 bg-gradient-to-r from-purple-600 to-blue-600 text-white rounded-xl font-bold hover:shadow-xl hover:scale-105 transition-all duration-300">
+                    Book a Strategy Call
+                  </button>
+                </Link>
               </div>
 
-              {/* Phase 3 */}
-              <div className="relative">
-                <div className="bg-gradient-to-br from-green-50 to-emerald-50 border-2 border-green-300 rounded-2xl p-6 text-center hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
-                  <div className="w-16 h-16 bg-green-500 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
-                    <span className="text-3xl font-bold text-white">3</span>
+              {/* Card 3: Custom Partnership */}
+              <div className="relative bg-white border-2 border-gray-300 rounded-2xl p-8 hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
+                {/* Badge */}
+                <div className="absolute top-6 right-6">
+                  <div className="px-3 py-1 bg-gray-800 rounded-full">
+                    <span className="text-xs font-bold text-white">ENTERPRISE</span>
                   </div>
-                  <h3 className="text-2xl font-bold text-gray-900 mb-2">Ongoing Partnership</h3>
-                  <div className="text-4xl font-bold text-green-600 mb-2">From $5,000/month</div>
-                  <div className="text-sm text-gray-600 font-semibold">12-MONTH MINIMUM</div>
-                  <div className="mt-4 text-sm text-gray-700">Support & improvements</div>
                 </div>
+
+                <div className="mb-6">
+                  <h3 className="text-3xl font-bold text-gray-900 mb-4">Custom Partnership</h3>
+                  <p className="text-gray-600 mb-6">For agencies with larger scopes, advanced workflows, or specialized backend requirements.</p>
+                  
+                  {/* Pricing */}
+                  <div className="mb-2">
+                    <span className="text-4xl font-bold text-gray-900">Custom</span>
+                  </div>
+                  <div className="text-gray-600 mb-2">pricing</div>
+                  <div className="text-sm text-gray-500 mb-4">Flexible terms</div>
+                  <div className="text-xs text-gray-400">Built around your delivery model</div>
+                </div>
+
+                {/* Key Features */}
+                <div className="space-y-3 mb-8">
+                  <div className="flex items-start gap-2">
+                    <CheckCircle2 className="w-5 h-5 text-gray-700 mt-0.5 flex-shrink-0" />
+                    <p className="text-sm text-gray-700">Everything in Core Partner</p>
+                  </div>
+                  <div className="flex items-start gap-2">
+                    <CheckCircle2 className="w-5 h-5 text-gray-700 mt-0.5 flex-shrink-0" />
+                    <p className="text-sm text-gray-700">Custom integrations beyond GHL</p>
+                  </div>
+                  <div className="flex items-start gap-2">
+                    <CheckCircle2 className="w-5 h-5 text-gray-700 mt-0.5 flex-shrink-0" />
+                    <p className="text-sm text-gray-700">Advanced multi-layered systems</p>
+                  </div>
+                  <div className="flex items-start gap-2">
+                    <CheckCircle2 className="w-5 h-5 text-gray-700 mt-0.5 flex-shrink-0" />
+                    <p className="text-sm text-gray-700">Priority support</p>
+                  </div>
+                  <div className="flex items-start gap-2">
+                    <CheckCircle2 className="w-5 h-5 text-gray-700 mt-0.5 flex-shrink-0" />
+                    <p className="text-sm text-gray-700">Fully custom scope</p>
+                  </div>
+                </div>
+
+                {/* CTA */}
+                <Link href="/contact">
+                  <button className="w-full px-6 py-3 border-2 border-gray-800 text-gray-800 rounded-xl font-bold hover:bg-gray-800 hover:text-white transition-all duration-300 hover:scale-105">
+                    Talk to Us
+                  </button>
+                </Link>
               </div>
             </div>
 

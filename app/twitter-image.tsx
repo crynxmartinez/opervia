@@ -9,6 +9,11 @@ export const size = {
 export const contentType = 'image/png'
  
 export default async function Image() {
+  // Fetch the logo
+  const logoData = await fetch(
+    new URL('../../public/logo-full.png', import.meta.url)
+  ).then((res) => res.arrayBuffer())
+
   return new ImageResponse(
     (
       <div
@@ -21,9 +26,21 @@ export default async function Image() {
           justifyContent: 'center',
           background: 'linear-gradient(135deg, #4A9FD8 0%, #3B82F6 50%, #14B8A6 100%)',
           fontFamily: 'system-ui, sans-serif',
+          padding: '60px',
         }}
       >
-        {/* Logo Text */}
+        {/* Logo Image */}
+        <img
+          src={logoData as any}
+          alt="Opervia Logo"
+          width="500"
+          height="130"
+          style={{
+            marginBottom: 40,
+          }}
+        />
+        
+        {/* Tagline */}
         <div
           style={{
             display: 'flex',
@@ -34,37 +51,26 @@ export default async function Image() {
         >
           <div
             style={{
-              fontSize: 120,
-              fontWeight: 'bold',
-              color: 'white',
-              letterSpacing: '-0.05em',
-              marginBottom: 20,
-              textShadow: '0 4px 20px rgba(0,0,0,0.3)',
-            }}
-          >
-            OPERVIA
-          </div>
-          <div
-            style={{
-              fontSize: 40,
-              color: 'rgba(255,255,255,0.95)',
+              fontSize: 48,
+              color: 'rgba(255,255,255,0.98)',
               textAlign: 'center',
-              maxWidth: 900,
-              lineHeight: 1.4,
-              fontWeight: 600,
-              textShadow: '0 2px 10px rgba(0,0,0,0.2)',
+              maxWidth: 1000,
+              lineHeight: 1.3,
+              fontWeight: 700,
+              textShadow: '0 2px 10px rgba(0,0,0,0.3)',
+              marginBottom: 20,
             }}
           >
             White-Label Technical Partner for Agencies
           </div>
           <div
             style={{
-              fontSize: 28,
-              color: 'rgba(255,255,255,0.85)',
+              fontSize: 32,
+              color: 'rgba(255,255,255,0.9)',
               textAlign: 'center',
-              maxWidth: 800,
-              marginTop: 30,
-              lineHeight: 1.3,
+              maxWidth: 900,
+              lineHeight: 1.4,
+              fontWeight: 500,
             }}
           >
             Custom Systems • GoHighLevel Integration • Backend Support

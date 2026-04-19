@@ -40,6 +40,14 @@ export const metadata: Metadata = {
     siteName: 'Opervia',
     title: 'Opervia | White-Label Technical Partner for Agencies',
     description: 'White-label technical partner for agencies. Custom systems, GoHighLevel integration, client dashboards, and ongoing backend support.',
+    images: [
+      {
+        url: '/opengraph-image',
+        width: 1200,
+        height: 630,
+        alt: 'Opervia - White-Label Technical Partner for Agencies',
+      },
+    ],
   },
   twitter: {
     card: 'summary_large_image',

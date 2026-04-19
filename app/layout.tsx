@@ -2,7 +2,7 @@ import type { Metadata } from "next"
 import "./globals.css"
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://opervia.com'),
+  metadataBase: new URL('https://www.opervia.agency'),
   title: {
     default: "Opervia | White-Label Technical Partner for Agencies",
     template: "%s | Opervia"
@@ -36,13 +36,13 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    url: 'https://opervia.com',
+    url: 'https://www.opervia.agency',
     siteName: 'Opervia',
     title: 'Opervia | White-Label Technical Partner for Agencies',
     description: 'White-label technical partner for agencies. Custom systems, GoHighLevel integration, client dashboards, and ongoing backend support.',
     images: [
       {
-        url: 'https://opervia.com/logo-full.png',
+        url: 'https://www.opervia.agency/logo-full.png',
         width: 800,
         height: 400,
         alt: 'Opervia Logo',
@@ -53,7 +53,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Opervia | White-Label Technical Partner for Agencies',
     description: 'White-label technical partner for agencies. Custom systems, GoHighLevel integration, and ongoing backend support.',
-    images: ['https://opervia.com/logo-full.png'],
+    images: ['https://www.opervia.agency/logo-full.png'],
     creator: '@opervia',
   },
   robots: {
@@ -84,8 +84,8 @@ export default function RootLayout({
     '@type': 'Organization',
     name: 'Opervia',
     description: 'White-label technical partner for agencies that need custom systems, GoHighLevel integration, and ongoing backend support.',
-    url: 'https://opervia.com',
-    logo: 'https://opervia.com/logo-full.png',
+    url: 'https://www.opervia.agency',
+    logo: 'https://www.opervia.agency/logo-full.png',
     sameAs: [
       // Add your social media URLs here when ready
       // 'https://twitter.com/opervia',

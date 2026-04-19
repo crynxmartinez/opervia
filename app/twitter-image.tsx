@@ -9,11 +9,6 @@ export const size = {
 export const contentType = 'image/png'
  
 export default async function Image() {
-  // Fetch the logo
-  const logoData = await fetch(
-    new URL('../../public/logo-full.png', import.meta.url)
-  ).then((res) => res.arrayBuffer())
-
   return new ImageResponse(
     (
       <div
@@ -25,20 +20,24 @@ export default async function Image() {
           alignItems: 'center',
           justifyContent: 'center',
           background: 'linear-gradient(135deg, #4A9FD8 0%, #3B82F6 50%, #14B8A6 100%)',
-          fontFamily: 'system-ui, sans-serif',
-          padding: '60px',
+          fontFamily: 'system-ui, -apple-system, sans-serif',
+          padding: '80px',
         }}
       >
-        {/* Logo Image */}
-        <img
-          src={logoData as any}
-          alt="Opervia Logo"
-          width="500"
-          height="130"
+        {/* Logo Text */}
+        <div
           style={{
-            marginBottom: 40,
+            fontSize: 140,
+            fontWeight: 900,
+            color: 'white',
+            letterSpacing: '-0.05em',
+            marginBottom: 30,
+            textShadow: '0 8px 32px rgba(0,0,0,0.3)',
+            display: 'flex',
           }}
-        />
+        >
+          OPERVIA
+        </div>
         
         {/* Tagline */}
         <div
@@ -57,20 +56,22 @@ export default async function Image() {
               maxWidth: 1000,
               lineHeight: 1.3,
               fontWeight: 700,
-              textShadow: '0 2px 10px rgba(0,0,0,0.3)',
-              marginBottom: 20,
+              textShadow: '0 4px 16px rgba(0,0,0,0.3)',
+              marginBottom: 24,
+              display: 'flex',
             }}
           >
             White-Label Technical Partner for Agencies
           </div>
           <div
             style={{
-              fontSize: 32,
-              color: 'rgba(255,255,255,0.9)',
+              fontSize: 34,
+              color: 'rgba(255,255,255,0.92)',
               textAlign: 'center',
               maxWidth: 900,
               lineHeight: 1.4,
-              fontWeight: 500,
+              fontWeight: 600,
+              display: 'flex',
             }}
           >
             Custom Systems • GoHighLevel Integration • Backend Support

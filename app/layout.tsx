@@ -41,6 +41,9 @@ export const metadata: Metadata = {
     title: 'Opervia | White-Label Technical Partner for Agencies',
     description: 'White-label technical partner for agencies. Custom systems, GoHighLevel integration, client dashboards, and ongoing backend support.',
   },
+  facebook: {
+    appId: '1234567890', // Replace with your actual Facebook App ID when you create one
+  },
   twitter: {
     card: 'summary_large_image',
     title: 'Opervia | White-Label Technical Partner for Agencies',

@@ -44,13 +44,13 @@ export default function Home() {
               <span className="text-white text-5xl md:text-7xl lg:text-8xl block">Build Your Agency SaaS</span>
               <br />
               <span className="text-white text-4xl md:text-6xl lg:text-7xl block">
-                Without the $100K+ Upfront Cost
+                Without the Upfront Cost
               </span>
             </h1>
 
             {/* Subheading - Brighter, Benefit-Focused */}
             <p className="text-xl md:text-2xl text-white font-medium max-w-4xl mx-auto leading-relaxed drop-shadow-lg" style={{ textShadow: '0 2px 10px rgba(0,0,0,0.4)' }}>
-              Opervia builds your custom SaaS or web app through a 12-month partnership. Instead of paying $100K-$300K upfront, invest monthly while we build and support your platform as your backend technical partner.
+              Opervia builds your custom SaaS or web app through a 12-month partnership. Instead of massive upfront fees, invest monthly while we build and support your platform as your backend technical partner.
             </p>
 
             {/* CTA Buttons - Stronger Design */}

@@ -104,8 +104,8 @@ export default function ServicesPage() {
                 <h3 className="text-3xl md:text-4xl font-bold text-gray-900 mb-3">
                   Core Partner
                 </h3>
-                <div className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent mb-4">
-                  From $5,000/month
+                <div className="text-xl text-gray-600 mb-4">
+                  Our flagship backend partnership
                 </div>
               </div>
 
@@ -606,7 +606,7 @@ export default function ServicesPage() {
                   <ul className="space-y-3 text-gray-600 text-sm">
                     <li className="flex items-start gap-2">
                       <span className="text-red-500">✕</span>
-                      <span>$100k+ per developer</span>
+                      <span>High annual developer costs</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <span className="text-red-500">✕</span>

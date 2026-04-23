@@ -152,7 +152,7 @@ export default function Home() {
               <div className="space-y-4">
                 <div className="flex items-start gap-3">
                   <AlertTriangle className="w-5 h-5 text-red-500 mt-0.5 flex-shrink-0" />
-                  <p className="text-gray-700 leading-relaxed font-medium">$100K+ per developer annually</p>
+                  <p className="text-gray-700 leading-relaxed font-medium">High annual developer costs</p>
                 </div>
                 <div className="flex items-start gap-3">
                   <AlertTriangle className="w-5 h-5 text-red-500 mt-0.5 flex-shrink-0" />
@@ -209,7 +209,7 @@ export default function Home() {
                   <div className="w-6 h-6 bg-gradient-to-br from-blue-500 to-purple-500 rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5 group-hover/item:scale-110 transition-transform">
                     <Sparkles className="w-4 h-4 text-white" strokeWidth={2.5} />
                   </div>
-                  <p className="text-gray-800 leading-relaxed font-semibold">$3K-$5K/month × 12 months (not $100K+ upfront)</p>
+                  <p className="text-gray-800 leading-relaxed font-semibold">Predictable monthly investment (not massive upfront fees)</p>
                 </div>
                 <div className="flex items-start gap-3 group/item">
                   <div className="w-6 h-6 bg-gradient-to-br from-purple-500 to-pink-500 rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5 group-hover/item:scale-110 transition-transform">

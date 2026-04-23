@@ -7,7 +7,7 @@ export const metadata: Metadata = {
     default: "Opervia | White-Label Technical Partner for Agencies",
     template: "%s | Opervia"
   },
-  description: "Build your agency SaaS through a 12-month partnership. No $100K+ upfront fees. We're your backend technical partner—build, launch, ongoing support.",
+  description: "Build your agency SaaS through a 12-month partnership. No massive upfront fees. We're your backend technical partner—build, launch, ongoing support.",
   keywords: [
     "agency saas development",
     "build agency saas",
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
     url: 'https://www.opervia.agency',
     siteName: 'Opervia',
     title: 'Opervia | White-Label Technical Partner for Agencies',
-    description: 'Build your agency SaaS through a 12-month partnership. No $100K+ upfront fees. Custom web apps, dashboards, integrations, and ongoing support.',
+    description: 'Build your agency SaaS through a 12-month partnership. No massive upfront fees. Custom web apps, dashboards, integrations, and ongoing support.',
     images: [
       {
         url: 'https://www.opervia.agency/logo-full.png',

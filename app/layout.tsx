@@ -7,17 +7,17 @@ export const metadata: Metadata = {
     default: "Opervia | White-Label Technical Partner for Agencies",
     template: "%s | Opervia"
   },
-  description: "Opervia is the white-label technical partner for agencies that need custom systems, GoHighLevel integration, admin control, client dashboards, and ongoing backend support. Build, launch, and scale with structured partnership.",
+  description: "Build your agency SaaS through a 12-month partnership. No $100K+ upfront fees. We're your backend technical partner—build, launch, ongoing support.",
   keywords: [
-    "white-label technical partner",
-    "agency backend support",
-    "GoHighLevel integration",
-    "custom client portals",
-    "agency fulfillment systems",
-    "GHL development",
-    "white-label development",
+    "agency saas development",
+    "build agency saas",
+    "backend technical partner",
+    "custom web app development",
+    "12-month saas partnership",
+    "agency web app builder",
+    "saas development no upfront cost",
     "agency technical partner",
-    "custom dashboards",
+    "custom client portals",
     "backend infrastructure"
   ],
   authors: [{ name: "Opervia" }],
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
     url: 'https://www.opervia.agency',
     siteName: 'Opervia',
     title: 'Opervia | White-Label Technical Partner for Agencies',
-    description: 'White-label technical partner for agencies. Custom systems, GoHighLevel integration, client dashboards, and ongoing backend support.',
+    description: 'Build your agency SaaS through a 12-month partnership. No $100K+ upfront fees. Custom web apps, dashboards, integrations, and ongoing support.',
     images: [
       {
         url: 'https://www.opervia.agency/logo-full.png',
@@ -52,7 +52,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Opervia | White-Label Technical Partner for Agencies',
-    description: 'White-label technical partner for agencies. Custom systems, GoHighLevel integration, and ongoing backend support.',
+    description: 'Build your agency SaaS through a 12-month partnership. No upfront fees. Custom web apps and ongoing technical support.',
     images: ['https://www.opervia.agency/logo-full.png'],
     creator: '@opervia',
   },
@@ -83,7 +83,7 @@ export default function RootLayout({
     '@context': 'https://schema.org',
     '@type': 'Organization',
     name: 'Opervia',
-    description: 'White-label technical partner for agencies that need custom systems, GoHighLevel integration, and ongoing backend support.',
+    description: 'Build your agency SaaS or custom web app through a 12-month partnership. We\'re your backend technical partner for ongoing support and growth.',
     url: 'https://www.opervia.agency',
     logo: 'https://www.opervia.agency/logo-full.png',
     sameAs: [

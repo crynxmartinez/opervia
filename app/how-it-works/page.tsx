@@ -40,21 +40,21 @@ export default function HowItWorksPage() {
 
             {/* Headline */}
             <h1 className="text-5xl md:text-7xl font-bold leading-tight drop-shadow-2xl" style={{ textShadow: '0 4px 20px rgba(0,0,0,0.5)' }}>
-              <span className="text-white">How the Opervia</span>
+              <span className="text-white">How We Build Your</span>
               <br />
               <span className="text-white">
-                Partnership Works
+                Agency SaaS Together
               </span>
             </h1>
 
             {/* Subheadline */}
             <p className="text-xl md:text-2xl text-white font-medium max-w-4xl mx-auto leading-relaxed drop-shadow-lg" style={{ textShadow: '0 2px 10px rgba(0,0,0,0.4)' }}>
-              We help agencies launch custom GoHighLevel systems through a structured build, launch, and ongoing white-label technical partnership—without requiring a massive upfront software payment.
+              We build your agency SaaS or custom web app through a 12-month structured partnership. Instead of one massive upfront payment, invest monthly while we build your platform and stay as your backend technical partner.
             </p>
 
             {/* Support Line */}
             <p className="text-lg md:text-xl text-white/90 max-w-2xl mx-auto italic">
-              You bring the client. We build the system behind your service.
+              You grow your agency. We build and maintain the SaaS behind it.
             </p>
 
             {/* CTAs */}

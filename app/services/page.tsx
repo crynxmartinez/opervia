@@ -34,27 +34,27 @@ export default function ServicesPage() {
             <div className="flex items-center justify-center">
               <div className="inline-flex items-center gap-2 px-4 sm:px-6 py-2 sm:py-3 rounded-full bg-white/20 backdrop-blur-md border-2 border-white/30 shadow-[0_0_30px_rgba(255,255,255,0.3)] animate-float">
                 <Sparkles className="w-4 h-4 sm:w-5 sm:h-5 text-yellow-300 animate-pulse-slow" />
-                <span className="text-white font-bold text-sm sm:text-base tracking-wide">White-Label Technical Partner</span>
+                <span className="text-white font-bold text-sm sm:text-base tracking-wide">12-Month Partnership Model</span>
               </div>
             </div>
 
             {/* Headline */}
             <h1 className="text-5xl md:text-7xl font-bold leading-tight drop-shadow-2xl" style={{ textShadow: '0 4px 20px rgba(0,0,0,0.5)' }}>
-              <span className="text-white">Services That Power Your</span>
+              <span className="text-white">We Build Your Agency SaaS</span>
               <br />
               <span className="text-white">
-                Agency Behind the Scenes.
+                or Custom Web App
               </span>
             </h1>
 
             {/* Subheadline */}
             <p className="text-xl md:text-2xl text-white font-medium max-w-4xl mx-auto leading-relaxed drop-shadow-lg" style={{ textShadow: '0 2px 10px rgba(0,0,0,0.4)' }}>
-              We help agencies launch and support custom GoHighLevel-powered systems through a structured backend partnership model.
+              We build your agency SaaS or custom web app through a 12-month partnership—and stay as your backend technical partner for ongoing support, updates, and improvements.
             </p>
 
             {/* Support Line */}
             <p className="text-lg md:text-xl text-white/90 max-w-2xl mx-auto italic">
-              You bring the client. We build the system behind your service.
+              You grow your agency. We build and maintain the SaaS behind it.
             </p>
 
             {/* CTAs */}
@@ -86,7 +86,7 @@ export default function ServicesPage() {
               Everything Inside Core Partner
             </h2>
             <p className="text-xl text-gray-600 leading-relaxed">
-              Our flagship backend partnership for agencies that need more than setup—custom systems, GoHighLevel integration, admin control, client dashboards, and ongoing technical support.
+              Our flagship backend partnership for agencies that need more than setup—custom SaaS platforms, integrations, admin control, client dashboards, and ongoing technical support.
             </p>
           </div>
 
@@ -110,7 +110,7 @@ export default function ServicesPage() {
               </div>
 
               <p className="text-lg text-gray-700 leading-relaxed mb-8 max-w-3xl">
-                Built for agencies that need a real backend technical partner. Core Partner includes the full foundation: website, admin dashboard, client dashboard, GoHighLevel as the main integration, advanced support, and room for deeper custom delivery.
+                Built for agencies that need a real backend technical partner. Core Partner includes the full foundation: website, admin dashboard, client dashboard, custom integrations, advanced support, and room for deeper custom delivery of your SaaS platform.
               </p>
 
               {/* What's Included Grid */}
@@ -136,7 +136,7 @@ export default function ServicesPage() {
                 <div className="flex items-start gap-3">
                   <CheckCircle2 className="w-6 h-6 text-green-600 mt-0.5 flex-shrink-0" />
                   <div>
-                    <p className="font-semibold text-gray-900">GoHighLevel as the main integration</p>
+                    <p className="font-semibold text-gray-900">Custom integrations (Stripe, APIs, etc.)</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
@@ -322,19 +322,19 @@ export default function ServicesPage() {
               </div>
             </div>
 
-            {/* Pillar 4: GHL & Integrations */}
+            {/* Pillar 4: Custom Integrations */}
             <div className="relative bg-white border-2 border-gray-200 rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
               <div className="mb-4">
                 <Database className="w-10 h-10 text-green-600 mb-3" />
-                <h3 className="text-xl font-bold text-gray-900">GHL & Integrations</h3>
+                <h3 className="text-xl font-bold text-gray-900">Custom Integrations</h3>
               </div>
 
-              <p className="text-sm text-gray-600 mb-4 font-medium">GoHighLevel as the main backend engine</p>
+              <p className="text-sm text-gray-600 mb-4 font-medium">Connect your SaaS to any platform</p>
 
               <div className="space-y-2">
                 <div className="flex items-start gap-2">
                   <CheckCircle2 className="w-4 h-4 text-gray-600 mt-0.5 flex-shrink-0" />
-                  <p className="text-gray-700 text-sm">GHL as main integration</p>
+                  <p className="text-gray-700 text-sm">Stripe, payment processors</p>
                 </div>
                 <div className="flex items-start gap-2">
                   <CheckCircle2 className="w-4 h-4 text-gray-600 mt-0.5 flex-shrink-0" />
@@ -409,7 +409,7 @@ export default function ServicesPage() {
                   <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-cyan-600 rounded-full flex items-center justify-center mx-auto mb-3 shadow-lg relative z-10">
                     <Database className="w-8 h-8 text-white" />
                   </div>
-                  <p className="font-semibold text-gray-900 text-sm">GHL Foundation</p>
+                  <p className="font-semibold text-gray-900 text-sm">Integration Foundation</p>
                 </div>
                 
                 <div className="text-center">
@@ -794,7 +794,7 @@ export default function ServicesPage() {
             </h2>
 
             <p className="text-xl md:text-2xl text-white/90 mb-8 max-w-3xl mx-auto leading-relaxed">
-              We help agencies deliver stronger systems through <strong>GoHighLevel development</strong>, custom portals, backend infrastructure, and white-label technical fulfillment.
+              We help agencies build and scale their SaaS platforms through <strong>custom development</strong>, client portals, backend infrastructure, and ongoing technical partnership.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">

@@ -34,23 +34,23 @@ export default function Home() {
             <div className="flex items-center justify-center">
               <div className="inline-flex items-center gap-2 px-4 sm:px-6 py-2 sm:py-3 rounded-full bg-white/20 backdrop-blur-md border-2 border-white/30 shadow-[0_0_30px_rgba(255,255,255,0.3)] animate-float">
                 <Sparkles className="w-4 h-4 sm:w-5 sm:h-5 text-yellow-300 animate-pulse-slow" />
-                <span className="text-white font-bold text-sm sm:text-base tracking-wide">White-Label Technical Partner</span>
+                <span className="text-white font-bold text-sm sm:text-base tracking-wide">12-Month Partnership • Your Backend Technical Partner</span>
                 <div className="w-2 h-2 bg-infra-lime rounded-full animate-pulse" />
               </div>
             </div>
 
             {/* Main Heading with Text Shadow for Crispness */}
             <h1 className="font-bold leading-tight drop-shadow-2xl" style={{ textShadow: '0 4px 20px rgba(0,0,0,0.5)' }}>
-              <span className="text-white text-5xl md:text-7xl lg:text-8xl block">You Grow the Agency.</span>
+              <span className="text-white text-5xl md:text-7xl lg:text-8xl block">Build Your Agency SaaS</span>
               <br />
               <span className="text-white text-4xl md:text-6xl lg:text-7xl block">
-                We Build the Infrastructure Behind It.
+                Without the $100K+ Upfront Cost
               </span>
             </h1>
 
             {/* Subheading - Brighter, Benefit-Focused */}
             <p className="text-xl md:text-2xl text-white font-medium max-w-4xl mx-auto leading-relaxed drop-shadow-lg" style={{ textShadow: '0 2px 10px rgba(0,0,0,0.4)' }}>
-              Opervia is the white-label technical partner for agencies that need custom systems, GoHighLevel integration, admin control, client dashboards, and ongoing backend support.
+              Opervia builds your custom SaaS or web app through a 12-month partnership. Instead of paying $100K-$300K upfront, invest monthly while we build and support your platform as your backend technical partner.
             </p>
 
             {/* CTA Buttons - Stronger Design */}
@@ -182,7 +182,7 @@ export default function Home() {
                 The Third Option: Opervia
               </p>
               <p className="text-xl text-gray-700 max-w-2xl mx-auto font-medium">
-                A white-label technical partner and backend partner for agencies.
+                A 12-month partnership to build your SaaS—we're your backend technical partner.
               </p>
             </div>
 
@@ -200,7 +200,7 @@ export default function Home() {
               
               {/* Punchy Title */}
               <h3 className="text-3xl font-bold mb-8 bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text text-transparent pr-16 animate-gradient" style={{ backgroundSize: '200% auto' }}>
-                We Become Your Backend Technical Partner
+                12-Month Partnership to Build Your SaaS
               </h3>
               
               {/* Benefit-Focused Bullets with Sparkles */}
@@ -209,25 +209,25 @@ export default function Home() {
                   <div className="w-6 h-6 bg-gradient-to-br from-blue-500 to-purple-500 rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5 group-hover/item:scale-110 transition-transform">
                     <Sparkles className="w-4 h-4 text-white" strokeWidth={2.5} />
                   </div>
-                  <p className="text-gray-800 leading-relaxed font-semibold">Backend partner for agencies without hiring in-house</p>
+                  <p className="text-gray-800 leading-relaxed font-semibold">$3K-$5K/month × 12 months (not $100K+ upfront)</p>
                 </div>
                 <div className="flex items-start gap-3 group/item">
                   <div className="w-6 h-6 bg-gradient-to-br from-purple-500 to-pink-500 rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5 group-hover/item:scale-110 transition-transform">
                     <Sparkles className="w-4 h-4 text-white" strokeWidth={2.5} />
                   </div>
-                  <p className="text-gray-800 leading-relaxed font-semibold">Custom systems built around your actual service</p>
+                  <p className="text-gray-800 leading-relaxed font-semibold">Build your agency SaaS or custom web app together</p>
                 </div>
                 <div className="flex items-start gap-3 group/item">
                   <div className="w-6 h-6 bg-gradient-to-br from-blue-500 to-pink-500 rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5 group-hover/item:scale-110 transition-transform">
                     <Sparkles className="w-4 h-4 text-white" strokeWidth={2.5} />
                   </div>
-                  <p className="text-gray-800 leading-relaxed font-semibold">White-label delivery under your brand</p>
+                  <p className="text-gray-800 leading-relaxed font-semibold">We stay as your backend technical partner</p>
                 </div>
                 <div className="flex items-start gap-3 group/item">
                   <div className="w-6 h-6 bg-gradient-to-br from-purple-500 to-blue-500 rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5 group-hover/item:scale-110 transition-transform">
                     <Sparkles className="w-4 h-4 text-white" strokeWidth={2.5} />
                   </div>
-                  <p className="text-gray-800 leading-relaxed font-semibold">Ongoing support after launch as your agency fulfillment partner</p>
+                  <p className="text-gray-800 leading-relaxed font-semibold">Ongoing support, not a handoff after launch</p>
                 </div>
               </div>
 

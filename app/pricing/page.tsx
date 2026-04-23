@@ -49,12 +49,12 @@ export default function PricingPage() {
 
             {/* Subheadline */}
             <p className="text-xl md:text-2xl text-white font-medium max-w-4xl mx-auto leading-relaxed drop-shadow-lg" style={{ textShadow: '0 2px 10px rgba(0,0,0,0.4)' }}>
-              Opervia offers structured backend partnership plans for agencies that need custom systems, GoHighLevel integration, dashboards, and ongoing technical support.
+              Choose the partnership level for your agency SaaS or web app build. 12-month structured partnerships with build, launch, and support included—no massive upfront development fees.
             </p>
 
             {/* Supporting line */}
             <p className="text-lg md:text-xl text-white/90 max-w-2xl mx-auto italic">
-              You close the client. We build the system behind your service.
+              You grow your agency. We build and maintain the SaaS behind it.
             </p>
 
             {/* CTAs */}
@@ -114,7 +114,7 @@ export default function PricingPage() {
                   </div>
                   <div className="flex items-start gap-2">
                     <CheckCircle2 className="w-5 h-5 text-blue-600 mt-0.5 flex-shrink-0" />
-                    <p className="text-sm text-gray-700">GoHighLevel as main integration</p>
+                    <p className="text-sm text-gray-700">Custom integrations (Stripe, APIs, etc.)</p>
                   </div>
                   <div className="flex items-start gap-2">
                     <CheckCircle2 className="w-5 h-5 text-blue-600 mt-0.5 flex-shrink-0" />
@@ -163,7 +163,7 @@ export default function PricingPage() {
                   </div>
                   <div className="flex items-start gap-2">
                     <CheckCircle2 className="w-5 h-5 text-purple-600 mt-0.5 flex-shrink-0" />
-                    <p className="text-sm text-gray-800 font-medium">GoHighLevel as main integration</p>
+                    <p className="text-sm text-gray-800 font-medium">Custom integrations (Stripe, APIs, etc.)</p>
                   </div>
                   <div className="flex items-start gap-2">
                     <CheckCircle2 className="w-5 h-5 text-purple-600 mt-0.5 flex-shrink-0" />
@@ -297,9 +297,9 @@ export default function PricingPage() {
                 </tr>
                 <tr className="bg-gray-50">
                   <td className="px-6 py-4 font-bold text-gray-900">Main Integration</td>
-                  <td className="px-6 py-4 text-center text-gray-700">GoHighLevel</td>
-                  <td className="px-6 py-4 text-center bg-purple-50 text-gray-700">GoHighLevel</td>
-                  <td className="px-6 py-4 text-center text-gray-700">GoHighLevel or custom stack</td>
+                  <td className="px-6 py-4 text-center text-gray-700">Custom integrations</td>
+                  <td className="px-6 py-4 text-center bg-purple-50 text-gray-700">Custom integrations</td>
+                  <td className="px-6 py-4 text-center text-gray-700">Any tech stack</td>
                 </tr>
                 <tr>
                   <td className="px-6 py-4 font-bold text-gray-900">Additional Integrations</td>
@@ -411,8 +411,8 @@ export default function PricingPage() {
               <div className="flex items-start gap-3 p-4 bg-white rounded-xl shadow-md">
                 <CheckCircle2 className="w-6 h-6 text-green-600 mt-1 flex-shrink-0" />
                 <div>
-                  <p className="font-semibold text-gray-900">GoHighLevel as the main integration</p>
-                  <p className="text-sm text-gray-600">Backend engine</p>
+                  <p className="font-semibold text-gray-900">Custom integrations included</p>
+                  <p className="text-sm text-gray-600">Stripe, APIs, webhooks, etc.</p>
                 </div>
               </div>
               <div className="flex items-start gap-3 p-4 bg-white rounded-xl shadow-md">
@@ -521,7 +521,7 @@ export default function PricingPage() {
                 <span className="text-gray-500 group-open:rotate-180 transition-transform duration-300">▼</span>
               </summary>
               <p className="mt-4 text-gray-700 leading-relaxed">
-                An integration is a connection between your system and an external platform—like Stripe, Calendly, Zapier, Google Sheets, or a custom API. GoHighLevel is included as the main integration in all plans.
+                An integration is a connection between your system and an external platform—like Stripe, Calendly, Zapier, Google Sheets, or a custom API. Custom integrations are included in all plans based on your needs.
               </p>
             </details>
 
@@ -551,7 +551,7 @@ export default function PricingPage() {
                 <span className="text-gray-500 group-open:rotate-180 transition-transform duration-300">▼</span>
               </summary>
               <p className="mt-4 text-gray-700 leading-relaxed">
-                Choose Custom if you need more than 10 integrations, advanced multi-layered systems, custom tech stacks beyond GoHighLevel, or specialized workflows. We'll build a tailored solution around your exact requirements.
+                Choose Custom if you need more than 10 integrations, advanced multi-layered systems, specialized tech stacks, or complex workflows. We'll build a tailored solution around your exact requirements.
               </p>
             </details>
           </div>

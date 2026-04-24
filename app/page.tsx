@@ -53,6 +53,11 @@ export default function Home() {
               Opervia builds your custom SaaS or web app through a 12-month partnership. Instead of massive upfront fees, invest monthly while we build and support your platform as your backend technical partner.
             </p>
 
+            {/* Supporting line */}
+            <p className="text-lg md:text-xl text-white/90 max-w-2xl mx-auto italic">
+              You grow your agency. We build and maintain the SaaS behind it.
+            </p>
+
             {/* CTA Buttons - Stronger Design */}
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-4">
               <Link href="/contact">

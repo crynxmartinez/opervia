@@ -41,6 +41,9 @@ export function Header() {
             <Link href="/blog" className="text-gray-700 hover:text-blue-600 transition-colors font-medium">
               Blog
             </Link>
+            <Link href="/admin/login" className="text-gray-500 hover:text-gray-700 transition-colors font-medium text-sm">
+              Admin
+            </Link>
             <Link href="/contact">
               <button className="px-6 py-2 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-lg font-semibold hover:shadow-lg hover:scale-105 transition-all">
                 Get Started
@@ -99,6 +102,13 @@ export function Header() {
                 onClick={() => setMobileMenuOpen(false)}
               >
                 Blog
+              </Link>
+              <Link 
+                href="/admin/login" 
+                className="text-gray-500 hover:text-gray-700 transition-colors font-medium py-2 text-sm"
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                Admin Login
               </Link>
               <Link 
                 href="/contact"
